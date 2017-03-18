@@ -12,7 +12,6 @@ Hará cosa de un mes, saliendo a guardar la bici, descubrimos una visita inesper
 ---
 
 ## HELLO-WORLD!
-#### CATALÀ
 
 *Farà ja cosa d'un mes, sortint a guardar la bici, vam descobrir una visita inesperada al balcó de casa.*
 
@@ -31,9 +30,10 @@ Hará cosa de un mes, saliendo a guardar la bici, descubrimos una visita inesper
 *Seguim esperant notícies seves. Us mantindrem informats.*  
 
 *Att, David i Airí.*   
+
   
-...
-#### CASTELLANO   
+... 
+
 
 *Hará cosa de un mes, saliendo a guardar la bici, descubrimos una visita inesperada en el balcón de casa.*  
 
@@ -51,8 +51,9 @@ Hará cosa de un mes, saliendo a guardar la bici, descubrimos una visita inesper
   
 *Att, David y Airí.*   
 
+
 ...  
-#### ENGLISH 
+
 
 *It'll be about a month ago, while keeping the bike after a tiring day, we discovered an unexpected visit in our balcony.*  
   

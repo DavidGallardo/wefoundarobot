@@ -100,7 +100,8 @@
 				height: 280px;
 				position: absolute;
 				display: block;
-				background: $yellow;
+				background: $yellow url("../images/header/01.jpg") center center no-repeat;
+				background-size: cover;
 				left: 25%;
 				top: 0;
 			}
@@ -109,7 +110,8 @@
 				height: 280px;
 				position: absolute;
 				display: block;
-				background: $blue;
+				background: $blue url("../images/header/02.jpg") center center no-repeat;
+				background-size: cover;
 				left: 5%;
 				top: 300px;
 			}
@@ -118,7 +120,8 @@
 				height: 280px;
 				position: absolute;
 				display: block;
-				background: $red;
+				background: $red url("../images/header/03.jpg") center center no-repeat;
+				background-size: cover;
 				left: 390px;
 				top: 350px;
 			}

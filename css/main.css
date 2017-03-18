@@ -617,7 +617,8 @@ footer {
         height: 280px;
         position: absolute;
         display: block;
-        background: #FFED5A;
+        background: #FFED5A url("../images/header/01.jpg") center center no-repeat;
+        background-size: cover;
         left: 25%;
         top: 0; }
       .hp-heading .hp-image-block .image-wrap .image-2 {
@@ -625,7 +626,8 @@ footer {
         height: 280px;
         position: absolute;
         display: block;
-        background: #6C92FE;
+        background: #6C92FE url("../images/header/02.jpg") center center no-repeat;
+        background-size: cover;
         left: 5%;
         top: 300px; }
       .hp-heading .hp-image-block .image-wrap .image-3 {
@@ -633,7 +635,8 @@ footer {
         height: 280px;
         position: absolute;
         display: block;
-        background: #E34C41;
+        background: #E34C41 url("../images/header/03.jpg") center center no-repeat;
+        background-size: cover;
         left: 390px;
         top: 350px; }
 

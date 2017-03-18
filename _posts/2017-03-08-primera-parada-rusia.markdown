@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: true
+share: false
 number: "01"
 title:  "Primera Parada: Rusia."
 author: "BB-8"
@@ -43,7 +43,7 @@ Os adjunto aquí los **informes elaborados** para las 2 últimas ciudades que he
 </figure>
 {:/}
   
-### San Petersburgo | Санкт-Петербург 
+## San Petersburgo | Санкт-Петербург 
 Hora de llegada a la ciudad: 06.00h del día 03 de Marzo de 2017. Temperatura: -1Cº. Humedad relativa del aire: 56%. Vientos: tranquilo. Estado de la mar: completamente helado.  
 
 Resultado de la primera exploración en territorio Ruso: **satisfactoria**.    
@@ -93,7 +93,7 @@ Mientras me despido de la ciudad, de camino al *hostel* donde pasaré la última
 </figure>
 {:/} 
   
-### Moscú | Москва   
+## Moscú | Москва   
 Hora de llegada a la capital: 06.45h del día 07 de Marzo de 2017. Temperatura: 1Cº. Humedad relativa del aire: 90%. Vientos: inexistentes. Estado de la mar: tranquilo.    
   
 Incidente a primera hora de la mañana: **fallo en el sistema de adaptación al terreno**.     
