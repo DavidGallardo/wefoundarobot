@@ -1,0 +1,21 @@
+<nav class="main-nav">
+	<div class="list-wrapper">
+		<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show">Menu</span><span id="close">Close</span></div>
+		<ul class="closed">
+			{% if page.backbutton %}
+			<li class="arrow"><a href="{{ site.url }}/#{{ page.number }}"><img src='{{ "images/arrow-white-left.svg" | prepend:site.baseurl }}' alt="pointing arrow"></a></li>
+			{% endif %}
+			{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
+	    {% for p in navigation_pages %}
+	      {% if p.navigation_order %}
+	        <li>
+	          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+	            {{ p.title }}
+	          </a>
+	        </li>
+	      {% endif %}
+	  	{% endfor %}
+		</ul>
+		<div class="logo"><a href="{{ site.url }}"><img src='{{ "images/logo-winter-small.svg" | prepend:site.baseurl }}' alt="logo"></a></div>
+	</div>
+</nav>

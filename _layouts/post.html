@@ -1,0 +1,65 @@
+
+{% include head.html %}
+
+<header class="at-header">
+	{% include navigation.html %}
+
+	<div class="header-gradient" data-start="background-image: linear-gradient(-135deg, rgb(108,146,254) 0%, rgb(78,95,238) 100%);" data-200-start="background-image: linear-gradient(-135deg, rgb(256,256,256) 0%, rgb(256,256,256) 100%);"></div>
+	
+	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
+		<h1 class="animated fadeInDown">{{ page.title }}</h1>
+	</div>
+	<div class="at-main-image">
+		<div class="extra at-author">{{ page.author }}, {{ page.date | date: "%d %B"}}</div>
+		<div class="extra at-date">{% assign words = content | number_of_words %}
+		{% if words < 320 %}
+		  1 min
+		{% else %}
+		  {{ words | divided_by:160 }} min read
+		{% endif %}
+		</div>
+			<figure class="animated fadeInUp" data-start="bottom: 0px;" data-800-start="bottom:130px;"><img src="{{ page.post-image-path | prepend:site.baseurl }}" alt="{{ page.post-image-title}}" /></figure>
+			<a href="javascript:void(0)" id="scroll-down" class="extra grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;">Leer Post<span><img src='{{ "images/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
+	</div>
+</header>
+
+<section id="at-content" class="at-content">
+	<article>
+		{% if page.share %}
+		<div class="sharing-block extra grey">Share on<span><img src='{{ "images/rectangle.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
+		{% endif %}
+
+		{{ content }}
+		
+		{% if page.share %}
+		<div class="sharing-block extra grey" id="at-mobile">Share on<span><img src='{{ "images/rectangle.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://www.facebook.com/dialog/share
+    ?app_id=946372735391329&display=popup
+    &href={{ site.url }}{{ page.url }}
+    &redirect_uri={{ site.url }}{{ page.url }}">Facebook</a><a href="https://twitter.com/share?
+    text={{ page.title }}
+    &url={{ page.shorturl }}" class="twitter">Twitter</a></div>
+    {% endif %}
+	</article>
+</section>
+{% if page.gallery %}
+<section class="at-gallery">
+	<div class="slider">
+		{% for item in page.gallery %}
+			<div class="slider-item"><img src="{{ item | prepend:site.baseurl }}"></div>
+		{% endfor %}
+	</div>
+</section>
+{% endif %}
+
+
+{% if page.next %} 
+<footer class="at-next">
+  <a href="{{ page.next.url }}" class="at-title">
+		<div class="extra at-next-arrow">Siguiente Post</div>
+		<h4 class="h1">{{ page.next.title }}</h4>
+	</a>
+</footer>
+{% endif %}
+
+{% include footer.html %}
+

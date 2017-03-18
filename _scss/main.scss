@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Rubik:300,400,500,500i,700,700i,900);
+@import 'reset/reset';
+@import "bourbon/bourbon";
+@import 'reset/grid-settings';
+@import "neat/neat";
+@import 'helpers/mixins';
+
+
+
+// ––––––––––––––Custom Styles
+
+html {
+  font-size:100%;
+  font-size: $base-typography;
+  //MEDIA QUERY
+    @include media($m) {
+      font-size: 16px;
+    }
+}
+body{
+  
+  background:white;
+}
+main{
+  font-size: 1em;
+  width: 100%;
+  display: block;
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  @include border-box;
+  background: white;
+  
+    
+    @include media($xxl) {
+      font-size: 1.5em;
+    }
+    //
+}
+::selection {
+    color: white; 
+    background: $blue;
+}
+ul, ol, figure{
+  @include no-space;
+  li{
+    @include no-space;
+  }
+}
+// ––––––––––––––Generic Modules & Typography
+
+@import 'helpers/typography';
+@import 'modules/navigation';
+@import 'modules/footer';
+@import 'modules/buttons';
+
+
+// ––––––––––––––Homepage
+@import 'modules/homeposts';
+
+
+
+// ––––––––––––––Post
+@import 'pages/post';
+
+
+
+
+// ––––––––––––––Animate & Sliders
+@import 'helpers/animate';
+@import 'helpers/slick';
+
+
+// ––––––––––––––Print Styles
+
+@import 'reset/print';
