@@ -4,7 +4,7 @@ permalink: /:title/
 highlighter: pygments # or rouge or null
 include: ["_pages"]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-# url: http://wefoundarobot.com
-url: http://localhost:3000
+url: http://wefoundarobot.com
+# url: http://localhost:3000 
 baseurl: /
 
