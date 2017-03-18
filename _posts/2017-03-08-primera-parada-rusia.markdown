@@ -51,12 +51,12 @@ Resultado de la primera exploración en territorio Ruso: **satisfactoria**.
 La adaptación ha sido rápida.   
 Después de unos cuantos tumbos alrededor de la misma agrupación de edificios buscando donde dormir la primera noche, me he dado cuenta de que existían 2 cosas básicas para sobrevivir al frío de este lugar: **un abrigo largo y negro** y **un conejo peludo** para proteger mi cabeza. Así que después de descargarme la extensión de *tiendas de fauna y flora en San Petersburgo* y de adoptar la forma de *humano turista disfrazado de viajero mochilero* me dispongo a buscar la tienda de conejos más cercana.   
   
-> – Buenos días Señora, querría un conejo para mi cabeza. Soy nuevo aquí, así que querría el más peludo que tenga. No vaya a ser que se me congelen las antenas.
+> – Buenos días Señora, querría un conejo para mi cabeza. Soy nuevo aquí, así que querría el más peludo que tenga. No vaya a ser que se me congelen las antenas.<br><br>
 La chica de la tienda me contesta con un ruso tan rápido y enfurecido que mi sistema es incapaz de entender ni traducir ni media palabra de su respuesta... ¿Habré hecho algo malo? Igual me habré equivocado de tienda, así que me dispongo a salir otra vez... 
-– Подождите, сэр, вы ищете в шляпе? (Os lo traduzco: espere, señor, está buscando un sombrero?)
-– No – le digo –. Estoy buscando un conejo. Fuera he visto que la mayoría de hombres y mujeres llevan uno en sus cabezas para protegerse del frío. Pero tranquila, buscaré en otro lugar, no quería molestarla.
-La mujer se pone a reír descontroladamente. Empiezo a detectar un comportamiento extraño en el ser humano de categoría "rusa" que no había detectado en otras especies. Estos pasan del estado enfadado al estado contento en menos de un segundo. Y todo esto, sin motivo alguno. Al menos, del que yo me haya podido percatar.
-– No es un conejo lo que lleva la gente en sus cabezas, señor, son sombreros y capuchas hechas con pelo de animal. **No se puede vivir en esta ciudad sin un buen material de abrigo.** ¿Quiere uno?
+– Подождите, сэр, вы ищете в шляпе? (Os lo traduzco: espere, señor, está buscando un sombrero?)<br><br>
+– No – le digo –. Estoy buscando un conejo. Fuera he visto que la mayoría de hombres y mujeres llevan uno en sus cabezas para protegerse del frío. Pero tranquila, buscaré en otro lugar, no quería molestarla.<br><br>
+La mujer se pone a reír descontroladamente. Empiezo a detectar un comportamiento extraño en el ser humano de categoría "rusa" que no había detectado en otras especies. Estos pasan del estado enfadado al estado contento en menos de un segundo. Y todo esto, sin motivo alguno. Al menos, del que yo me haya podido percatar.<br><br>
+– No es un conejo lo que lleva la gente en sus cabezas, señor, son sombreros y capuchas hechas con pelo de animal. **No se puede vivir en esta ciudad sin un buen material de abrigo.** ¿Quiere uno?<br><br>
 – La verdad es que me deja más tranquilo, señora – le contesto con mi Ruso aprendido en el cursillo acelerado en Google Translator –. Me llevaré uno de estos color pelo castaño, gracias.  
 
 {::nomarkdown type='html'}
