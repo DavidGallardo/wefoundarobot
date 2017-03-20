@@ -12,19 +12,18 @@ post-image-path: images/journey/01/01-header.jpg
 post-image-title: Neva Helado
 excerpt: "BB-8 ha empezado su expedición en la Tierra por Rusia. Ha visitado dos de las ciudades más importantes del lado Europeo del país. Nos ha enviado un e-mail con los informes que ha realizado recogiendo sus aventuras y primeros hallazgos."
 gallery: 
-  - images/journey/01/gallery/01-gal-1.jpg
-  - images/journey/01/gallery/01-gal-2.jpg
-  - images/journey/01/gallery/01-gal-3.jpg
-  - images/journey/01/gallery/01-gal-4.jpg
-  - images/journey/01/gallery/01-gal-5.jpg
-  - images/journey/01/gallery/01-gal-6.jpg
-  - images/journey/01/gallery/01-gal-7.jpg
-  - images/journey/01/gallery/01-gal-8.jpg
-  - images/journey/01/gallery/01-gal-9.jpg
-  - images/journey/01/gallery/01-gal-10.jpg
-  - images/journey/01/gallery/01-gal-11.jpg
-  - images/journey/01/gallery/01-gal-12.jpg
-  - images/journey/01/gallery/01-gal-13.jpg
+  - images/journey/01/gallery/gal-1.jpg
+  - images/journey/01/gallery/gal-2.jpg
+  - images/journey/01/gallery/gal-3.jpg
+  - images/journey/01/gallery/gal-5.jpg
+  - images/journey/01/gallery/gal-6.jpg
+  - images/journey/01/gallery/gal-7.jpg
+  - images/journey/01/gallery/gal-8.jpg
+  - images/journey/01/gallery/gal-9.jpg
+  - images/journey/01/gallery/gal-10.jpg
+  - images/journey/01/gallery/gal-11.jpg
+  - images/journey/01/gallery/gal-12.jpg
+  - images/journey/01/gallery/gal-13.jpg
 ---
 
  
@@ -39,7 +38,7 @@ Os adjunto aquí los **informes elaborados** para las 2 últimas ciudades que he
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}'>
+	<img  class="lazy" src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}
   
@@ -61,7 +60,7 @@ La mujer se pone a reír descontroladamente. Empiezo a detectar un comportamient
 
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-2.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-2.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}
     
@@ -69,7 +68,7 @@ Después de este incidente medio patoso pero exitoso me dispongo a visitar los p
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-3.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-3.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}   
   
@@ -79,7 +78,7 @@ La ciudad está **llena de coches y puentes** (La Venecia del Norte, dice Wikipe
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-4.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-4.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}    
   
@@ -89,7 +88,7 @@ Mientras me despido de la ciudad, de camino al *hostel* donde pasaré la última
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-5.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-5.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/} 
   
@@ -105,7 +104,7 @@ Resultado del incidente: cuatro rasguños, una pequeña abolladura y un importan
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-6.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-6.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}  
   
@@ -115,7 +114,7 @@ Desde allí, mi GPS me dirige hacia el Kremlin (el punto importante que comentab
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-7.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-7.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}  
   
@@ -124,7 +123,7 @@ A mitad de camino, entre el edificio de colores y yo, un grupo de humanos catego
  
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-8.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-8.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}   
   
@@ -134,7 +133,7 @@ Una vez resuelto el enigma, me quedo a dar una vuelta por aquí. El silencio y l
   
 {::nomarkdown type='html'}
 <figure>
-	<img src='{{ "images/journey/01/01-post-9.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='{{ "images/journey/01/01-post-9.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}   
   

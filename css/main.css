@@ -200,7 +200,6 @@ main {
   width: 100%;
   display: block;
   position: relative;
-  max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
   background: white; }
@@ -1168,14 +1167,15 @@ p.hp-excerpt {
 
 .at-next {
   background: #222;
+  background-image: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 150px;
+  padding-bottom: 110px;
   height: auto;
   min-height: 0;
   transition: all .3s; }
   .at-next:hover {
-    background: #6C92FE;
+    background-image: linear-gradient(-225deg, #6C92FE 0%, #4E5FEE 100%);
     color: white;
     transition: all .3s; }
     .at-next:hover a, .at-next:hover h4, .at-next:hover .h1, .at-next:hover .extra {

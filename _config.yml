@@ -1,7 +1,7 @@
 name: We Found A Robot
 markdown: kramdown
-permalink: /:title/
-highlighter: pygments # or rouge or null
+permalink: /journey/:title/
+highlighter: rouge
 include: ["_pages"]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 url: http://wefoundarobot.com

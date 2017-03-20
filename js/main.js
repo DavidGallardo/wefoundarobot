@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
 
+// Lazy load for images
+
+  $("img.lazy").lazyload({
+      threshold : 0,
+      effect : "fadeIn"
+  });
+
+
+
+
+
 // Mobile Navigation
 $("#nav-trigger span").click(function(){
 

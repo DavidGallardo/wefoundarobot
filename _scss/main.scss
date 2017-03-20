@@ -26,7 +26,7 @@ main{
   width: 100%;
   display: block;
   position: relative;
-  max-width: $max-width;
+  // max-width: $max-width;
   margin: 0 auto;
   @include border-box;
   background: white;
@@ -56,7 +56,7 @@ ul, ol, figure{
 
 
 // ––––––––––––––Homepage
-@import 'modules/homeposts';
+@import 'pages/journey';
 
 
 

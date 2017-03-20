@@ -283,14 +283,15 @@
 
 .at-next{
 	background: $dark-grey;
+	background-image: none;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 150px;
+	padding-bottom: 110px;
 	height: auto;
 	min-height: 0;
 	transition: all .3s;
 	&:hover{
-			background: $blue;
+			background-image: linear-gradient(-225deg, #6C92FE 0%, #4E5FEE 100%);
 			color: white;
 			transition: all .3s;
 			a, h4, .h1, .extra{ color: white;}

@@ -25,7 +25,7 @@
                   <div class="hp-day">{{ post.date | date: "%d"}}</div>
                   <div class="hp-month">{{ post.date | date: "%b"}}</div>
                 </div>
-                <figure><img src="{{ post.home-image-path | prepend:site.baseurl }}" alt="{{ post.home-image-title}}" /></figure>
+                <figure><img class="lazy" src="{{ post.home-image-path | prepend:site.baseurl }}" alt="{{ post.home-image-title}}" /></figure>
               </div>
           </div>
           <div class="hp-copyblock">
