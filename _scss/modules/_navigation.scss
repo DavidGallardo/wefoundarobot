@@ -1,0 +1,171 @@
+// Navigation
+
+nav.main-nav{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: transparent;
+
+	.list-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 1rem;
+		display: block;
+		position: relative;
+		background:transparent;
+		z-index: 999;
+
+		//MEDIA QUERY
+		@include media($m) {
+			width: 100%;
+			height: auto;
+			// max-width: 960px;
+			max-width: 1024px;
+			padding: 0rem;
+			background:transparent;
+		}
+	}
+	.list-open{
+			height: 100vh;
+			background:$blue;
+		}
+	.logo{
+		position: absolute;
+		right: 1rem;
+		top: 36px;
+		transition: all .3s;
+		//MEDIA QUERY
+		@include media($m) {
+			right: 1rem;
+			top: 42px;
+		}
+		&:hover{ 
+				transform: translateY(-4px);
+				transition: all .3s;
+			}
+		a{
+			&:before{ display: none;}
+			&:hover:before{ display: none;}
+		}
+	}
+
+	.nav-trigger{
+		@include rubik(500,1rem);
+		color: white;
+		padding: 3.1rem 0 0 0;
+		display: block;
+		
+		span{
+			display: none;
+		}
+		.show{
+				display: block;
+			}
+
+		//MEDIA QUERY
+		@include media($m) {
+			display: none;
+		}
+	}
+
+	ul{
+		width: 100%;
+		@include clearfix;
+		padding: 0;
+		position: absolute;
+		padding-top: 2rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+		//MEDIA QUERY
+		@include media($m) {
+			width: 100%;
+			position: relative;
+			@include clearfix;
+			padding-top: 4rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			background:transparent;
+			transform: none;
+			top: 0;
+			left: 0;
+			display: block;
+		}
+
+	}
+
+	.ul-open{ display: block;}
+
+
+	li{
+		list-style: none;
+		width: 100%;
+		padding: 2rem 0;
+		text-align: center;
+		//MEDIA QUERY
+		@include media($m) {
+			width: auto;
+			text-align: center;
+			padding: 0;
+			float: left;
+			margin-right: 2rem;
+		}
+		&:last-child{margin: 0;}
+
+		a{
+			@include rubik(500,1rem);
+			color: white;
+			position: relative;
+			transition: all .3s;
+			
+			&:after{
+				content: '';
+				width: 0%;
+				height: 2px;
+				display: block;
+				background: white !important;
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+				z-index: 999;
+				transition: all .3s;
+			}
+			&:hover:after{
+				width: 100%;
+				transition: all .3s;
+			}
+			&:before{ display: none;}
+			&:hover:before{ display: none;}
+		}
+		.active:after{
+				content: '';
+				width: 100%;
+				height: 2px;
+				display: block;
+				background: white !important;
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+				border-radius: $radius;
+				z-index: 999;
+			}
+	}
+	.arrow{ 
+		display: none;
+		//MEDIA QUERY
+		@include media($m) {
+			display: block;
+		}
+		a:after{
+		display: none;
+		}
+	}
+}
+
+
+
+
+
+

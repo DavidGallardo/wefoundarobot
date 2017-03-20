@@ -1,0 +1,12 @@
+
+// _grid-settings.scss
+@import "neat/neat-helpers";
+
+// Change the grid settings
+$visual-grid: false;
+$visual-grid-color: grey;
+$gutter: 0em;
+$grid-columns: 12;
+$max-width: 2560px;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.08;
