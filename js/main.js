@@ -1,13 +1,30 @@
 $(document).ready(function(){
 
-
 // Lazy load for images
-
   $("img.lazy").lazyload({
       threshold : 0,
       effect : "fadeIn"
   });
 
+
+
+// Delaying animation for heading images
+  $('.image-1').show().addClass('animated fadeInUp');
+
+  setTimeout(
+    function() {
+    $('.image-2').show().addClass('animated fadeInUp');
+  }, 200);
+
+  setTimeout(
+    function() {
+    $('.image-3').show().addClass('animated fadeInUp');
+  }, 400);
+
+  setTimeout(
+    function() {
+    $('#main-article').show().addClass('animated fadeIn');
+  }, 800);
 
 
 
@@ -38,11 +55,8 @@ $("#nav-trigger span").click(function(){
         } else {
             $("#close").addClass("show");
         }
-        
-        
+
     });
-
-
 
 
 
@@ -72,7 +86,7 @@ $("#nav-trigger span").click(function(){
 // Scroll to section
 	$("#scroll-down").click(function() {
 	    $('html, body').animate({
-	        scrollTop: $("#at-content").offset().top +0
+	        scrollTop: $("#at-content").offset().top -100
 	    }, 800);
 	});
 

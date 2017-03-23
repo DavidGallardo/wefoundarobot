@@ -1,0 +1,41 @@
+
+{% include head.html %}
+
+<header class="at-header">
+	{% include navigation.html %}
+
+	<div class="header-gradient">
+		<div class="white-box" data-start="opacity: 0;" data-200-start="opacity:1;"></div>
+		<div class="arrow-wrapper">
+			<a href="javascript:void(0)" id="scroll-down" class="extra grey at-keep-reading" style="display: none" data-start="opacity: 1;" data-200-start="opacity:0;">Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
+		</div>
+	</div>
+	
+	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
+		<h1 class="animated fadeIn">{{ page.title }}</h1>
+	</div>
+	<div class="at-main-image">
+		<figure class="animated fadeInUp" data-start="bottom: 0px;" data-800-start="bottom:60px;">
+			<img src="{{ page.post-image-path | prepend:site.baseurl }}" alt="{{ page.post-image-title}}" />
+		</figure>
+	</div>
+</header>
+
+<section id="at-content" class="at-content">
+	<article>
+
+		{{ content }}
+		
+	</article>
+</section>
+
+
+<footer class="at-next">
+  <a href="{{ site.posts.last.url }}" class="at-title">
+		<div class="extra at-next-copy">Empezar Aventura</div>
+		<h4 class="h1">{{ site.posts.last.title }}</h4>
+	</a>
+</footer>
+
+{% include footer.html %}
+

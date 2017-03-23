@@ -3,7 +3,7 @@
 		<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show">Menu</span><span id="close">Close</span></div>
 		<ul class="closed">
 			{% if page.backbutton %}
-			<li class="arrow"><a href="{{ site.url }}/#{{ page.number }}"><img src='{{ "images/arrow-white-left.svg" | prepend:site.baseurl }}' alt="pointing arrow"></a></li>
+			<li class="arrow"><a href="{{ site.url }}/#{{ page.number }}"><img src='{{ "images/ui/arrow-white-left.svg" | prepend:site.baseurl }}' alt="pointing arrow"></a></li>
 			{% endif %}
 			{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
 	    {% for p in navigation_pages %}
@@ -16,6 +16,6 @@
 	      {% endif %}
 	  	{% endfor %}
 		</ul>
-		<div class="logo"><a href="{{ site.url }}"><img src='{{ "images/logo-winter-small.svg" | prepend:site.baseurl }}' alt="logo"></a></div>
+		<div class="logo"><a href="{{ site.url }}"><img src='{{ "images/ui/logo-winter-small.svg" | prepend:site.baseurl }}' alt="logo"></a></div>
 	</div>
 </nav>

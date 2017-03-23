@@ -22,7 +22,7 @@ gallery:
 ---
 
 Hola pequeño BB-8,
-¿Como estás?  
+¿Cómo estás?  
 
 Nosotros te escribimos también desde el tren, dirección Irkutsk. Hemos pasado por San Petersburgo, Moscú, Ekaterinburgo y Novosibirsk pero ha sido imposible encontrarte.   
   
@@ -30,21 +30,16 @@ Después de 11 días y más de 3.000 km recorridos en tren, empezamos a asimilar
 
 *Casa* ha pasado a ser este tren Transiberiano que tanto estamos disfrutando.    
 
-Una casa en la que apenas disponemos de 2 metros cuadrados de espacio, los cuales tenemos que compartir amistosamente con las diferentes familias rusas que han pasado hasta ahora.  
+Una casa en la que apenas disponemos de 2 metros cuadrados de espacio, los cuales tenemos que compartir amistosamente con las diferentes familias rusas que han pasado hasta ahora.
 
 {::nomarkdown type='html'}
 <figure>
   <img class="lazy" src='{{ "images/journey/02/02-post-1.jpg" | prepend:site.baseurl }}'>
 </figure>
 {:/}     
-{::nomarkdown type='html'}
-<figure>
-  <img class="lazy" src='{{ "images/journey/02/02-post-2.jpg" | prepend:site.baseurl }}'>
-</figure>
-{:/}  
-  
-Una casa en la que hibernamos durante más de 24h seguidas y de la que salimos solo para airearnos y visitar las ciudades más sugerentes que vamos encontrando por el camino.     
-  
+ 
+Una casa en la que hibernamos durante más de 24h seguidas y de la que salimos solo para airearnos y visitar las ciudades más sugerentes que vamos encontrando por el camino. 
+
 Una casa que vive con el reloj de los moscovitas, aunque cada vez nos queden más lejos y a más franjas horarias de distancia. 
   
 Una casa con una cama donde descansar a la vez que leer, comer, volver a leer, pensar, abrazarnos, aprender algo de ruso, escribir, pasar mucho calor y volver a (casi)dormir. Tema ducha está difícil.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: story
 navigation_order: 2
 nav-deepness: 1
 title: The Story Behind

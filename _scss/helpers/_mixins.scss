@@ -12,31 +12,31 @@ $xxl: min-width $bp-xxlarge;
 
 
 // Colors
-
 $blacky: rgba(0,0,0,.70);
 $whity: #f7f7f7;
 $dividers: darken($whity,5);
-$grey: rgba(0,0,0,.6);
+$grey: rgba(0,0,0,.75);
 $light-grey: rgba(0,0,0,.1);
-$dark-grey: #222;
+$dark-grey: #3A3F41;
 
 $yellow: #FFED5A;
 $red: #E34C41;
 $green: #20CE6A;
-// $blue: #4990E2;
-$blue: #6C92FE;
+$blue: #6180F8;
+$pink: #EDC4F7;
 
-$light-blue: #F0F3F8;
+$blue-gradient: linear-gradient(-225deg, #6C92FE 0%, #4E5FEE 100%);
 
 
 // Variables
 $base-typography: 18px;
-$max-width: 1920px;
-$radius: 4px;
+$base-typography: 20px;
+$max-width: 2560px;
+$radius: 2px;
+$shadow: 0 10px 40px rgba(0,0,0,.1);
 
 
 //Typography
-
 @mixin smoothy{
 	-webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -46,7 +46,7 @@ $radius: 4px;
   font-family: 'Open Sans', Helvetica, sans-serif; 
   font-weight: $weight; 
   font-size: $size; 
-  // @include smoothy;
+  @include smoothy;
 }
 
 @mixin rubik($weight, $size) {
@@ -58,7 +58,6 @@ $radius: 4px;
 
 
 //Helpers
-
 @mixin border-box{
 	box-sizing: border-box;
 }

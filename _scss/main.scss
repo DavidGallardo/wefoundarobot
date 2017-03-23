@@ -14,7 +14,7 @@ html {
   font-size: $base-typography;
   //MEDIA QUERY
     @include media($m) {
-      font-size: 16px;
+      font-size: $base-typography;
     }
 }
 body{

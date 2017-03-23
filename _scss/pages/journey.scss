@@ -4,7 +4,7 @@
 	height: 80vh;
 	max-height: 900px;
 	position: relative;
-	background-image: linear-gradient(-225deg, #6C92FE 0%, #4E5FEE 100%);
+	background-image: $blue-gradient;
 
 	//MEDIA QUERY
 	@include media($m) {
@@ -31,7 +31,8 @@
 	  	transform: translateY(-50%);
 		}
 		@include media($l) {
-			width: 1024px;
+			width: 100%;
+			max-width: 1200px;
 			margin-left: 1rem;
 			top: 50%;
 			left: 50%;
@@ -41,7 +42,7 @@
 		h1{
 			width: 100%;
 			max-width: 600px;
-			@include rubik(700,2rem);
+			@include rubik(700,1.5rem);
 			color: white;
 			margin:0;
 			margin-top: 1rem;
@@ -53,7 +54,7 @@
 				height: 3px;
 				display: block;
 				position: absolute;
-				border-radius: $radius;
+				border-radius: 10px;
 				bottom: -3rem;
 				left: 0;
 				background:white;
@@ -87,12 +88,11 @@
 			right: 0;
 		}
 	
-
 		.image-wrap{
 			position: relative;
 			.img{
-				box-shadow: 0 10px 50px rgba(0,0,0,.2);
-				border-radius: 4px;
+				box-shadow: $shadow;
+				border-radius: $radius;
 				transition: all .3s;
 			}
 			.image-1{
@@ -126,45 +126,54 @@
 				top: 350px;
 			}
 		}
-
-		
 	}
-
 }
 
 // Home-Post Typography
 h2.hp-title{
-	@include open(700,1.5rem);
+	@include open(800,1.5rem);
 	color: $blacky;
 	margin:0;
 	margin-top: 1rem;
 	margin-left: -2px;
+	position: relative;
 	line-height: 1;
 	//MEDIA QUERY
-		@include media($m) {
-			@include open(700,2rem);
-		}
+	@include media($m) {
+		@include open(800,2rem);
+		line-height: 1.2;
+	}
+	&:after{
+		content: '';
+		width: 80px;
+		height: 3px;
+		display: block;
+		position: absolute;
+		border-radius: 10px;
+		bottom: -1.2rem;
+		left: 3px;
+		background:$blue;
+	}
 }
 p.hp-excerpt{
 	@include open(400,1rem);
 	line-height: 1.6rem;
 	color: $grey;
-	margin: 1rem 0 1rem 0;
+	margin: 2rem 0 1.5rem 0;
 	//MEDIA QUERY
-    @include media($m) {
-      margin: 2rem 0 2.5rem 0;
-    }
-    //
+	@include media($l) {
+		@include open(400,.9rem);
+	}
 }
 .hp-day{
-	@include open(700,2rem);
+	@include open(700,1.75rem);
 	color: $blacky;
 	line-height: 1em;
 	padding-top: 22px;
 	margin-left: -4px;
 }
 .hp-month{
-	@include open(400,1rem);
+	@include open(400,.8rem);
 	color: $blacky;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
@@ -173,7 +182,7 @@ p.hp-excerpt{
 
 // Home-Post Generic
 .home-post-section{
-	padding-bottom: 3rem;
+	padding-bottom: 0rem;
 	//MEDIA QUERY
 	@include media($m) {
     margin-top: 100px;
@@ -191,12 +200,14 @@ p.hp-excerpt{
 	@include outer-container;
 	list-style: none;
 	padding: 2.5rem 0;
+	border-bottom: 1px solid $dividers;
 	//MEDIA QUERY
 	@include media($m) {
     padding: 5rem 0;
   }
   @include media($l) {
-    padding: 7rem 0;
+    padding: 6rem 0;
+    min-height: 650px;
   }
 	
 }
@@ -206,6 +217,7 @@ p.hp-excerpt{
 	text-align: left;
 	position: relative;
 	transition: all .3s;
+
 	//MEDIA QUERY
   @include media($l) {
    	text-align: center;
@@ -213,28 +225,15 @@ p.hp-excerpt{
   //
 	img{
 		width: 100%;
-		box-shadow: 0 10px 50px rgba(0,0,0,.2);
-		border-radius: 4px;
+		box-shadow: $shadow;
+		border-radius: $radius;
 		transition: all .3s;
+
 			//MEDIA QUERY
 		  @include media($m) {
 		  	width: 98%;
 		   	max-width: 470px;
 		  }
-		  //
-	}
-	&:hover{
-		transform: translate(0px, -5px);
-		transition: all .3s;
-	}
-	&:hover img{
-		box-shadow: 0 15px 60px rgba(0,0,0,.3);
-		transition: all .3s;
-	}
-	&:hover .hp-date {
-		transform: translate(0px, -8px);
-		box-shadow: 0 15px 60px rgba(0,0,0,.3);
-		transition: all .3s;
 	}
 }
 .hp-image-wrap{
@@ -255,8 +254,8 @@ p.hp-excerpt{
 	position: absolute;
 	bottom: -35px;
 	background:white;
-	border-radius: 2px;
-	box-shadow: 0 10px 50px rgba(0,0,0,.2);
+	border-radius: $radius;
+	box-shadow: 0 10px 40px rgba(0,0,0,.15);
 	border-bottom: 5px solid $blue;
 	transition: box-shadow .3s, transform .3s;
 }
@@ -378,11 +377,40 @@ p.hp-excerpt{
 }
 }
 //
+// --------------------------------------
+
+footer.love{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	min-height: 0;
+	text-align: center;
+
+	.footer-wrapper{
+		@include rubik(300,.8rem);
+		padding: 2rem 0; 
+		color: lighten($grey, 20);
+		span{
+			color: $pink;
+		}
+	}
+
+}
+
+
 
 
 
 
 // --------------------------------------
+
+
+
+
+
+
+
+
 
 
 
