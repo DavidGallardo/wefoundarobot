@@ -390,6 +390,7 @@ footer.love{
 		@include rubik(300,.8rem);
 		padding: 2rem 0; 
 		color: lighten($grey, 20);
+		text-align: center;
 		span{
 			color: $pink;
 		}
