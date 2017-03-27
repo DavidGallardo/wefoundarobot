@@ -255,7 +255,7 @@ h3 {
   color: rgba(0, 0, 0, 0.7);
   margin: 0; }
 
-p {
+p, li {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -305,6 +305,9 @@ blockquote {
     border-left: 3px solid #eaeaea;
     color: rgba(13, 13, 13, 0.75);
     font-style: italic; }
+
+ul {
+  list-style: circle inside; }
 
 .extra {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -398,8 +401,8 @@ nav.main-nav {
         width: 100%;
         position: relative;
         padding-top: 3rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
         background: transparent;
         -webkit-transform: none;
                 transform: none;
@@ -410,6 +413,10 @@ nav.main-nav {
           clear: both;
           content: "";
           display: block; } }
+    @media screen and (min-width: 64em) {
+      nav.main-nav ul {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
   nav.main-nav .ul-open {
     display: block; }
   nav.main-nav li {
@@ -537,10 +544,6 @@ footer {
     .hp-heading {
       padding: 0 2rem;
       height: 100vh; } }
-  @media screen and (min-width: 64em) {
-    .hp-heading {
-      padding: 0;
-      height: 100vh; } }
   .hp-heading .hp-claim {
     width: 96%;
     height: auto;
@@ -552,6 +555,7 @@ footer {
             transform: translateY(-50%); }
     @media screen and (min-width: 48em) {
       .hp-heading .hp-claim {
+        width: 90%;
         top: 50%;
         left: 2rem;
         -webkit-transform: translateY(-50%);
@@ -560,7 +564,6 @@ footer {
       .hp-heading .hp-claim {
         width: 100%;
         max-width: 1200px;
-        margin-left: 1rem;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -586,8 +589,11 @@ footer {
         position: absolute;
         border-radius: 10px;
         bottom: -3rem;
-        left: 0;
+        left: 0rem;
         background: white; }
+        @media screen and (min-width: 64em) {
+          .hp-heading .hp-claim h1:after {
+            left: 1rem; } }
       @media screen and (min-width: 48em) {
         .hp-heading .hp-claim h1 {
           font-family: 'Rubik', Helvetica, sans-serif;
@@ -603,7 +609,8 @@ footer {
           font-size: 2.75rem;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
-          max-width: 600px; } }
+          max-width: 600px;
+          padding-left: 1rem; } }
   .hp-heading .hp-image-block {
     display: none;
     width: 55%;
@@ -614,8 +621,7 @@ footer {
     overflow: hidden; }
     @media screen and (min-width: 48em) {
       .hp-heading .hp-image-block {
-        display: block;
-        right: -10%; } }
+        display: block; } }
     @media screen and (min-width: 64em) {
       .hp-heading .hp-image-block {
         display: block;
@@ -635,6 +641,14 @@ footer {
         background-size: cover;
         left: 25%;
         top: 0; }
+        @media screen and (min-width: 48em) {
+          .hp-heading .hp-image-block .image-wrap .image-1 {
+            left: 35%;
+            top: 0; } }
+        @media screen and (min-width: 64em) {
+          .hp-heading .hp-image-block .image-wrap .image-1 {
+            left: 28%;
+            top: 0; } }
       .hp-heading .hp-image-block .image-wrap .image-2 {
         width: 330px;
         height: 280px;
@@ -644,15 +658,30 @@ footer {
         background-size: cover;
         left: 5%;
         top: 300px; }
+        @media screen and (min-width: 48em) {
+          .hp-heading .hp-image-block .image-wrap .image-2 {
+            left: 10%;
+            top: 300px; } }
+        @media screen and (min-width: 64em) {
+          .hp-heading .hp-image-block .image-wrap .image-2 {
+            left: 5%;
+            top: 300px; } }
       .hp-heading .hp-image-block .image-wrap .image-3 {
-        width: 400px;
-        height: 280px;
-        position: absolute;
-        display: block;
-        background: #E34C41 url("../images/header/03.jpg") center center no-repeat;
-        background-size: cover;
-        left: 390px;
-        top: 350px; }
+        display: none; }
+        @media screen and (min-width: 48em) {
+          .hp-heading .hp-image-block .image-wrap .image-3 {
+            width: 400px;
+            height: 280px;
+            position: absolute;
+            display: block;
+            background: #E34C41 url("../images/header/03.jpg") center center no-repeat;
+            background-size: cover;
+            left: 400px;
+            top: 330px; } }
+        @media screen and (min-width: 64em) {
+          .hp-heading .hp-image-block .image-wrap .image-3 {
+            left: 390px;
+            top: 350px; } }
 
 h2.hp-title {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -960,7 +989,8 @@ footer.love {
   max-width: 1200px;
   height: auto;
   min-height: 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   footer.love .footer-wrapper {
     font-family: 'Rubik', Helvetica, sans-serif;
     font-weight: 300;
@@ -968,6 +998,7 @@ footer.love {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 2rem 0;
+    margin: 0 auto;
     color: rgba(51, 51, 51, 0.75);
     text-align: center; }
     footer.love .footer-wrapper span {
@@ -1184,11 +1215,11 @@ footer.love {
     @media screen and (min-width: 64em) {
       .at-content article {
         padding: 0 0 3rem 0; } }
-    .at-content article h1, .at-content article h2, .at-content article h3, .at-content article h4, .at-content article h5, .at-content article h6, .at-content article p {
+    .at-content article h1, .at-content article h2, .at-content article h3, .at-content article h4, .at-content article h5, .at-content article h6, .at-content article p, .at-content article ul {
       width: 100%;
       margin-left: 0; }
       @media screen and (min-width: 48em) {
-        .at-content article h1, .at-content article h2, .at-content article h3, .at-content article h4, .at-content article h5, .at-content article h6, .at-content article p {
+        .at-content article h1, .at-content article h2, .at-content article h3, .at-content article h4, .at-content article h5, .at-content article h6, .at-content article p, .at-content article ul {
           max-width: 600px;
           margin-left: 84px; } }
     .at-content article figure {

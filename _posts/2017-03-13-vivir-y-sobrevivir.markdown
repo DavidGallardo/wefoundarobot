@@ -22,8 +22,6 @@ gallery:
   - images/journey/03/gallery/gal-8.jpg
   - images/journey/03/gallery/gal-9.jpg
   - images/journey/03/gallery/gal-10.jpg
-
-
 ---
 
 Por cierto, se nos olvidaba!

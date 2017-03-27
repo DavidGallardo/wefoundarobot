@@ -7,4 +7,3 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 url: http://wefoundarobot.com
 # url: http://localhost:3000 
 baseurl: /
-

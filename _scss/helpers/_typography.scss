@@ -26,7 +26,7 @@ h3{
 	margin: 0;
 }
 
-p{
+p, li{
 	@include open(400,1rem);
 	line-height: 1.5;
 	color: $grey;
@@ -69,9 +69,13 @@ blockquote{
 		border-left: 3px solid $dividers;
 		color: lighten($grey, 5);
 		font-style: italic;
-	}
-	
+	}	
 }
+
+ul{
+	list-style: circle inside;
+}
+
 
 .extra{
 	@include open(100,1rem);

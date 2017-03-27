@@ -11,10 +11,10 @@
 		padding: 0 2rem;
 		height: 100vh;
 	}
-	@include media($l) {
-		padding: 0;
-		height: 100vh;
-	}
+	// @include media($l) {
+	// 	padding: 0;
+	// 	height: 100vh;
+	// }
 
 	.hp-claim{
 		width: 96%;
@@ -26,6 +26,7 @@
 	  transform: translateY(-50%);
   	//MEDIA QUERY
 		@include media($m) {
+			width: 90%;
 			top: 50%;
 			left: 2rem;
 	  	transform: translateY(-50%);
@@ -33,10 +34,9 @@
 		@include media($l) {
 			width: 100%;
 			max-width: 1200px;
-			margin-left: 1rem;
 			top: 50%;
 			left: 50%;
-	  	transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 		}
 
 		h1{
@@ -56,8 +56,12 @@
 				position: absolute;
 				border-radius: 10px;
 				bottom: -3rem;
-				left: 0;
+				left: 0rem;
 				background:white;
+				//MEDIA QUERY
+				@include media($l) {
+					left: 1rem;
+				}
 			}
 			//MEDIA QUERY
 			@include media($m) {
@@ -67,6 +71,7 @@
 			@include media($l) {
 				@include rubik(700,2.75rem);
 				max-width: 600px;
+				padding-left: 1rem;
 			}
 		}
 	}
@@ -81,7 +86,6 @@
 		//MEDIA QUERY
 		@include media($m) {
 			display: block;
-			right: -10%;
 		}
 		@include media($l) {
 			display: block;
@@ -104,6 +108,15 @@
 				background-size: cover;
 				left: 25%;
 				top: 0;
+				//MEDIA QUERY
+				@include media($m) {
+					left: 35%;
+					top: 0;
+				}
+				@include media($l) {
+					left: 28%;
+					top: 0;
+				}
 			}
 			.image-2{
 				width: 330px;
@@ -114,16 +127,34 @@
 				background-size: cover;
 				left: 5%;
 				top: 300px;
+				//MEDIA QUERY
+				@include media($m) {
+					left: 10%;
+					top: 300px;
+				}
+				@include media($l) {
+					left: 5%;
+					top: 300px;
+				}
 			}
 			.image-3{
-				width: 400px;
-				height: 280px;
-				position: absolute;
-				display: block;
-				background: $red url("../images/header/03.jpg") center center no-repeat;
-				background-size: cover;
-				left: 390px;
-				top: 350px;
+				display: none;
+
+				//MEDIA QUERY
+				@include media($m) {
+					width: 400px;
+					height: 280px;
+					position: absolute;
+					display: block;
+					background: $red url("../images/header/03.jpg") center center no-repeat;
+					background-size: cover;
+					left: 400px;
+					top: 330px;
+				}
+				@include media($l) {
+					left: 390px;
+					top: 350px;
+				}
 			}
 		}
 	}
@@ -385,10 +416,12 @@ footer.love{
 	height: auto;
 	min-height: 0;
 	text-align: center;
+	margin: 0 auto;
 
 	.footer-wrapper{
 		@include rubik(300,.8rem);
 		padding: 2rem 0; 
+		margin: 0 auto;
 		color: lighten($grey, 20);
 		text-align: center;
 		span{
