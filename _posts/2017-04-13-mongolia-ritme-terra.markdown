@@ -5,7 +5,8 @@ share: false
 number: "05"
 title:  "Mongòlia, al ritme <br> de la terra."
 author: "Airí&David"
-categories: mongolia 
+categories: mongolia
+gradient: "brown-grad"
 home-image-path: images/journey/05/homepage.jpg
 home-image-title: Neva helado
 post-image-path: images/journey/05/header.jpg
@@ -14,7 +15,6 @@ excerpt: "Hola BB8! Ara t'escrivim des del tren, altre cop, camí a Beijing. Hem
 Mongòlia és un país diferent, digne del teu estudi terrestre.   
 De cel blau i terra aspra i gèlida. Imponent, de ritme tranquil i infinitament preciós."
 gallery: 
-  - images/journey/05/gallery/gal-1.jpg
   - images/journey/05/gallery/gal-2.jpg
   - images/journey/05/gallery/gal-3.jpg
   - images/journey/05/gallery/gal-4.jpg
@@ -33,19 +33,23 @@ gallery:
   - images/journey/05/gallery/gal-17.jpg
   - images/journey/05/gallery/gal-18.jpg
   - images/journey/05/gallery/gal-19.jpg
+  - images/journey/05/gallery/gal-1.jpg
 ---
 
 
 
 Hola BB-8!
+
 Com estàs? Per on pares? Fa molts dies que no sabem res de tu... 
+
 Veient com de bé t'entens amb els russos, hem pensat que a partir d'ara t'escriurem en català. Així aprens un nou idioma i nosaltres ens expressem amb la nostra llengua. 
 
 Ara t'escrivim des del tren, altre cop, camí a Beijing. Hem estat uns dies desconnectats, voltant per Mongòlia.
-Mongòlia és un país diferent, digne del teu estudi terrestre.   
-De cel blau i terra aspra i gèlida. Imponent, de ritme tranquil i infinitament preciós.
+
+Mongòlia és un país diferent, digne del teu estudi terrestre. De cel blau i terra aspra i gèlida. Imponent, de ritme tranquil i infinitament preciós.
 
 Un país on, per sobre de la corrupció, governen les lleis de la natura, amb 60 milions d'animals i tant sols 3 milions de persones. 
+
 Un país on la seva religió, apart d'uns quants Budes, té per Déu el bateg de les muntanyes i el dring de l'aigua. 
 
 Un país on la terra és de tots i de ningú, on viuen la meitat de les famílies saltant d'un lloc a l'altre amb el *ger* sota el braç, fugint de la sequera i buscant el tros on veure créixer els seus ramats una temporada més.
@@ -84,6 +88,8 @@ Hem compartit viatge amb 4 personetes tafaneres com nosaltres i un súperheroi: 
 </figure>
 {:/}
 
-Passarà el temps... i allà on siguem, d'allà on vinguem, els recordarem. I recordarem aquell mes de Març de 2017 recorrent estepes, dunes i serralades... I somriurem. Com somriuen els Mongols davant el sol rogent i el verd de les fulles humides. I sentirem aquell pessig al pit. Com el senten els nòmades cada primavera davant el naixement d'una nova vida.
+Passarà el temps... i allà on siguem, d'allà on vinguem, els recordarem. I recordarem aquell mes de Març de 2017 recorrent estepes, dunes i serralades...
+
+I somriurem. Com somriuen els Mongols davant el sol rogent i el verd de les fulles humides. I sentirem aquell pessig al pit. Com el senten els nòmades cada primavera davant el naixement d'una nova vida.
  
  

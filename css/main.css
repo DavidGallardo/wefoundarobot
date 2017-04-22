@@ -1245,7 +1245,7 @@ footer.love {
 .at-gallery {
   border-top: 1px solid #eaeaea;
   padding: 2rem 0;
-  background: #161819; }
+  background: #fafafa; }
   @media screen and (min-width: 48em) {
     .at-gallery {
       padding: 4rem 0; } }
@@ -1296,6 +1296,9 @@ footer.love {
   .at-next .at-next-copy {
     display: block;
     padding-bottom: .5rem; }
+
+.brown-grad {
+  background-image: linear-gradient(-225deg, #C79362 0%, #E0A27B 100%) !important; }
 
 /*!
  * animate.css -http://daneden.me/animate

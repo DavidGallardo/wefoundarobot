@@ -270,7 +270,7 @@
 .at-gallery{
 	border-top: 1px solid $dividers;
 	padding: 2rem 0;
-	background: darken($dark-grey, 15);
+	background: darken(white, 2);
 	//MEDIA QUERY
 		@include media($m) {
 			padding: 4rem 0;
@@ -338,7 +338,9 @@
 }
 
 
-
+.brown-grad{
+	background-image: $brown-gradient !important;
+}
 
 
 
