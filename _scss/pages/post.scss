@@ -21,20 +21,10 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-image: $blue-gradient;
 		//MEDIA QUERY
 		@include media($m) { 
 			height: 520px;
-		}
-		.white-box{
-			width: 100%;
-			height: 100%;
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background: white;
-			opacity: 0;
+			box-shadow: inset 0 0 0 10px white; 
 		}
 		.arrow-wrapper{
 			width: 100%;
@@ -49,12 +39,13 @@
 
 			.at-keep-reading{
 				display: none;
-
 				@include rubik(300,1em);
 	    	width: 160px;
 				position: absolute;
 				bottom: -130px;
 				transform: rotate(90deg);
+				@include rubik(400,1rem);
+				color: $black-6;
 				//MEDIA QUERY
 		    @include media($l) {
 					display: block;
@@ -78,24 +69,27 @@
 	max-width: 700px;
 	display: block;
 	position: relative;
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
-	padding: 90px 1rem 0 1rem;
+	padding: 50px 1rem 0 1rem;
 	// z-index: 99;
 	//MEDIA QUERY
 		@include media($m) {
-			padding: 110px 1rem 0 1rem;
+			text-align: center;
+			padding: 50px 1rem 0 1rem;
 			@include rubik(700,2.75rem);
 		}
 	h1, .h1{
-		@include rubik(800,1.75rem);
+		@include rubik(700,1.8rem);
+		color: $black-7;
 		line-height: 1;
-		margin: 0;
-		color: white;
+		margin: 1rem 0;
+		color: $grey;
 		//MEDIA QUERY
 		@include media($m) {
 			@include rubik(700,2.75rem);
 			min-height: 70px;
+			color: white;
 		}
 	}
 	&:after{
@@ -116,6 +110,18 @@
 			}
 		}
 }
+.at-back-mbl{
+	padding: 0 0 1rem 0;
+	@include rubik(400,.9rem);
+	img{
+		margin-right: .3rem;
+		margin-top: -2px;
+	}
+	//MEDIA QUERY
+		@include media($m) { display: none;}
+
+}
+
 .at-main-image{
 	height: auto;
 	width: 100%;
@@ -123,22 +129,26 @@
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	padding: 0 .5rem;
-	margin-top: 100px;
+	padding: 0;
+	margin-top: 2rem;
 	//MEDIA QUERY
-		@include media($l) {
-			max-width: 900px;
-			padding: 0;
-		}
+	@include media($m) {
+		margin-top: 6rem;
+	}
+	@include media($l) {
+		max-width: 900px;
+		padding: 0;
+	}
 	figure{
 		position: relative;
 		img{ 
 			width: 100%;
 			height: auto;
-			border-radius: $radius;
+			border-radius: none;
 			//MEDIA QUERY
     	@include media($m) {
 				box-shadow: $shadow;
+				border-radius: $radius;
 			}
 		}
 	}	
@@ -195,22 +205,17 @@
 	}
 	.at-date-block{
 		width: 100%;
-		
 		height: 40px;
 		display: block;
 		margin: 0 auto;
-		border-bottom: 3px solid $dark-grey;
-		// border-radius: $radius;
-		margin-bottom: 2rem;
 		margin-top: 2rem; 
+		@include rubik(500,1rem);
+		color: $black-6;
 		//MEDIA QUERY
 	    @include media($m) {
 	    	max-width: 600px;
 	    	margin-top: 0;
-	    	margin-bottom: 2rem;
 	    }
-		.at-date{ float: left;}
-		.at-time{ float: right;}
 	}
 
 	article{
@@ -274,6 +279,7 @@
 	//MEDIA QUERY
 		@include media($m) {
 			padding: 4rem 0;
+			border-top: none;
 		}
 		@include media($l) {
 			padding: 6rem 0;
@@ -306,40 +312,76 @@
 
 // –––––––––––––– Footer Next
 
-.at-next{
+footer.at-next{
 	background: $dark-grey;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 130px;
+	padding-bottom: 3rem;
 	height: auto;
 	min-height: 0;
 	transition: all .3s;
+	//MEDIA QUERY
+		@include media($m) {
+			padding-bottom: 5.5rem;
+		}
 	&:hover{
-			background: $blue;
 			color: white;
 			transition: all .3s;
 			a, h4, .h1, .extra{ color: white;}
-			.at-title:after{
-				background: white;
-			}
 		}
+	a, h4, .h1, .extra{ color: white;}
 	a{
 		display: block;
 		color: white;
-
+		padding-top: 3rem;
+		//MEDIA QUERY
+		@include media($m) {
+			padding-top: 70px;
+		}
 		&:hover:before{
 			display: none;
 		}
 	}
 	.at-next-copy{
 		display: block;
-		padding-bottom: .5rem;
+		@include rubik(500,1rem);
+		padding-bottom: 0;
+		opacity: .7;
+		//MEDIA QUERY
+		@include media($m) {
+			padding-bottom: 1rem;
+		}
+
 	}
 }
 
 
-.brown-grad{
-	background-image: $brown-gradient !important;
+
+
+// –––––––––––––– Specific gradients
+
+.blue-grad{ 
+	background-image: none;
+	//MEDIA QUERY
+		@include media($m) {
+			background-image: $blue-gradient; 
+		}
+}
+footer.blue-grad{
+	background: $dark-grey;
+	&:hover{ background-color: $blue; }
+}
+
+.brown-grad{ 
+	background-image: none;
+	//MEDIA QUERY
+		@include media($m) {
+			background-image: $brown-gradient; 
+		}
+}
+footer.brown-grad{
+	background: $dark-grey;
+	&:hover{ background-color: $brown;}
 }
 
 

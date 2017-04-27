@@ -4,7 +4,7 @@ backbutton: true
 share: false
 number: "05"
 title:  "Mongòlia, al ritme <br> de la terra."
-author: "Airí&David"
+author: "Airí & David"
 categories: mongolia
 gradient: "brown-grad"
 home-image-path: images/journey/05/homepage.jpg

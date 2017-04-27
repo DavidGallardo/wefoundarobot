@@ -5,17 +5,17 @@
 	{% include navigation.html %}
 
 	<div class="header-gradient {{ page.gradient }} ">
-		<div class="white-box" data-start="opacity: 0;" data-200-start="opacity:1;"></div>
 		<div class="arrow-wrapper">
-			<a href="javascript:void(0)" id="scroll-down" class="extra grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
+			<a href="javascript:void(0)" id="scroll-down" class="grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
 		</div>
 	</div>
 	
 	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
+		<a href="{{ site.url }}/#{{ page.number }}" class="at-back-mbl"><img src='{{ "images/ui/arrow-blue-left.svg" | prepend:site.baseurl }}' alt="pointing arrow">Back to posts</a>
 		<h1 class="animated fadeIn">{{ page.title }}</h1>
 	</div>
 	<div class="at-main-image">
-		<figure class="animated fadeInUp" data-start="bottom: 0px;" data-800-start="bottom:60px;">
+		<figure class="animated fadeInUp" data-start="bottom: 0px;" data-800-start="bottom:80px;">
 			<img src="{{ page.post-image-path | prepend:site.baseurl }}" alt="{{ page.post-image-title}}" />
 		</figure>
 	</div>
@@ -31,8 +31,7 @@
 		
 		<!-- DATE & READING TIME -->
 		<div class="at-date-block">
-			<div class="extra at-date">{% if page.date %} {{ page.date | date: "%d %B"}} {% endif %}</div>
-			<div class="extra at-time">{% assign words = content | number_of_words %}
+			<div class="at-date">{% if page.author %} {{ page.author }}, {% endif %}{% if page.date %} {{ page.date | date: "%d %b"}} {% endif %}  –  {% assign words = content | number_of_words %}
 			{% if words < 320 %}
 			  1 min
 			{% else %}
@@ -62,7 +61,7 @@
 {% if page.next %} 
 <footer class="at-next {{ page.next.gradient }} ">
   <a href="{{ page.next.url }}" class="at-title">
-		<div class="extra at-next-copy">Siguiente Post</div>
+		<div class="at-next-copy">Siguiente Post</div>
 		<h4 class="h1">{{ page.next.title }}</h4>
 	</a>
 </footer>

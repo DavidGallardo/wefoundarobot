@@ -4,13 +4,13 @@ h1{
 	@include rubik(700,2rem);
 	line-height: 1;
 	margin: 0;
-	color: $blacky;
+	color: $black-7;
 }
 
 h2{
-	@include rubik(700,1.5rem);
+	@include rubik(700,1.66rem);
 	line-height: 1;
-	color: $blacky;
+	color: $black-7;
 	margin: 1em 0 .833333rem 0;
 	//MEDIA QUERY
     @include media($m) {
@@ -22,14 +22,14 @@ h2{
 h3{
 	@include rubik(700,1.25rem);
 	margin: 1.75rem 0 1.5rem 0;
-	color: $blacky;
+	color: $black-7;
 	margin: 0;
 }
 
 p, li{
 	@include open(400,1rem);
-	line-height: 1.5;
-	color: $grey;
+	line-height: 1.66;
+	color: $black-6;
 	margin: 0 0 1.75rem 0;
 }
 

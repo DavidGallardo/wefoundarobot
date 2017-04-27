@@ -12,29 +12,37 @@ $xxl: min-width $bp-xxlarge;
 
 
 // Colors
-$blacky: rgba(0,0,0,.70);
+$black-9: rgba(0,0,0,.9);
+$black-8: rgba(0,0,0,.8);
+$black-7: rgba(0,0,0,.7);
+$black-6: rgba(0,0,0,.6);
+$black-5: rgba(0,0,0,.5);
+$black-4: rgba(0,0,0,.4);
+$black-3: rgba(0,0,0,.3);
+
+
 $whity: #f7f7f7;
 $dividers: darken($whity,5);
-$grey: rgba(0,0,0,.75);
-$light-grey: rgba(0,0,0,.1);
+$grey: $black-7;
+$light-grey: #F8FAFD;
 $dark-grey: #3A3F41;
 
 $yellow: #FFED5A;
 $red: #E34C41;
 $green: #20CE6A;
-$blue: #6180F8;
+$blue: #576FF3;
 $pink: #EDC4F7;
+$brown: #E0A27B;
 
-$blue-gradient: linear-gradient(-225deg, #6C92FE 0%, #4E5FEE 100%);
+$blue-gradient: linear-gradient(-225deg, #4E5FEE 0%, #6C92FE 100%);
 $brown-gradient: linear-gradient(-225deg, #C79362 0%, #E0A27B 100%);
 
 
 
 // Variables
-$base-typography: 18px;
 $base-typography: 20px;
-$max-width: 2560px;
-$radius: 2px;
+$max-width: 1200px;
+$radius: 4px;
 $shadow: 0 10px 40px rgba(0,0,0,.1);
 
 

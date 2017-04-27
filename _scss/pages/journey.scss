@@ -1,38 +1,38 @@
 
 .hp-heading{
 	width: 100%;
-	height: 80vh;
+	height: auto;
 	max-height: 900px;
 	position: relative;
-	background-image: $blue-gradient;
-
+	background:white;
+	padding-bottom: 6rem;
+	
 	//MEDIA QUERY
 	@include media($m) {
+		background-image: $blue-gradient;
 		padding: 0 2rem;
 		height: 100vh;
+		box-shadow: inset 0 0 0 10px white; 
 	}
-	// @include media($l) {
-	// 	padding: 0;
-	// 	height: 100vh;
-	// }
 
 	.hp-claim{
-		width: 96%;
+		width: 100%;
 		height: auto;
 		display: block;
-		position: absolute; 
-		top: 50%;
-		left: 1rem;
-	  transform: translateY(-50%);
+		position: relative; 
+		padding: 0rem 1rem;
+	
   	//MEDIA QUERY
 		@include media($m) {
+			position: absolute;
 			width: 90%;
+			padding: 0rem;
 			top: 50%;
 			left: 2rem;
 	  	transform: translateY(-50%);
 		}
 		@include media($l) {
-			width: 100%;
+			width: 85%;
 			max-width: 1200px;
 			top: 50%;
 			left: 50%;
@@ -42,34 +42,37 @@
 		h1{
 			width: 100%;
 			max-width: 600px;
-			@include rubik(700,1.5rem);
-			color: white;
+			@include rubik(700,1.8rem);
+			color: $black-7;
 			margin:0;
-			margin-top: 1rem;
+			margin-top: 4rem;
 			margin-left: -2px;
 			line-height: 1;
-			&:after{
-				content: '';
-				width: 100px;
-				height: 3px;
-				display: block;
-				position: absolute;
-				border-radius: 10px;
-				bottom: -3rem;
-				left: 0rem;
-				background:white;
-				//MEDIA QUERY
-				@include media($l) {
-					left: 1rem;
+			@include media($m) {
+				&:after{
+					content: '';
+					width: 100px;
+					height: 3px;
+					display: block;
+					position: absolute;
+					border-radius: 10px;
+					bottom: -2rem;
+					left: 0rem;
+					background:white;
+					//MEDIA QUERY
+					@include media($l) {
+						left: 1rem;
+					}
 				}
 			}
 			//MEDIA QUERY
 			@include media($m) {
-				@include rubik(700,2.75rem);
+				@include rubik(700,2.1rem);
 				max-width: 500px;
+				color: white;
+				margin-top: 0rem;
 			}
 			@include media($l) {
-				@include rubik(700,2.75rem);
 				max-width: 600px;
 				padding-left: 1rem;
 			}
@@ -162,52 +165,60 @@
 
 // Home-Post Typography
 h2.hp-title{
-	@include open(800,1.5rem);
-	color: $blacky;
+	@include rubik(600,1.8rem);
+	color: $black-7;
 	margin:0;
-	margin-top: 1rem;
+	margin-top: .5rem;
 	margin-left: -2px;
 	position: relative;
-	line-height: 1;
+	line-height: 1.2;
 	//MEDIA QUERY
 	@include media($m) {
-		@include open(800,2rem);
-		line-height: 1.2;
-	}
-	&:after{
-		content: '';
-		width: 80px;
-		height: 3px;
-		display: block;
-		position: absolute;
-		border-radius: 10px;
-		bottom: -1.2rem;
-		left: 3px;
-		background:$blue;
+		margin: 0;
+		margin-left: -2px;
 	}
 }
 p.hp-excerpt{
 	@include open(400,1rem);
 	line-height: 1.6rem;
 	color: $grey;
-	margin: 2rem 0 1.5rem 0;
+	margin: 1rem 0 1.5rem 0;
 	//MEDIA QUERY
 	@include media($l) {
-		@include open(400,.9rem);
+		@include open(400,1rem);
+		line-height: 1.6;
 	}
 }
 .hp-day{
-	@include open(700,1.75rem);
-	color: $blacky;
-	line-height: 1em;
-	padding-top: 22px;
-	margin-left: -4px;
+	@include open(600,.9rem);
+	color: $blue;
+	display: inline-block;
+	margin-top: 1rem;
+	
+	@include media($m) {
+		margin-top: .5rem;
+	}
+	@include media($l) {
+		@include open(700,1.75rem);
+		color: $black-7;
+		line-height: 1em;
+		padding-top: 20px;
+		margin-top: 0px;
+		margin-left: -4px;
+	}
 }
 .hp-month{
-	@include open(400,.8rem);
-	color: $blacky;
-	text-transform: uppercase;
-	letter-spacing: 2.5px;
+	@include open(600,.9rem);
+	color: $blue;
+	display: inline-block;
+
+	@include media($l) {
+		display: block;
+		@include open(400,.8rem);
+		color: $black-7;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+	}
 }
 // --------------------------------------
 
@@ -223,14 +234,11 @@ p.hp-excerpt{
   }
 }
 
-.home-post-list{
-	@include outer-container(1280px);
-}
+.home-post-list{  }
 
 .home-post{
-	@include outer-container;
 	list-style: none;
-	padding: 2.5rem 0;
+	padding: 2.5rem .9rem;
 	border-bottom: 1px solid $dividers;
 	//MEDIA QUERY
 	@include media($m) {
@@ -243,7 +251,7 @@ p.hp-excerpt{
 	
 }
 .hp-image{
-	@include span-columns(10);
+	@include span-columns(12);
 	min-height: 20px;
 	text-align: left;
 	position: relative;
@@ -265,6 +273,7 @@ p.hp-excerpt{
 		  	width: 98%;
 		   	max-width: 470px;
 		  }
+
 	}
 }
 .hp-image-wrap{
@@ -278,25 +287,29 @@ p.hp-excerpt{
   //
 }
 .hp-date{
-	width: 70px;
-	height: 100px;
-	display: block;
-	text-align: center;
-	position: absolute;
-	bottom: -35px;
-	background:white;
-	border-radius: $radius;
-	box-shadow: 0 10px 40px rgba(0,0,0,.15);
-	border-bottom: 5px solid $blue;
-	transition: box-shadow .3s, transform .3s;
+	//MEDIA QUERY
+  @include media($l) {
+		width: 70px;
+		height: 100px;
+		display: block;
+		text-align: center;
+		position: absolute;
+		bottom: -35px;
+		background:white;
+		border-radius: $radius;
+		box-shadow: 0 10px 40px rgba(0,0,0,.15);
+		border-bottom: 5px solid $blue;
+		transition: box-shadow .3s, transform .3s;
+		z-index: 99;
+	}
 }
 // --------------------------------------
 
 // Home-Post Odd
 .home-post-list li:nth-child(2n+1){
+	.hp-cell-container{ @include outer-container; }
   .hp-image{
-		@include span-columns(10);
-		@include shift(1);
+		@include span-columns(12);
 		//MEDIA QUERY
 	  @include media($m) {
 	   	@include span-columns(8);
@@ -305,53 +318,77 @@ p.hp-excerpt{
 	  @include media($l) {
 	   	@include span-columns(6);
 	   	@include shift(0);
+	   	height: 430px;
+	   	position: relative;
 	  }
 	  //
 	}
 	.hp-image-wrap{
-		margin-bottom: 1rem;
 			//MEDIA QUERY
-		  @include media($m) {
-		   	margin-bottom: 3rem;
-	  	}
 	  @include media($l) {
-	   	right: 5%;
+	   	width: 100%;
 	   	margin-bottom: 0;
 	  }
 	  //
 	}
-	.hp-date{
-		display: none;
+	figure{
+		position: relative;
+		width: 100%;
+		max-width: 470px;
+		margin: 0;
 		//MEDIA QUERY
-	  @include media($l) {
-	   	display: block;
-	   	left: 30px;
-	  }
-
-	  //
+		  @include media($l) {
+		   	margin: 0 auto;
+		  }
+		  //
+		.hp-date{
+			display: block;
+			position: relative;
+			//MEDIA QUERY
+		  @include media($l) {
+		  	position: absolute;
+		   	display: block;
+		   	left: 30px;
+		  }
+		  //
+		}
 	}
+	
 	.hp-copyblock{
-		@include span-columns(10);
-		@include shift(1);
+		@include span-columns(12);
 		//MEDIA QUERY
 	  @include media($m) {
 	   	@include span-columns(8);
 	   	@include shift(2);
 	  }
     @include media($l) {
-     	@include span-columns(4);
-			@include shift(1);
+     	@include span-columns(6);
+			@include shift(0);
+			height: 430px;
+			position: relative;
+			// background:blue;
     }
     //
+    .hp-copybox{
+    	//MEDIA QUERY
+    	@include media($l) {
+	     	width: 400px;
+	     	height: auto;
+	     	position: absolute;
+	     	top: 50%;
+	     	left: 50%;
+	     	transform: translate(-50%, -50%);
+	    }
+    }
 	}
 }
 // --------------------------------------
 
 
 .home-post-list li:nth-child(2n){
+	.hp-cell-container{ @include outer-container; }
 	  .hp-image{
-     	@include span-columns(10);
-			@include shift(1);
+     	@include span-columns(12);
 			//MEDIA QUERY
 		  @include media($m) {
 		   	@include span-columns(8);
@@ -359,27 +396,15 @@ p.hp-excerpt{
 		  }
 		}
 		.hp-copyblock{
-    	@include span-columns(10);
-			@include shift(1);
+    	@include span-columns(12);
 			//MEDIA QUERY
 		  @include media($m) {
 		   	@include span-columns(8);
 		   	@include shift(2);
 	  	}
-	  	 @include media($l) {
-		   	@include span-columns(4);
-		   	@include shift(0);
-	  	}
-		}
-		.hp-image-wrap{
-			margin-bottom: 1rem;
-			//MEDIA QUERY
-		  @include media($m) {
-		   	margin-bottom: 3rem;
-	  	}
 		}
 		.hp-date{
-			display: none;
+			display: block;
 		}
 	}
 
@@ -388,21 +413,54 @@ p.hp-excerpt{
 // Home-Post Even
 @include direction-context(right-to-left) {
 	.home-post-list li:nth-child(2n){
+		width: 100%;
 	  .hp-image{
      	@include span-columns(6);
-     	@include shift(1);
+     	@include shift(0);
+     	height: 430px;
+	   	// background:red;
+	   	position: relative;
 		}
 		.hp-image-wrap{
-			right: 0%;
-			margin-bottom: 0;
+			width: 100%;
 		}
-		.hp-date{
-			display: block;
-			right: 30px;
+		figure{
+			position: relative;
+			width: 100%;
+			max-width: 470px;
+			margin: 0;
+			//MEDIA QUERY
+			  @include media($l) {
+			   	margin: 0 auto;
+			  }
+			  //
+			.hp-date{
+				display: block;
+				//MEDIA QUERY
+			  @include media($l) {
+			   	display: block;
+			   	right: 30px;
+			  }
+			  //
+			}
 		}
 		.hp-copyblock{
-     	@include span-columns(4);
+     	@include span-columns(6);
 			@include shift(0);
+			// background:blue;
+			height: 430px;
+			position: relative;
+			.hp-copybox{
+	    	//MEDIA QUERY
+	    	@include media($l) {
+		     	width: 400px;
+		     	height: auto;
+		     	position: absolute;
+		     	top: 50%;
+		     	left: 50%;
+		     	transform: translate(-50%, -50%);
+		    }
+		  }
 		}
 	}
 }
