@@ -17,9 +17,9 @@
 
     <section class="home-post-section" id="home-posts">
       <ul class="home-post-list">
+      <!-- Canviar site x paginator -->
       {% for post in site.posts %}
         <li class="home-post" id="{{ post.number }}">
-
           <div class="hp-cell-container">
             <div class="hp-image">
               <div class="hp-image-wrap" data-bottom-top="top: 60px;" data-top-bottom="top:-20px;">
@@ -30,10 +30,8 @@
                     <div class="hp-month">{{ post.date | date: "%b"}}</div>
                   </div>
                 </figure>
-
               </div>
             </div>
-
             <div class="hp-copyblock">
               <div class="hp-copybox">
                 <h2 class="hp-title">{{post.title}}</h2>
@@ -41,10 +39,7 @@
                 <a href="{{ post.url }}" class="generic-cta blue">Leer Post</a>
               </div>
             </div>
-
           </div>
-          
-          
         </li>
       {% endfor %}
     </ul>

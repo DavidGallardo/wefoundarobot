@@ -2,8 +2,7 @@ $(document).ready(function(){
 
 // Lazy load for images
   $("img.lazy").lazyload({
-      threshold : 10,
-      effect : "fadeIn"
+      threshold : 10
   });
 
 
@@ -20,12 +19,6 @@ $(document).ready(function(){
     function() {
     $('.image-3').show().addClass('animated fadeInUp');
   }, 400);
-
-  setTimeout(
-    function() {
-    $('#main-article').show().addClass('animated fadeIn');
-  }, 800);
-
 
 
 
