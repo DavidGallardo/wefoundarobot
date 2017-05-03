@@ -12,12 +12,17 @@
         </title>
 	    <meta name="description" content="Travel blog about David & Airí - From St.Petersburg to Aukland">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	    <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
+        <!--[if IE]>
+          <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
+        <![endif]-->
 	    <!-- <script src="{{ site.baseurl | prepend:site.url }}js/vendor/modernizr-2.8.3.min.js"></script> -->
 
     </head>
     <body>
+        <!--[if !IE]> -->
+            <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
+        <!-- <![endif]-->
+
     	<main>
     		
     
