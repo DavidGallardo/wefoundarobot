@@ -67,5 +67,47 @@
 {% endif %}
 
 
+
 {% include footer.html %}
+
+<!-- {% if page.gallery %}
+	<script src="{{ site.baseurl | prepend:site.url }}js/slick.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		// Slick slider
+			$('.slider').slick({
+			  centerMode: true,
+			  arrows: false,
+			  centerPadding: '120px',
+			  infinite: false,
+			  slidesToShow: 1,
+			  draggable: true,
+			  variableWidth: true,
+			  focusOnSelect: true,
+			  adaptiveHeight: false,
+			  responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        centerMode: true,
+			        arrows: false,
+			        centerPadding: '120px',
+			        infinite: false,
+			        slidesToShow: 2,
+			        draggable: true,
+			        variableWidth: true,
+			        focusOnSelect: true,
+			        adaptiveHeight: false
+			      }
+			    }
+			  ]
+			});
+		// ///////////////////////////////////////////////////////////////
+
+		});
+		// Ends $Documnet Ready Function
+	</script>
+
+{% endif %} -->
 

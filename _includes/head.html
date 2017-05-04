@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>
-            {% if page.title %}
-              {{ page.title }} | {{site.name}}
-            {% else %}
-              {{ site.name }}
-            {% endif %}
-        </title>
-	    <meta name="description" content="Travel blog about David & Airí - From St.Petersburg to Aukland">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--[if IE]>
-          <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
-        <![endif]-->
-	    <!-- <script src="{{ site.baseurl | prepend:site.url }}js/vendor/modernizr-2.8.3.min.js"></script> -->
-
-    </head>
-    <body>
-        <!--[if !IE]> -->
-            <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
-        <!-- <![endif]-->
-
-    	<main>
-    		
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+    {% if page.title %}
+      {{ page.title }} | {{site.name}}
+    {% else %}
+      {{ site.name }}
+    {% endif %}
+    </title>
+    <meta name="description" content="Travel blog about David & Airí - From St.Petersburg to Aukland">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]>
+      <link rel="stylesheet" href="{{ site.baseurl | prepend:site.url }}css/main.css">
+    <![endif]-->
     
+    <style>
+      .hp-heading { width: 100%; height: auto; max-height: 900px; position: relative; background: white; padding-bottom: 6rem }
+        @media screen and (min-width:48em) {
+          .hp-heading { background-image: linear-gradient(-225deg, #4E5FEE 0%, #6C92FE 100%); padding: 0 2rem; height: 100vh; box-shadow: inset 0 0 0 10px white }
+        }
+        .hp-heading .hp-claim { width: 100%; height: auto; display: block; position: relative; padding: 0rem 1rem }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-claim { position: absolute; width: 90%; padding: 0rem; top: 50%; left: 2rem; -webkit-transform: translateY(-50%); transform: translateY(-50%) }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-claim { width: 85%; max-width: 1200px; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%) }
+        }
+        .hp-heading .hp-claim h1 { width: 100%; max-width: 600px; font-family: 'Rubik', Helvetica, sans-serif; font-weight: 700; font-size: 1.8rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: rgba(0, 0, 0, 0.7); margin: 0; margin-top: 4rem; margin-left: -2px; line-height: 1 }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-claim h1:after { content: ''; width: 100px; height: 3px; display: block; position: absolute; border-radius: 10px; bottom: -2rem; left: 0rem; background: white }
+        }
+        @media screen and (min-width:48em) and (min-width:64em) {
+          .hp-heading .hp-claim h1:after { left: 1rem }
+        }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-claim h1 { font-family: 'Rubik', Helvetica, sans-serif; font-weight: 700; font-size: 2.1rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; max-width: 500px; color: white; margin-top: 0rem }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-claim h1 { max-width: 600px; padding-left: 1rem }
+        }
+        .hp-heading .hp-image-block { display: none; width: 55%; height: 100%; position: absolute; right: 0; top: 30vh; overflow: hidden }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-image-block { display: block }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-image-block { display: block; right: 0 }
+        }
+        .hp-heading .hp-image-block .image-wrap { position: relative }
+        .hp-heading .hp-image-block .image-wrap .img { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); border-radius: 4px; transition: all .3s }
+        .hp-heading .hp-image-block .image-wrap .image-1 { width: 400px; height: 280px; position: absolute; display: block; background: #FFED5A url("../images/header/01.jpg") center center no-repeat; background-size: cover; left: 25%; top: 0 }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-image-block .image-wrap .image-1 { left: 35%; top: 0 }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-image-block .image-wrap .image-1 { left: 28%; top: 0 }
+        }
+        .hp-heading .hp-image-block .image-wrap .image-2 { width: 330px; height: 280px; position: absolute; display: block; background: #576FF3 url("../images/header/02.jpg") center center no-repeat; background-size: cover; left: 5%; top: 300px }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-image-block .image-wrap .image-2 { left: 10%; top: 300px }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-image-block .image-wrap .image-2 { left: 5%; top: 300px }
+        }
+        .hp-heading .hp-image-block .image-wrap .image-3 { display: none }
+        @media screen and (min-width:48em) {
+          .hp-heading .hp-image-block .image-wrap .image-3 { width: 400px; height: 280px; position: absolute; display: block; background: #E34C41 url("../images/header/03.jpg") center center no-repeat; background-size: cover; left: 400px; top: 330px }
+        }
+        @media screen and (min-width:64em) {
+          .hp-heading .hp-image-block .image-wrap .image-3 { left: 390px; top: 350px }
+        }
+    </style>
+  </head>
+  <body>
+    <main>

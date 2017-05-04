@@ -1,12 +1,5 @@
 $(document).ready(function(){
 
-// Lazy load for images
-  $("img.lazy").lazyload({
-      threshold : 10
-  });
-
-
-
 // Delaying animation for heading images
   $('.image-1').show().addClass('animated fadeInUp');
 
@@ -19,7 +12,6 @@ $(document).ready(function(){
     function() {
     $('.image-3').show().addClass('animated fadeInUp');
   }, 400);
-
 
 
 // Mobile Navigation
@@ -52,7 +44,6 @@ $("#nav-trigger span").click(function(){
     });
 
 
-
 // Init Skrollr Plugin
  $(function () {
   // initialize skrollr if the window width is large enough
@@ -71,7 +62,7 @@ $("#nav-trigger span").click(function(){
     	skrollr.init({
               forceHeight: false,
               smoothScrolling:true   
-          });
+         });
     }
   });
 });
