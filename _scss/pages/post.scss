@@ -386,6 +386,17 @@ footer.brown-grad{
 	&:hover{ background-color: $brown;}
 }
 
+.green-grad{ 
+	background-image: none;
+	//MEDIA QUERY
+		@include media($m) {
+			background-image: $green-gradient; 
+		}
+}
+footer.green-grad{
+	background: $dark-grey;
+	&:hover{ background-color: $green;}
+}
 
 
 
