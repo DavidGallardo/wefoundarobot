@@ -4,7 +4,7 @@ backbutton: true
 share: false
 number: "04"
 title:  "El Gran Baikal"
-author: "Airí & David"
+author: "BB8"
 categories: russia, transiberià, irkutsk, baikal 
 gradient: blue-grad
 home-image-path: images/journey/04/04-homepage.jpg
@@ -31,9 +31,9 @@ Hora de llegada a la ciudad: 09.30h del día 16 de Marzo de 2017. Temperatura: -
 
 Para llegar hasta el punto indicado decido adoptar la forma de *viajero explorador*. Es un tipo de humano que viste siempre de verde-caqui, lleva gafas de sol redondas, gorro con visera y zapatos con punta de plástico y forro de conejo blanco. Acostumbra a mirar siempre hacia el horizonte (el que sea) con los ojos entrecerrados...
 
-Como medio de transporte he elegido el del resto de mortales: el bus de línea de toda la vida, para mezclarme con gente local. Iba todo bien hasta que mis receptores olfativos han detectado la presencia de **un atún en el bus**. O igual era un salmón? Fuese el pez que fuese, se ha desenvuelto con vasta facilidad aun y estar fuera de su hábitat natural (el agua) y ha perturbado enormemente mi viaje. A quién se le ocurre entrar en un lugar público sin un sistema de control de olor corporal?
+Como medio de transporte he elegido el del resto de mortales: el bus de línea de toda la vida, para mezclarme con gente local. Iba todo bien hasta que mis receptores olfativos han detectado la presencia de **un atún en el bus** ¿O igual era un salmón? Fuese el pez que fuese, se ha desenvuelto con vasta facilidad aun y estar fuera de su hábitat natural (el agua) y ha perturbado enormemente mi viaje. ¿A quién se le ocurre entrar en un lugar público sin un sistema de control de olor corporal?
 
-Me bajo del bus donde se supone que voy a dormir esta noche. Miro hacia la izquierda: blanco hielo. Miro hacia la derecha: blanco nieve. Hacia arriba: cielo sereno. Hacia abajo: hielo caca. Me habré equivocado? Relocalizo...
+Me bajo del bus donde se supone que voy a dormir esta noche. Miro hacia la izquierda: blanco hielo. Miro hacia la derecha: blanco nieve. Hacia arriba: cielo sereno. Hacia abajo: hielo caca. ¿Me habré equivocado? Relocalizo...
 
 {::nomarkdown type='html'}
 <figure>
@@ -41,13 +41,13 @@ Me bajo del bus donde se supone que voy a dormir esta noche. Miro hacia la izqui
 </figure>
 {:/}
 
-Efectivamente, me encuentro en Litsvyanka, un pueblecito pescador de casitas de madera con las ventanas de intensos colores que yace en la orilla del **Lago Baikal**. *Ah my friend!* El gran Baikal! Este lago de inmensas proporciones que alberga más del 20% del agua dulce de la Tierra. El más viejo y el más profundo del mundo.
+Efectivamente, me encuentro en Litsvyanka, un pueblecito pescador de casitas de madera con las ventanas de intensos colores que yace en la orilla del **Lago Baikal**. *¡Ah my friend!* ¡El gran Baikal! Este lago de inmensas proporciones que alberga más del 20% del agua dulce de la Tierra. El más viejo y el más profundo del mundo.
 
 Ahora me acuerdo porque estoy aquí. Aquí se reúnen unas condiciones concretas que propician una fauna y flora características de la zona. Me incumben sobretodo 2 de las especies del lugar: el Omul y las Nerpas. Me dispongo a buscarles.
 
-El primero es un pez larguirucho con complejo de salmón (será este el del bus?) que nace en el lago y todos sus afluentes. Encontrarlo ha sido tarea fácil, ***Omul is everywhere***: Omul soup, Omul pie, Omul salad, pasta con Omul, Omul con arroz, Omul fumado, Omul colgado, Omul rebozado, Omul secado...
+El primero es un pez larguirucho con complejo de salmón (¿será este el del bus?) que nace en el lago y todos sus afluentes. Encontrarlo ha sido tarea fácil, ***Omul is everywhere***: Omul soup, Omul pie, Omul salad, pasta con Omul, Omul con arroz, Omul fumado, Omul colgado, Omul rebozado, Omul secado...
 
-No he tenido tanta suerte con la segunda: una una pseudofoca rechonchona, gris, con los ojos saltones, llamada **Nerpa**. Veo rastro de ella en todos los rincones del lugar, pero no consigo encontrarla. Por ello, he decidido reforzar mis sistemas de búsqueda. He pensado que lo mejor sería hacerlo con técnicas locales. 
+No he tenido tanta suerte con la segunda: una pseudofoca rechonchona, gris, con los ojos saltones, llamada **Nerpa**. Veo rastro de ella en todos los rincones del lugar, pero no consigo encontrarla. Por ello, he decidido reforzar mis sistemas de búsqueda. He pensado que lo mejor sería hacerlo con técnicas locales. 
 
 {::nomarkdown type='html'}
 <figure>
@@ -59,7 +59,7 @@ Uno de los medios de transporte más comunes en la zona son los **trineos**. Aqu
 
 > – ¿Me dejaría uno, señora? Me han encomendado una misión de vital importancia y me sería de gran utilidad contar con la colaboración de estos perros hambrientos de velocidad y cacería.<br><br>
 – Да, Да! (en español: Si, claro!) – contesta la señora de mejillas enrojecidas y ojos deprimidos - Будет ли достаточно тепло?<br><br>
-– Por supuesto, señorita Natalya! – le digo mientras arranco la furia de mis nuevos amigos perros – Pasé por San Petersburgo a comprar uno de estos conejos que te protegen contra el frío!
+– ¡Por supuesto, señorita Natalya! – le digo mientras arranco la furia de mis nuevos amigos perros – ¡Pasé por San Petersburgo a comprar uno de estos conejos que te protegen contra el frío!
 
 {::nomarkdown type='html'}
 <figure>
@@ -79,7 +79,7 @@ Me vuelvo a **Irkutsk**, una ciudad cercana a la zona del Baikal que combina cas
 
 ## Isla de Olkhon
 
-Al día siguiente me subo a un minibus con la intención de llegar a mi nuevo punto de mira: la **Isla de Olkhon**. Una Isla de unos 72km de largo que descansa en medio del lago congelado. A mi lado, duermen 2 personajes que van vestidos igual que yo. Oh si! 2 ejemplares de humano *viajero explorador*. ¡Vivitos y coleando!
+Al día siguiente me subo a un minibus con la intención de llegar a mi nuevo punto de mira: la **Isla de Olkhon**. Una Isla de unos 72km de largo que descansa en medio del lago congelado. A mi lado, duermen 2 personajes que van vestidos igual que yo. ¡Oh si! 2 ejemplares de humano *viajero explorador*. ¡Vivitos y coleando!
 
 > - 1,83m de altura
 > - Barba pelirroja
@@ -100,11 +100,11 @@ Pero... espera un momento. Ellos llevan algo que yo debo haber olvidado: **¡un 
 </figure>
 {:/}
 
-Después de un traslado de 4h dando tumbos y saltitos dentro de la furgoneta llegamos a un camino sin salida: otra vez el lago. Sin necesidad de tomar la forma de una nave acuática, **cruzamos por encima del agua sólida** dirección Olkhon. Esta tierra me resulta familiar... esto no era Jakku (donde vi a Rey por primera vez)? Ah, no! Aquí las casas son de madera y se atisba un bosque tipo Ruso a lo lejos.   
+Después de un traslado de 4h dando tumbos y saltitos dentro de la furgoneta llegamos a un camino sin salida: otra vez el lago. Sin necesidad de tomar la forma de una nave acuática, **cruzamos por encima del agua sólida** dirección Olkhon. Esta tierra me resulta familiar... ¿esto no era Jakku, dónde vi a Rey por primera vez? ¡Ah, no! Aquí las casas son de madera y se atisba un bosque tipo Ruso a lo lejos.   
   
-¿Por qué habrá cintas de colores colgando de las ramas de los árboles? Pregunto a una mujer de pequeña estatura que acaba de despertarme tirándome un cubo de agua de color marrón (con el frío qué hace... ¡señora!).
+¿Por qué habrá cintas de colores colgando de las ramas de los árboles? Pregunto a una mujer de pequeña estatura que acaba de despertarme tirándome un cubo de agua de color marrón encima (con el frío qué hace... ¡señora!).
 
-> – Bienvenido a Olkhon! Esta es una tierra llena de energía. Cuenta la **leyenda** que en esa roca que ves a tu derecha nació el primer Chamán de la historia, hijo de Joto Babai, enviado a la tierra por los Dioses superiores. Las cintas cuelgan en los árboles como señal de agradecimiento a los espíritus, que nos mantienen a salvo de los fantasmas y los malos augurios.  
+> – ¡Bienvenido a Olkhon! Esta es una tierra llena de energía. Cuenta la **leyenda** que en esa roca que ves a tu derecha nació el primer Chamán de la historia, hijo de Joto Babai, enviado a la tierra por los Dioses superiores. Las cintas cuelgan en los árboles como señal de agradecimiento a los espíritus, que nos mantienen a salvo de los fantasmas y los malos augurios.  
 
 {::nomarkdown type='html'}
 <figure>
@@ -112,7 +112,7 @@ Después de un traslado de 4h dando tumbos y saltitos dentro de la furgoneta lle
 </figure>
 {:/}
 
-Demasiada información de golpe. ¿Qué es una leyenda? ¿Qué son malos augurios? ¿Hacen falta tantas cintas de colores? ¿Qué ~~coño~~ es un chamán? ¿Y por qué vive en una cueva pudiendo vivir en una casita de madera con calefacción y agua corriente (ah no! que aquí no tienen duchas...)? 
+Demasiada información de golpe. ¿Qué es una leyenda? ¿Qué son malos augurios? ¿Hacen falta tantas cintas de colores? ¿Qué ~~coño~~ es un chamán? ¿Y por qué vive en una cueva pudiendo vivir en una casita de madera con calefacción y agua corriente? (¡ah, no! que aquí no tienen duchas...) 
   
 Dejo aquí un par de respuestas rápidas localizadas en wordreference.com:
 > **Chamán:** m. Hechicero que se supone con poder para entrar en contacto con los espíritus y los dioses, adivinar, y curar enfermos.
@@ -128,7 +128,7 @@ Empiezo a pensar que hay algunos humanos que viven en un mundo paralelo el cuál
 </figure>
 {:/}
 
-Este empieza a gritarme, gesticular y a hablar a una velocidad que mi sistema operativo es incapaz de procesar. De repente, me encuentro subido a su furgoneta gris. Por fin consigo identificar su procedencia: es un ejemplar auténtico de la familia humana de los **Buryats** (personas medio rusas medio mongolas que viven cerca del Baikal). Más pistas para reconocerlos: comen pipas sin sal todo el ~~maldito~ día y huelen  fuertemente a Omul.
+Este empieza a gritarme, gesticular y a hablar a una velocidad que mi sistema operativo es incapaz de procesar. De repente, me encuentro subido a su furgoneta gris. Por fin consigo identificar su procedencia: es un ejemplar auténtico de la familia humana de los **Buryats** (personas medio rusas medio mongolas que viven cerca del Baikal). Más pistas para reconocerlos: comen pipas sin sal todo el día y huelen  fuertemente a Omul.
 
 Por suerte, este hombre de nombre impronunciable, conoce la zona y tiene el tiempo suficiente para unirse a mi cometido, así que nos disponemos a recorrer todos los rincones y rinconcitos del congeladísimo lago Baikal. 
 

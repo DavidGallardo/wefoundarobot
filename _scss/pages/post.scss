@@ -140,6 +140,7 @@
 	@include media($l) {
 		max-width: 900px;
 		padding: 0;
+		min-height: 500px;
 	}
 	figure{
 		position: relative;
@@ -168,7 +169,7 @@
 			padding: 1rem 0;
 		}
 		@include media($l) {	
-			padding:0;
+			padding: 2rem 0 0 0;
 		}
 	.sharing-block{
 		width: 100%;

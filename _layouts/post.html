@@ -15,7 +15,7 @@
 		<h1 class="animated fadeIn">{{ page.title }}</h1>
 	</div>
 	<div class="at-main-image">
-		<figure class="animated fadeInUp" data-start="bottom: 0px;" data-800-start="bottom:80px;">
+		<figure class="animated fadeInUp">
 			<img src="{{ page.post-image-path | prepend:site.baseurl }}" alt="{{ page.post-image-title}}" />
 		</figure>
 	</div>
@@ -69,45 +69,3 @@
 
 
 {% include footer.html %}
-
-<!-- {% if page.gallery %}
-	<script src="{{ site.baseurl | prepend:site.url }}js/slick.min.js"></script>
-	
-	<script>
-		$(document).ready(function(){
-		// Slick slider
-			$('.slider').slick({
-			  centerMode: true,
-			  arrows: false,
-			  centerPadding: '120px',
-			  infinite: false,
-			  slidesToShow: 1,
-			  draggable: true,
-			  variableWidth: true,
-			  focusOnSelect: true,
-			  adaptiveHeight: false,
-			  responsive: [
-			    {
-			      breakpoint: 768,
-			      settings: {
-			        centerMode: true,
-			        arrows: false,
-			        centerPadding: '120px',
-			        infinite: false,
-			        slidesToShow: 2,
-			        draggable: true,
-			        variableWidth: true,
-			        focusOnSelect: true,
-			        adaptiveHeight: false
-			      }
-			    }
-			  ]
-			});
-		// ///////////////////////////////////////////////////////////////
-
-		});
-		// Ends $Documnet Ready Function
-	</script>
-
-{% endif %} -->
-
