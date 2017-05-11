@@ -40,6 +40,7 @@ Os adjunto aquí los **informes elaborados** para las 2 últimas ciudades que he
 {::nomarkdown type='html'}
 <figure>
 	<img  class="lazy" src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}'>
+  <!-- <img class="lazy" data-src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}' data-src-retina='{{ "images/journey/01/01-post-1@2x.jpg" | prepend:site.baseurl }}' src='{{ "images/ui/placeholder.jpg" | prepend:site.baseurl }}' alt="Saint Petersburg" />  -->
 </figure>
 {:/}
   

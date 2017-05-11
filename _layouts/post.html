@@ -4,12 +4,12 @@
 	{% include navigation.html %}
 	<div class="header-gradient {{ page.gradient }} ">
 		<div class="arrow-wrapper">
-			<a href="javascript:void(0)" id="scroll-down" class="grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
+			<a href="javascript:void(0)" id="scroll-down" class="grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow" data-no-retina></span></a>
 		</div>
 	</div>
 	
 	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
-		<a href="{{ site.url }}/#{{ page.number }}" class="at-back-mbl"><img src='{{ "images/ui/arrow-blue-left.svg" | prepend:site.baseurl }}' alt="pointing arrow">Back to posts</a>
+		<a href="{{ site.url }}/#{{ page.number }}" class="at-back-mbl"><img src='{{ "images/ui/arrow-blue-left.svg" | prepend:site.baseurl }}' alt="pointing arrow" data-no-retina>Back to posts</a>
 		<h1 class="animated fadeIn hinge">{{ page.title }}</h1>
 	</div>
 	<div class="at-main-image">
