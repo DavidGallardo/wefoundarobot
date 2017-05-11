@@ -10,6 +10,19 @@ var messages = {
 };
 
 /**
+ * Compile files from _scss into 
+ */
+gulp.task('critical', function () {
+    gulp.src('_scss/critical.scss')
+        .pipe(sass({
+            includePaths: ['scss'],
+            outputStyle: 'compressed',
+            onError: browserSync.notify
+        }))
+        .pipe(gulp.dest('./_includes/'));
+});
+
+/**
  * Build the Jekyll Site
  */
 gulp.task('jekyll-build', function (done) {
@@ -28,7 +41,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['critical', 'sass', 'jekyll-build'], function() {
     browserSync({
         /** Static Version **/
         server: {
@@ -37,6 +50,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
     });
 });
+
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -60,7 +74,8 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('_scss/critical.scss', ['critical', 'jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_pages/*', 'js/*.js'], ['jekyll-rebuild']);
 });
 
 /**

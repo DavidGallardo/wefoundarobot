@@ -1,0 +1,19 @@
+		<script>
+			$(document).ready(function(){
+			// Delaying animation for heading images
+			  $('.image-1').show().addClass('animated fadeInUp');
+			  setTimeout(
+			    function() {
+			    $('.image-2').show().addClass('animated fadeInUp');
+			  }, 200);
+			  setTimeout(
+			    function() {
+			    $('.image-3').show().addClass('animated fadeInUp');
+			  }, 400);
+			})
+		</script>
+		<script src="{{ site.baseurl | prepend:site.url }}js/skrollr.js"></script>
+    <script src="{{ site.baseurl | prepend:site.url }}js/main.js"></script>
+
+	</body>
+</html>

@@ -2,7 +2,8 @@
 
 .generic-cta{
 	width: auto;
-	max-width: 230px;
+	// max-width: 230px;
+	max-width: 140px;
 	display: block;
 	padding: 9px 30px 10px 20px;
 	border: 2px solid $blue;
@@ -43,7 +44,6 @@
 	//MEDIA QUERY
     @include media($m) {
     	width: auto;
-      max-width: 200px;
       padding: 9px 30px 10px 20px;
     }
 		@include media($l) {

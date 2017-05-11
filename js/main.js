@@ -1,19 +1,5 @@
 $(document).ready(function(){
 
-// Delaying animation for heading images
-  $('.image-1').show().addClass('animated fadeInUp');
-
-  setTimeout(
-    function() {
-    $('.image-2').show().addClass('animated fadeInUp');
-  }, 200);
-
-  setTimeout(
-    function() {
-    $('.image-3').show().addClass('animated fadeInUp');
-  }, 400);
-
-
 // Mobile Navigation
 $("#nav-trigger span").click(function(){
 
@@ -74,44 +60,11 @@ $("#nav-trigger span").click(function(){
 	    }, 800);
 	});
 
-// ///////////////////////////////////////////////////////////////
-
-// Slick slider
-$('.slider').slick({
-  centerMode: true,
-  arrows: false,
-  centerPadding: '120px',
-  infinite: false,
-  slidesToShow: 1,
-  draggable: true,
-  variableWidth: true,
-  focusOnSelect: true,
-  adaptiveHeight: false,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        arrows: false,
-        centerPadding: '120px',
-        infinite: false,
-        slidesToShow: 2,
-        draggable: true,
-        variableWidth: true,
-        focusOnSelect: true,
-        adaptiveHeight: false
-      }
-    }
-  ]
-});
-
-
-
 
 // ///////////////////////////////////////////////////////////////
 
 });
-// Ends $Documnet Ready Function
+// Ends $Document Ready Function
 // /////////////////////////////////////////////////////////////
 
 

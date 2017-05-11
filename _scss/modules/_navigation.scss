@@ -15,6 +15,7 @@ nav.main-nav{
 		position: relative;
 		background:transparent;
 		z-index: 999;
+		@include border-box;
 
 		//MEDIA QUERY
 		@include media($m) {

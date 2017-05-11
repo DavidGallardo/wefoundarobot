@@ -1,0 +1,39 @@
+
+		<script src="{{ site.baseurl | prepend:site.url }}js/skrollr.js"></script>
+		<script src="{{ site.baseurl | prepend:site.url }}js/slick.min.js"></script>
+    <script src="{{ site.baseurl | prepend:site.url }}js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+			// Slick slider
+			$('.slider').slick({
+			  centerMode: true,
+			  arrows: false,
+			  centerPadding: '120px',
+			  infinite: false,
+			  slidesToShow: 1,
+			  draggable: true,
+			  variableWidth: true,
+			  focusOnSelect: true,
+			  adaptiveHeight: false,
+			  responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        centerMode: true,
+			        arrows: false,
+			        centerPadding: '120px',
+			        infinite: false,
+			        slidesToShow: 2,
+			        draggable: true,
+			        variableWidth: true,
+			        focusOnSelect: true,
+			        adaptiveHeight: false
+			      }
+			    }
+			  ]
+			});
+		})
+    </script>
+
+	</body>
+</html>

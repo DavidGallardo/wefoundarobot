@@ -1,0 +1,426 @@
+@import '../_scss/reset/_reset';
+@import '../_scss/helpers/_media';
+@import '../_scss/helpers/_mixins';
+
+// ––––––––––––––Custom Styles
+
+html {
+	font-size: 100%;
+	font-size: $base-typography;
+
+	//MEDIA QUERY
+	@include media($m) {
+		font-size: $base-typography
+	}
+}
+body {
+	background: white
+}
+main {
+	font-size: 1em;
+	width: 100%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	@include border-box;
+	background: white;
+
+	@include media($xxl) {
+		font-size: 1.5em
+	}
+	//
+}
+::selection {
+	color: white;
+	background: $blue
+}
+ul, ol, figure {
+	@include no-space;
+
+	li {
+		@include no-space
+	}
+}
+
+//////////////////////////////////////////////////////
+//NAVIGATION
+//////////////////////////////////////////////////////
+
+@import '../_scss/modules/_navigation';
+
+//////////////////////////////////////////////////////
+//JOURNEY HEADER 
+//////////////////////////////////////////////////////
+
+.hp-heading {
+	width: 100%;
+	height: auto;
+	max-height: 900px;
+	position: relative;
+	background: white;
+	padding-bottom: 6rem;
+	color: white;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $blue-gradient;
+		padding: 0 2rem;
+		height: 100vh;
+		box-shadow: inset 0 0 0 10px white;
+		@include border-box;
+	}
+	.hp-claim {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		padding: 0rem 1rem;
+		@include border-box;
+
+		//MEDIA QUERY
+		@include media($m) {
+			position: absolute;
+			width: 90%;
+			padding: 0rem;
+			top: 50%;
+			left: 2rem;
+			transform: translateY(-50%);
+		}
+		@include media($l) {
+			width: 85%;
+			max-width: 1200px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		h1 {
+			width: 100%;
+			max-width: 600px;
+			@include rubik(700, 1.8rem);
+			color: $black-7;
+			margin: 0;
+			margin-top: 4rem;
+			margin-left: -2px;
+			line-height: 1;
+
+			@include media($m) {
+				&:after {
+					content: '';
+					width: 100px;
+					height: 3px;
+					display: block;
+					position: absolute;
+					border-radius: 10px;
+					bottom: -2rem;
+					left: 0rem;
+					background: white;
+
+					//MEDIA QUERY
+					@include media($l) {
+						left: 1rem;
+					}
+				}
+			}
+			//MEDIA QUERY
+			@include media($m) {
+				@include rubik(700, 2.1rem);
+				max-width: 500px;
+				color: white;
+				margin-top: 0rem;
+			}
+			@include media($l) {
+				max-width: 600px;
+				padding-left: 1rem;
+			}
+		}
+	}
+	.hp-image-block {
+		display: none;
+		width: 55%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 30vh;
+		overflow: hidden;
+
+		//MEDIA QUERY
+		@include media($m) {
+			display: block;
+		}
+		@include media($l) {
+			display: block;
+			right: 0;
+		}
+		.image-wrap {
+			position: relative;
+
+			.img {
+				box-shadow: $shadow;
+				border-radius: $radius;
+				transition: all .3s;
+			}
+			.image-1 {
+				width: 400px;
+				height: 280px;
+				position: absolute;
+				display: block;
+				background: $yellow url("../images/header/01.jpg") center center no-repeat;
+				background-size: cover;
+				left: 25%;
+				top: 0;
+
+				//MEDIA QUERY
+				@include media($m) {
+					left: 35%;
+					top: 0;
+				}
+				@include media($l) {
+					left: 28%;
+					top: 0;
+				}
+			}
+			.image-2 {
+				width: 330px;
+				height: 280px;
+				position: absolute;
+				display: block;
+				background: $blue url("../images/header/02.jpg") center center no-repeat;
+				background-size: cover;
+				left: 5%;
+				top: 300px;
+
+				//MEDIA QUERY
+				@include media($m) {
+					left: 10%;
+					top: 300px;
+				}
+				@include media($l) {
+					left: 5%;
+					top: 300px;
+				}
+			}
+			.image-3 {
+				display: none;
+
+				//MEDIA QUERY
+				@include media($m) {
+					width: 400px;
+					height: 280px;
+					position: absolute;
+					display: block;
+					background: $red url("../images/header/03.jpg") center center no-repeat;
+					background-size: cover;
+					left: 400px;
+					top: 330px;
+				}
+				@include media($l) {
+					left: 390px;
+					top: 350px;
+				}
+			}
+		}
+	}
+}
+
+
+//////////////////////////////////////////////////////
+//POST
+//////////////////////////////////////////////////////
+
+.at-header {
+	height: auto;
+	width: 100%;
+	display: block;
+	position: relative;
+
+	//MEDIA QUERY
+	@include media($m) {
+		padding: 0 2rem;
+		@include border-box;
+	}
+	@include media($l) {
+		padding: 0;
+	}
+	.header-gradient {
+		width: 100%;
+		height: 370px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+
+		//MEDIA QUERY
+		@include media($m) {
+			height: 520px;
+			box-shadow: inset 0 0 0 10px white;
+			display: block;
+		}
+		.arrow-wrapper {
+			width: 100%;
+			max-width: 1100px;
+			height: 20px;
+			display: block;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			background: transparent;
+			transform: translateX(-50%);
+
+			.at-keep-reading {
+				display: none;
+				@include rubik(300, 1em);
+				width: 160px;
+				position: absolute;
+				bottom: -130px;
+				transform: rotate(90deg);
+				@include rubik(400, 1rem);
+				color: $black-6;
+
+				//MEDIA QUERY
+				@include media($l) {
+					display: block;
+					right: -40px;
+
+					&:hover:before {
+						display: none;
+					}
+					span {
+						margin-left: 1rem;
+						transition: margin .3s;
+					}
+					&:hover {
+						color: $blue;
+					}
+					&:hover span {
+						margin-left: 1.25rem;
+						transition: margin .3s;
+					}
+				}
+			}
+		}
+	}
+}
+.at-title {
+	max-width: 700px;
+	display: block;
+	position: relative;
+	text-align: left;
+	margin: 0 auto;
+	padding: 50px 1rem 0 1rem;
+
+	//MEDIA QUERY
+	@include media($m) {
+		text-align: center;
+		padding: 50px 1rem 0 1rem;
+		@include rubik(700, 2.75rem);
+	}
+	h1, .h1 {
+		@include rubik(700, 1.8rem);
+		color: $black-7;
+		line-height: 1;
+		margin: 1rem 0;
+		color: $grey;
+
+		//MEDIA QUERY
+		@include media($m) {
+			@include rubik(700, 2.75rem);
+			min-height: 70px;
+			color: white;
+		}
+		
+		&:after {
+			display: none;
+
+			//MEDIA QUERY
+			@include media($m) {
+				display: block;
+				content: '';
+				width: 2px;
+				height: 220px;
+				display: block;
+				position: absolute;
+				background: white;
+				bottom: -240px;
+				left: 50%;
+				opacity: .8;
+			}
+		}
+	}
+}
+.at-back-mbl {
+	padding: 0 0 1rem 0;
+	@include rubik(400, .9rem);
+	&:hover::before{
+		display: none;
+	}
+
+	img {
+		margin-right: .3rem;
+		margin-top: -2px;
+	}
+	//MEDIA QUERY
+	@include media($m) {
+		display: none;
+	}
+}
+.at-main-image {
+	height: auto;
+	width: 100%;
+	max-width: 768px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 2rem;
+
+	//MEDIA QUERY
+	@include media($m) {
+		margin-top: 6rem;
+	}
+	@include media($l) {
+		max-width: 900px;
+		padding: 0;
+		min-height: 500px;
+	}
+	figure {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: none;
+
+			//MEDIA QUERY
+			@include media($m) {
+				box-shadow: $shadow;
+				border-radius: $radius;
+			}
+		}
+	}
+}
+/////Specific gradients
+
+.blue-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $blue-gradient;
+	}
+}
+.brown-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $brown-gradient;
+	}
+}
+.green-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $green-gradient;
+	}
+}

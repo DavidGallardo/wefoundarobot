@@ -1,54 +1,49 @@
 {% include head.html %}
-
-   <header class="hp-heading">
-     {% include navigation.html %}
-    <div class="hp-image-block">
-      <div class="image-wrap">
-        <div class="img image-1" style="display: none"></div>
-        <div class="img image-2" style="display: none"></div>
-        <div class="img image-3" style="display: none"></div>
-      </div>
+<header class="hp-heading">
+  {% include navigation.html %}
+  <div class="hp-image-block">
+    <div class="image-wrap">
+      <div class="img image-1" style="display: none"></div>
+      <div class="img image-2" style="display: none"></div>
+      <div class="img image-3" style="display: none"></div>
     </div>
-    <div class="hp-claim">
-      <h1>Looking for a robot while discovering an extraordinary planet </h1>
-    </div>
-    
-   </header>   
-
-    <section class="home-post-section" id="home-posts">
-      <ul class="home-post-list">
-      <!-- Canviar site x paginator -->
-      {% for post in site.posts %}
-        <li class="home-post" id="{{ post.number }}">
-          <div class="hp-cell-container">
-            <div class="hp-image">
-              <div class="hp-image-wrap" data-bottom-top="top: 60px;" data-top-bottom="top:-20px;">
-                <figure>
-                  <img class="lazy" src="{{ post.home-image-path | prepend:site.baseurl }}" alt="{{ post.home-image-title}}" />
-                  <div class="hp-date" data-bottom-top="bottom: -40px;" data-top-bottom="bottom:-10px;">
-                    <div class="hp-day">{{ post.date | date: "%d"}}</div>
-                    <div class="hp-month">{{ post.date | date: "%b"}}</div>
-                  </div>
-                </figure>
-              </div>
-            </div>
-            <div class="hp-copyblock">
-              <div class="hp-copybox">
-                <h2 class="hp-title">{{post.title}}</h2>
-                <p class="hp-excerpt">{{post.excerpt}}</p>
-                <a href="{{ post.url }}" class="generic-cta blue">Leer Post</a>
-              </div>
+  </div>
+  <div class="hp-claim">
+    <h1>Looking for a robot while discovering an extraordinary planet </h1>
+  </div>
+</header>
+<section class="home-post-section" id="home-posts">
+  <ul class="home-post-list">
+    {% for post in site.posts %}
+      <li class="home-post" id="{{ post.number }}">
+        <div class="hp-cell-container">
+          <div class="hp-image">
+            <div class="hp-image-wrap" data-bottom-top="top: 60px;" data-top-bottom="top:-20px;">
+              <a href="{{ post.url }}"><figure>
+                <img class="lazy" src="{{ post.home-image-path | prepend:site.baseurl }}" alt="{{ post.home-image-title}}" />
+                <div class="hp-date" data-bottom-top="bottom: -40px;" data-top-bottom="bottom:-10px;">
+                  <div class="hp-day">{{ post.date | date: "%d"}}</div>
+                  <div class="hp-month">{{ post.date | date: "%b"}}</div>
+                </div>
+              </figure></a>
             </div>
           </div>
-        </li>
-      {% endfor %}
-    </ul>
-    </section>
-    <footer class="love">
-      <div class="footer-wrapper">
-        Designed + Coded + Written with <span>❤︎</span> in-between <a href="https://goo.gl/maps/vrCniQhZEUu" target="_blank">Barcelona</a> & <a href="https://goo.gl/maps/iGbDXX5pcJz" target="_blank">Auckland</a>
-      </div>
-    </footer>
-    
+          <div class="hp-copyblock">
+            <div class="hp-copybox">
+              <h2 class="hp-title"><a href="{{ post.url }}">{{post.title}}</a></h2>
+              <p class="hp-excerpt">{{post.excerpt}}</p>
+              <a href="{{ post.url }}" class="generic-cta blue">Leer Post</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<footer class="love">
+  <div class="footer-wrapper">
+    Designed + Coded + Written with <span>❤︎</span> in-between <a href="https://goo.gl/maps/vrCniQhZEUu" target="_blank">Barcelona</a> & <a href="https://goo.gl/maps/iGbDXX5pcJz" target="_blank">Auckland</a>
+  </div>
+</footer>
 {% include footer.html %}
-
+{% include footer-journey.html %}

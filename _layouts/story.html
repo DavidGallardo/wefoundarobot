@@ -1,9 +1,6 @@
-
 {% include head.html %}
-
 <header class="at-header">
 	{% include navigation.html %}
-
 	<div class="header-gradient blue-grad">
 		<div class="white-box" data-start="opacity: 0;" data-200-start="opacity:1;"></div>
 		<div class="arrow-wrapper">
@@ -20,22 +17,17 @@
 		</figure>
 	</div>
 </header>
-
 <section id="at-content" class="at-content">
 	<article>
-
 		{{ content }}
 		
 	</article>
 </section>
-
-
-<footer class="at-next">
-  <a href="{{ site.posts.last.url }}" class="at-title">
+<footer class="at-next {{ site.posts.last.gradient }}">
+	<a href="{{ site.posts.last.url }}" class="at-title">
 		<div class="extra at-next-copy">Empezar Aventura</div>
 		<h4 class="h1">{{ site.posts.last.title }}</h4>
 	</a>
 </footer>
-
 {% include footer.html %}
-
+{% include footer-post.html %}

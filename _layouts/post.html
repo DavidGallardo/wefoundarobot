@@ -1,9 +1,7 @@
-
 {% include head.html %}
 
 <header class="at-header">
 	{% include navigation.html %}
-
 	<div class="header-gradient {{ page.gradient }} ">
 		<div class="arrow-wrapper">
 			<a href="javascript:void(0)" id="scroll-down" class="grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='{{ "images/ui/arrow-black-right.svg" | prepend:site.baseurl }}' alt="pointing arrow"></span></a>
@@ -12,7 +10,7 @@
 	
 	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
 		<a href="{{ site.url }}/#{{ page.number }}" class="at-back-mbl"><img src='{{ "images/ui/arrow-blue-left.svg" | prepend:site.baseurl }}' alt="pointing arrow">Back to posts</a>
-		<h1 class="animated fadeIn">{{ page.title }}</h1>
+		<h1 class="animated fadeIn hinge">{{ page.title }}</h1>
 	</div>
 	<div class="at-main-image">
 		<figure class="animated fadeInUp">
@@ -20,30 +18,28 @@
 		</figure>
 	</div>
 </header>
-
 <section id="at-content" class="at-content" >
 	<article id="main-article">
-
 		<!-- SHARING OPTION -->
 		{% if page.share %}
-		<div class="sharing-block extra grey">Share on<span><img src='{{ "images/ui/rectangle.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
+			<div class="sharing-block extra grey">Share on<span><img src='{{ "images/ui/rectangle.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
 		{% endif %}
 		
 		<!-- DATE & READING TIME -->
 		<div class="at-date-block">
 			<div class="at-date">{% if page.author %} {{ page.author }}, {% endif %}{% if page.date %} {{ page.date | date: "%d %b"}} {% endif %}  –  {% assign words = content | number_of_words %}
 			{% if words < 320 %}
-			  1 min
+				1 min
 			{% else %}
-			  {{ words | divided_by:160 }} min
+				{{ words | divided_by:160 }} min
 			{% endif %}
-			</div>
 		</div>
+	</div>
 	
-		<!-- CONTENT -->
-		{{ content }}
-		
-	</article>
+	<!-- CONTENT -->
+	{{ content }}
+	
+</article>
 </section>
 {% if page.gallery %}
 <section class="at-gallery">
@@ -54,18 +50,15 @@
 	</div>
 </section>
 {% endif %}
-
-
-{% if page.next %} 
+{% if page.next %}
+<a href="{{ page.next.url }}">
 <footer class="at-next {{ page.next.gradient }} ">
-  <a href="{{ page.next.url }}" class="at-title">
+	<div class="at-title">
 		<div class="at-next-copy">Siguiente Post</div>
 		<h4 class="h1">{{ page.next.title }}</h4>
-	</a>
+	</div>
 </footer>
-
+</a>
 {% endif %}
-
-
-
 {% include footer.html %}
+{% include footer-post.html %}
