@@ -204,7 +204,6 @@ a:visited{
 			}
 			.image-3 {
 				display: none;
-
 				//MEDIA QUERY
 				@include media($m) {
 					width: 400px;
@@ -223,6 +222,12 @@ a:visited{
 			}
 		}
 	}
+}
+.a-delay-3{
+  animation-delay: .3s;
+}
+.a-delay-6{
+  animation-delay: .6s;
 }
 
 //////////////////////////////////////////////////////
