@@ -15,7 +15,7 @@
 	transition: all .3s;
 	top: 0px;
 	
-	&:hover, &:active, &:focus{
+	&:hover, &:active, &:focus, &:visited{
 		background: $blue ;
 		color: white;
 		box-shadow: $shadow;
@@ -45,6 +45,7 @@
     @include media($m) {
     	width: auto;
       padding: 9px 30px 10px 20px;
+      color: white;
     }
 		@include media($l) {
       background: $blue;
