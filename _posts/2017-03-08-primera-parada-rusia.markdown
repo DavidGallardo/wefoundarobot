@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "01"
 title:  "Primera Parada: Rusia."
 author: "BB-8"

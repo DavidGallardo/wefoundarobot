@@ -108,6 +108,18 @@ p.hp-excerpt {
 		@include media($l) {
 			margin: 0 auto;
 		}
+		img{
+			width: 100%;
+			box-shadow: $shadow;
+			border-radius: $radius;
+			transition: all .3s;
+
+			//MEDIA QUERY
+			@include media($m) {
+				width: 98%;
+				max-width: 470px;
+			}
+		}
 		//
 		.hp-date {
 			display: block;
@@ -180,11 +192,24 @@ p.hp-excerpt {
 				width: 100%;
 				max-width: 470px;
 				margin: 0 auto;
+
 				.hp-date {
 					display: block;
 					right: 30px;
 				}
 			}
+			img{
+					width: 100%;
+					box-shadow: $shadow;
+					border-radius: $radius;
+					transition: all .3s;
+
+					//MEDIA QUERY
+					@include media($m) {
+						width: 98%;
+						max-width: 470px;
+					}
+				}
 		}
 	}
 
