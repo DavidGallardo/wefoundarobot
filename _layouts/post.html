@@ -22,7 +22,7 @@
 	<article id="main-article">
 		<!-- SHARING OPTION -->
 		{% if page.share %}
-			<div class="sharing-block extra grey">Share on<span><img src='{{ "images/ui/line.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
+			<div class="sharing-block extra grey">Share on<span><img src='{{ "images/ui/line.png" | prepend:site.baseurl }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
 		{% endif %}
 		
 		<!-- DATE & READING TIME -->
@@ -40,22 +40,31 @@
 	{{ content }}
 	
 </article>
-</section>
 {% if page.gallery %}
-<section class="at-gallery">
+<div class="at-gallery">
 	<div class="slider">
 		{% for item in page.gallery %}
 			<div class="slider-item"><img src="{{ item | prepend:site.baseurl }}"></div>
 		{% endfor %}
 	</div>
-</section>
+</div>
 {% endif %}
+</section>
 {% if page.next %}
 <a href="{{ page.next.url }}">
 <footer class="at-next {{ page.next.gradient }} ">
-	<div class="at-title">
+	<div class="at-footer-title">
 		<div class="at-next-copy">Siguiente Post</div>
 		<h4 class="h1">{{ page.next.title }}</h4>
+	</div>
+</footer>
+</a>
+{% else %}
+<a href="https://instagram.com/wefoundarobot">
+<footer class="at-next insta-grad ">
+	<div class="at-footer-title">
+		<div class="at-next-copy">No hay más posts</div>
+		<h4 class="h1">Visita nuestro Instagram</h4>
 	</div>
 </footer>
 </a>

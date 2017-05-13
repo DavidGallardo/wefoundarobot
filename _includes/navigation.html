@@ -1,6 +1,6 @@
 <nav class="main-nav">
 	<div class="list-wrapper">
-		<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show">Menu</span><span id="close">Close</span></div>
+		<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show"><img src='{{ "images/ui/menu-icon.svg" | prepend:site.baseurl }}' alt="menu icon" data-no-retina></span><span id="close"><img src='{{ "images/ui/menu-icon-close.svg" | prepend:site.baseurl }}' alt="menu icon close" data-no-retina></span></div>
 		<ul class="closed">
 			{% if page.backbutton %}
 			<li class="arrow"><a href="{{ site.url }}/#{{ page.number }}"><img src='{{ "images/ui/arrow-white-left.svg" | prepend:site.baseurl }}' alt="pointing arrow" data-no-retina></a></li>

@@ -2,7 +2,7 @@
 .at-content {
 	width: 100%;
 	position: relative;
-	padding: 0rem 1rem;
+	// padding: 0rem 1rem;
 	height: auto;
 	min-height: 200px;
 	margin: 0 auto;
@@ -11,10 +11,11 @@
 
 	//MEDIA QUERY
 	@include media($m) {
-		padding: 1rem 0;
+		padding: 1rem 0 0 0 ;
 	}
 	@include media($l) {
 		padding: 2rem 0 0 0;
+		margin-bottom: 250px;
 	}
 	.at-date-block {
 		width: 100%;
@@ -36,7 +37,7 @@
 		display: block;
 		position: relative;
 		margin: 0 auto;
-		padding: 0 0 3rem 0;
+		padding: 0 1rem 3rem 1rem;
 
 		//MEDIA QUERY
 		@include media($m) {
@@ -148,8 +149,8 @@
 	}
 }
 .slick-slide {
-	max-width: 320px;
-	padding: 0 1rem;
+	max-width: 300px;
+	padding: 0 .4rem;
 	cursor: pointer;
 
 	//MEDIA QUERY
@@ -176,16 +177,37 @@ footer.at-next {
 	background: $dark-grey;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 3rem;
-	height: auto;
-	min-height: 0;
+	height: 250px;
+	min-height: 250px;
+	position: relative;
 	transition: all .3s;
+
+	//MEDIA QUERY
+	@include media($l) {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		z-index: -1;
+	}
 
 	&:hover {
 		color: white;
 		transition: all .3s;
 	}
 
+	.at-footer-title{
+		width: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: left;
+		//MEDIA QUERY
+		@include media($m) {
+			width: 80%;
+			text-align: center;
+		}
+	}
 	.at-next-copy {
 		display: block;
 		@include rubik(500, 1rem);
@@ -193,9 +215,22 @@ footer.at-next {
 		opacity: .7;
 		color: white;
 	}
-	.h1:after{
-		height:60px;
-		bottom: -80px;
+
+	.h1{
+		@include rubik(700, 1.8rem);
+		line-height: 1;
+		margin: 1rem 0;
+		color: white;
+
+		//MEDIA QUERY
+		@include media($m) {
+			@include rubik(700, 2.75rem);
+			min-height: 70px;
+			color: white;
+		}
+		&:after{
+			display: none;
+		}
 	}
 }
 // –––––––––––––– Specific gradients
@@ -218,5 +253,14 @@ footer.green-grad {
 
 	&:hover {
 		background-color: $green;
+	}
+}
+
+footer.insta-grad {
+	background: $dark-grey url('../images/ui/grey-pix.png');
+
+	&:hover {
+		background: $dark-grey url('../images/ui/instagradient.png') no-repeat center center;
+		background-size: 100%;
 	}
 }

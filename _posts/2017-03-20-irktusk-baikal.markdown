@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "04"
 title:  "El Gran Baikal"
 author: "BB8"

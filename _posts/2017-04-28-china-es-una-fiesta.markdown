@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "06"
 title:  "China es una fiesta"
 author: "BB8"

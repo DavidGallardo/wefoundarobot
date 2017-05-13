@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "05"
 title:  "Mongòlia, al ritme <br> de la terra."
 author: "Airí & David"

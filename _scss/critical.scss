@@ -41,6 +41,9 @@ ul, ol, figure {
 		@include no-space
 	}
 }
+a{
+	text-decoration: none;
+}
 a:visited{
 	color: inherit;
 }
@@ -61,7 +64,7 @@ a:visited{
 	max-height: 900px;
 	position: relative;
 	background: white;
-	padding-bottom: 6rem;
+	padding-bottom: 5rem;
 	color: white;
 
 	//MEDIA QUERY
@@ -102,7 +105,7 @@ a:visited{
 			@include rubik(700, 1.8rem);
 			color: $black-8;
 			margin: 0;
-			margin-top: 4rem;
+			margin-top: 5rem;
 			margin-left: -2px;
 			line-height: 1;
 
@@ -169,7 +172,7 @@ a:visited{
 				display: block;
 				background: $yellow url("../images/header/01.jpg") center center no-repeat;
 				background-size: cover;
-				left: 25%;
+				left: 26%;
 				top: 0;
 
 				//MEDIA QUERY
@@ -178,7 +181,7 @@ a:visited{
 					top: 0;
 				}
 				@include media($l) {
-					left: 28%;
+					left: 30%;
 					top: 0;
 				}
 			}
@@ -272,6 +275,17 @@ a:visited{
 		text-align: center;
 	}
 	//
+	figure{
+		position: relative;
+		width: 100%;
+		max-width: 470px;
+		margin: 0;
+
+		//MEDIA QUERY
+		@include media($l) {
+			margin: 0 auto;
+		}
+	}
 	img {
 		width: 100%;
 		box-shadow: $shadow;
@@ -331,7 +345,7 @@ a:visited{
 		@include border-box;
 	}
 	@include media($l) {
-		padding: 0;
+		padding: 0 2rem;
 	}
 	.header-gradient {
 		width: 100%;
@@ -398,7 +412,7 @@ a:visited{
 	position: relative;
 	text-align: left;
 	margin: 0 auto;
-	padding: 50px 1rem 0 1rem;
+	padding: 4rem 1rem 0 1rem;
 
 	//MEDIA QUERY
 	@include media($m) {
@@ -440,8 +454,12 @@ a:visited{
 	}
 }
 .at-back-mbl {
-	padding: 0 0 1rem 0;
+	padding: 0;
 	@include rubik(400, .9rem);
+	color: $blue;
+	&:focus, &:visited{
+		color: $blue;
+	}
 	&:hover::before{
 		display: none;
 	}

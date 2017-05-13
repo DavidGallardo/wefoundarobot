@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "03"
 title:  "Vivir y Sobrevivir"
 author: "Airí & David"

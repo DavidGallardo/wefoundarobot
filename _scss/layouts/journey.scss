@@ -244,6 +244,14 @@ p.hp-excerpt {
 }
 // --------------------------------------
 
+#home-posts{
+	//MEDIA QUERY
+		@include media($l) {
+			margin-bottom: 102px;
+			z-index: 2;
+		}
+}
+
 footer.love {
 	width: 100%;
 	max-width: 1200px;
@@ -263,6 +271,13 @@ footer.love {
 			color: $pink;
 		}
 	}
+	//MEDIA QUERY
+		@include media($l) {
+			position: fixed;
+			bottom: 0;
+			z-index: -2;
+		}
+
 }
 // --------------------------------------
 

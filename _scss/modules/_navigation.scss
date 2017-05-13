@@ -37,7 +37,7 @@ nav.main-nav{
 	.logo{
 		position: absolute;
 		left: 1rem;
-		top: 2rem;
+		top: 1.2rem;
 		transition: all .3s;
 		//MEDIA QUERY
 		@include media($m) {
@@ -73,7 +73,7 @@ nav.main-nav{
 	.nav-trigger{
 		@include rubik(500,1rem);
 		color: $grey;
-		padding: 3.1rem 0 0 0;
+		padding: 2rem 0 0 0;
 		display: block;
 		text-align: right;
 
@@ -102,6 +102,7 @@ nav.main-nav{
 		padding: 2rem 0;
 		display: none;
 		border-bottom: 1px solid $dividers;
+		@include border-box;
 		//MEDIA QUERY
 		@include media($m) {
 			width: 100%;

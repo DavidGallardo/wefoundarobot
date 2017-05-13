@@ -3,6 +3,9 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var concat      = require('gulp-concat');  
+var rename      = require('gulp-rename');  
+var uglify      = require('gulp-uglify'); 
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {

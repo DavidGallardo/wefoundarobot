@@ -1,7 +1,7 @@
 ---
 layout: post
 backbutton: true
-share: false
+share: true
 number: "02"
 title:  "Cruzando Siberia. Parando el tiempo."
 author: "Airí & David"
