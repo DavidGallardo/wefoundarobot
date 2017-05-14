@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var order        = require("gulp-order");
 var concat      = require('gulp-concat');  
 var rename      = require('gulp-rename');  
 var uglify      = require('gulp-uglify'); 
@@ -44,7 +45,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['critical', 'sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['critical', 'sass', 'js', 'jekyll-build'], function() {
     browserSync({
         /** Static Version **/
         server: {
@@ -54,6 +55,19 @@ gulp.task('browser-sync', ['critical', 'sass', 'jekyll-build'], function() {
     });
 });
 
+// Minify & Concat JS
+gulp.task('js', function() {
+   gulp.src('./js/**/*.js') 
+        .pipe(order([
+            "retina.js",
+            "skrollr.js",
+            "main.js"
+        ]))
+       .pipe(concat('main.min.js'))
+       .pipe(uglify())
+       .pipe(gulp.dest('./js/min'));
+
+});
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -79,6 +93,7 @@ gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass']);
     gulp.watch('_scss/critical.scss', ['critical', 'jekyll-rebuild']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_pages/*', 'js/*.js'], ['jekyll-rebuild']);
+    gulp.watch('./js/**/*.js', ['jekyll-rebuild']);
 });
 
 /**

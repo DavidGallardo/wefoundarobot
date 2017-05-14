@@ -108,7 +108,7 @@ La verdad es que no. China es como **una gran fiesta** celebrada en un parque co
 </figure>
 {:/}
 
-Y de repente, te encuentras en medio de ella, haciendo la conga con los brazos alzados y doblados a la altura del pecho, moviéndolos hacia de fuera y hacia dentro mientras, sin que te caiga ni un tornillo, intentas balancear tu peso con la cadera... de izquierda a derecha, izquierda, derecha, izquierda, derecha, izquierda...
+Y de repente, te encuentras en medio de ella, haciendo la conga con los brazos alzados y doblados a la altura del pecho, moviéndolos hacia fuera y hacia dentro mientras, sin que te caiga ni un tornillo, intentas balancear tu peso con la cadera... de izquierda a derecha, izquierda, derecha, izquierda, derecha, izquierda...
 
 Os lo he dicho, ¡esto es una *fieeeshta*!
 

@@ -8,5 +8,3 @@ gems: [jekyll-paginate]
 url: http://wefoundarobot.com
 # url: http://localhost:3000
 baseurl: /
-# paginate: 3
-# paginate_path: "_pages/journey/page:num/"
