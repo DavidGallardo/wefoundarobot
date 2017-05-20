@@ -3,7 +3,7 @@ layout: post
 backbutton: true
 share: true
 number: "07"
-title:  "La Xina (mig)rural i el (no)Tibet"
+title:  "La Xina mig rural i el no Tibet"
 author: "Airí&David"
 categories: china
 gradient: "green-grad"
@@ -12,6 +12,31 @@ home-image-title: Zhongguo
 post-image-path: images/journey/07/header.jpg
 post-image-title: Zhongguo
 excerpt: "Després de buscar-te per Beijing, Xi'an i Shanghai hem seguit el nostre camí fugint de les ciutats d'acer i formigó, impacients i decorades amb la llum dels neons, dels rius de noies amb para-sol i sabates llampants..."
+gallery: 
+  - images/journey/07/gallery/gal-1.jpg
+  - images/journey/07/gallery/gal-2.jpg
+  - images/journey/07/gallery/gal-3.jpg
+  - images/journey/07/gallery/gal-4.jpg
+  - images/journey/07/gallery/gal-5.jpg
+  - images/journey/07/gallery/gal-6.jpg
+  - images/journey/07/gallery/gal-7.jpg
+  - images/journey/07/gallery/gal-8.jpg
+  - images/journey/07/gallery/gal-9.jpg
+  - images/journey/07/gallery/gal-10.jpg
+  - images/journey/07/gallery/gal-11.jpg
+  - images/journey/07/gallery/gal-12.jpg
+  - images/journey/07/gallery/gal-13.jpg
+  - images/journey/07/gallery/gal-14.jpg
+  - images/journey/07/gallery/gal-15.jpg
+  - images/journey/07/gallery/gal-16.jpg
+  - images/journey/07/gallery/gal-17.jpg
+  - images/journey/07/gallery/gal-18.jpg
+  - images/journey/07/gallery/gal-19.jpg
+  - images/journey/07/gallery/gal-20.jpg
+  - images/journey/07/gallery/gal-21.jpg
+  - images/journey/07/gallery/gal-22.jpg
+  - images/journey/07/gallery/gal-23.jpg
+  - images/journey/07/gallery/gal-24.jpg
 ---
 
 
