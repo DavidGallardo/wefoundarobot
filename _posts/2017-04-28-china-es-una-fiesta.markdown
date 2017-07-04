@@ -6,7 +6,7 @@ number: "06"
 title:  "China es una fiesta"
 author: "BB8"
 categories: china
-gradient: "green-grad"
+gradient: red
 home-image-path: images/journey/06/homepage.jpg
 home-image-title: Zhongguo
 post-image-path: images/journey/06/header.jpg

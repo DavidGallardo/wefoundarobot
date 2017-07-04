@@ -6,7 +6,7 @@ number: "05"
 title:  "Mongòlia, al ritme <br> de la terra."
 author: "Airí & David"
 categories: mongolia
-gradient: "brown-grad"
+gradient: brown
 home-image-path: images/journey/05/homepage.jpg
 home-image-title: Neva helado
 post-image-path: images/journey/05/header.jpg

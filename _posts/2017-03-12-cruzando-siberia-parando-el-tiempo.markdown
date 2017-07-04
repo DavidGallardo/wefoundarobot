@@ -6,7 +6,7 @@ number: "02"
 title:  "Cruzando Siberia. Parando el tiempo."
 author: "Airí & David"
 categories: russia, transiberian 
-gradient: blue-grad
+gradient: blue
 home-image-path: images/journey/02/02-homepage.jpg
 home-image-title: Transiberiano
 post-image-path: images/journey/02/02-header.jpg

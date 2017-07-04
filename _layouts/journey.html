@@ -12,7 +12,8 @@
     <h1>Looking for a robot while discovering an extraordinary planet </h1>
   </div>
 </header>
-<section class="home-post-section" id="home-posts">
+<main id="home-posts">
+<section class="home-post-section" >
   <ul class="home-post-list">
     {% for post in site.posts %}
       <li class="home-post" id="{{ post.number }}">
@@ -40,6 +41,8 @@
     {% endfor %}
   </ul>
 </section>
+{% include stats.html %}
+</main>
 <footer class="love">
   <div class="footer-wrapper">
     Designed + Coded + Written with <span>❤︎</span> in-between <a href="https://goo.gl/maps/vrCniQhZEUu" target="_blank">Barcelona</a> & <a href="https://goo.gl/maps/iGbDXX5pcJz" target="_blank">Auckland</a>

@@ -8,3 +8,4 @@ gems: [jekyll-paginate]
 url: http://wefoundarobot.com
 # url: http://localhost:3000
 baseurl: /
+incremental: true

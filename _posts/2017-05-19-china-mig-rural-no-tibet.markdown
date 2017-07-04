@@ -6,7 +6,7 @@ number: "07"
 title:  "La Xina mig rural i el no Tibet"
 author: "Airí&David"
 categories: china
-gradient: "green-grad"
+gradient: red
 home-image-path: images/journey/07/homepage.jpg
 home-image-title: Zhongguo
 post-image-path: images/journey/07/header.jpg

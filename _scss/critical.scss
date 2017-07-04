@@ -261,6 +261,10 @@ a:visited{
 	@include media($l) {
 		padding: 6rem 0;
 	}
+	&:last-child{
+		margin-bottom: 2rem;
+		border-bottom: none;
+	}
 }
 .hp-image {
 	@include out-container;
@@ -518,12 +522,28 @@ a:visited{
 		background-image: $blue-gradient;
 	}
 }
+.dark-blue-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $dark-blue-gradient;
+	}
+}
 .brown-grad {
 	background-image: none;
 
 	//MEDIA QUERY
 	@include media($m) {
 		background-image: $brown-gradient;
+	}
+}
+.red-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $red-gradient;
 	}
 }
 .green-grad {

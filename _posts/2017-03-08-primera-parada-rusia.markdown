@@ -6,7 +6,7 @@ number: "01"
 title:  "Primera Parada: Rusia."
 author: "BB-8"
 categories: russia 
-gradient: blue-grad
+gradient: blue
 home-image-path: images/journey/01/01-homepage.jpg
 home-image-title: Neva helado
 post-image-path: images/journey/01/01-header.jpg

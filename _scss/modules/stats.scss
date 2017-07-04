@@ -1,0 +1,80 @@
+// --------------------------------------
+
+.hp-statistics {
+	width: 100%;
+	height: auto;
+	box-shadow: inset 0px 0px 0 $dividers;
+}
+.stat-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	@include clearfix;
+	box-shadow: inset 1px 0px 0 $dividers, 0px -1px 0 $dividers;
+}
+.stat{
+	width: 100%;
+	min-height: 200px;
+	float: left;
+	position: relative;
+	box-shadow: inset -1px -1px 0 $dividers;
+	@include border-box;
+	padding: 1.5rem;
+	@include media($m) {
+		min-height: 300px;
+	}
+	&:hover{
+		background:#FDFDFD;
+	}
+}
+.stat-25 {
+	width: 50%;
+	@include media($m) {
+		width: 25%;
+	}
+}
+.stat-50 {
+	@include media($m) {
+		width: 50%;
+	}
+}
+.stat-100 {
+	width: 100%;
+}
+.stat-label{
+	@include rubik(500,.8rem);
+	color: $grey;
+	margin-bottom: .5rem;
+	@include media($m) {
+		@include rubik(100,1rem);
+	}
+}
+.stat-data{
+	@include rubik(100,1.2rem);	
+	margin-bottom: 1.5rem;
+	@include media($m) {
+		@include rubik(100,1.4rem);
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.temp{
+	width: 150px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+	@include rubik(100,1.5rem);
+	@include media($m) {
+		@include rubik(100,2rem);
+	}
+}
+.low-temp{
+	color: $blue;
+}
+.high-temp{
+	color: $red;
+}
+

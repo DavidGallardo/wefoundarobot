@@ -46,7 +46,7 @@
 		@include media($l) {
 			padding: 0 0 3rem 0;
 		}
-		h1, h2, h3, h4, h5, h6, p, ul {
+		h1, h2, h3, h4, h5, h6, p, ul, hr {
 			width: 100%;
 			margin-left: 0;
 
@@ -81,7 +81,6 @@
 #at-mobile {
 	display: block;
 }
-
 
 .sharing-block {
 	width: 100%;
@@ -241,11 +240,25 @@ footer.blue-grad {
 		background-color: $blue;
 	}
 }
+footer.dark-blue-grad {
+	background: $dark-grey;
+
+	&:hover {
+		background-color: $dark-blue;
+	}
+}
 footer.brown-grad {
 	background: $dark-grey;
 
 	&:hover {
 		background-color: $brown;
+	}
+}
+footer.red-grad {
+	background: $dark-grey;
+
+	&:hover {
+		background-color: $red;
 	}
 }
 footer.green-grad {

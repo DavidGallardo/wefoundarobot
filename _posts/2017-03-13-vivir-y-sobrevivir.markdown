@@ -6,7 +6,7 @@ number: "03"
 title:  "Vivir y Sobrevivir"
 author: "Airí & David"
 categories: russia, transiberià, ekaterinburg, novosibirsk, tuimén 
-gradient: blue-grad
+gradient: blue
 home-image-path: images/journey/03/03-homepage.jpg
 home-image-title: Transiberiano
 post-image-path: images/journey/03/03-header.jpg

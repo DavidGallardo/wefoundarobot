@@ -27,24 +27,27 @@ $grey: $black-7;
 $light-grey: #F8FAFD;
 $dark-grey: #3A3F41;
 
-$yellow: #FFED5A;
-$red: #E34C41;
+$yellow: #FFE04A;
+$red: #F55D50;
 $green: #5FDA84;
 $blue: #576FF3;
+$dark-blue: #073288;
 $pink: #EDC4F7;
 $brown: #E0A27B;
 
-$blue-gradient: linear-gradient(-225deg, #4E5FEE 0%, #6C92FE 100%);
+$blue-gradient: linear-gradient(-225deg, #6372F0 0%, #6C92FE 100%);
+$dark-blue-gradient: linear-gradient(-225deg, #073288 0%, #5580D7 100%);
 $brown-gradient: linear-gradient(-225deg, #C79362 0%, #E0A27B 100%);
+$red-gradient: linear-gradient(-225deg, #F55D50 0%, #D33838 100%);
 $green-gradient: linear-gradient(-225deg, #5FDA84 0%, #38D367 100%);
-
+$yellow-gradient: linear-gradient(-225deg, #FFE04A 0%, #EFC325 100%);
 
 
 // Variables
 $base-typography: 20px;
 $max-width: 1200px;
 $radius: 4px;
-$shadow: 0 10px 40px rgba(0,0,0,.1);
+$shadow: 0 10px 50px rgba(0,0,0,.10);
 
 
 //layout

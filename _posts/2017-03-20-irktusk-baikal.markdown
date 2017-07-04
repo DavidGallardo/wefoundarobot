@@ -6,7 +6,7 @@ number: "04"
 title:  "El Gran Baikal"
 author: "BB8"
 categories: russia, transiberià, irkutsk, baikal 
-gradient: blue-grad
+gradient: blue
 home-image-path: images/journey/04/04-homepage.jpg
 home-image-title: Lago Baikal
 post-image-path: images/journey/04/04-header.jpg
