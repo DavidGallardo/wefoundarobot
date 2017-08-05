@@ -4,8 +4,8 @@ permalink: /journey/:title/
 highlighter: rouge
 include: ["_pages"]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 url: http://wefoundarobot.com
 # url: http://localhost:3000
 baseurl: /
-incremental: true
+# incremental: true
