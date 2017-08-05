@@ -21,7 +21,7 @@
           <div class="hp-image">
             <div class="hp-image-wrap" data-bottom-top="top: 60px;" data-top-bottom="top:-20px;">
               <a href="{{ post.url }}"><figure>
-                <img class="lazy" src="{{ post.home-image-path | prepend:site.baseurl }}" alt="{{ post.home-image-title}}" />
+                <img class="lazy" src="/{{ post.home-image-path }}" alt="{{ post.home-image-title}}" />
                 <div class="hp-date" data-bottom-top="bottom: -40px;" data-top-bottom="bottom:-10px;">
                   <div class="hp-day">{{ post.date | date: "%d"}}</div>
                   <div class="hp-month">{{ post.date | date: "%b"}}</div>

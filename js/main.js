@@ -59,6 +59,9 @@ $("#nav-trigger span").click(function(){
 	        scrollTop: $("#at-content").offset().top -100
 	    }, 800);
 	});
+  $(window).bind("mousewheel", function() {
+     $("html, body").stop();
+  });
 
 // ///////////////////////////////////////////////////////////////
 
