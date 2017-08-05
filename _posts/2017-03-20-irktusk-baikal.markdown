@@ -25,7 +25,7 @@ Hora de llegada a la ciudad: 09.30h del día 16 de Marzo de 2017. Temperatura: -
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-1.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-1.jpg'>
 </figure>
 {:/}
 
@@ -37,7 +37,7 @@ Me bajo del bus donde se supone que voy a dormir esta noche. Miro hacia la izqui
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-2.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-2.jpg'>
 </figure>
 {:/}
 
@@ -51,7 +51,7 @@ No he tenido tanta suerte con la segunda: una pseudofoca rechonchona, gris, con 
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-3.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-3.jpg'>
 </figure>
 {:/}
 
@@ -63,7 +63,7 @@ Uno de los medios de transporte más comunes en la zona son los **trineos**. Aqu
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-4.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-4.jpg'>
 </figure>
 {:/}
 
@@ -73,7 +73,7 @@ Me vuelvo a **Irkutsk**, una ciudad cercana a la zona del Baikal que combina cas
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-5.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-5.jpg'>
 </figure>
 {:/}
 
@@ -96,7 +96,7 @@ Pero... espera un momento. Ellos llevan algo que yo debo haber olvidado: **¡un 
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-6.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-6.jpg'>
 </figure>
 {:/}
 
@@ -108,7 +108,7 @@ Después de un traslado de 4h dando tumbos y saltitos dentro de la furgoneta lle
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-7.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-7.jpg'>
 </figure>
 {:/}
 
@@ -124,7 +124,7 @@ Empiezo a pensar que hay algunos humanos que viven en un mundo paralelo el cuál
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-8.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-8.jpg'>
 </figure>
 {:/}
 
@@ -136,7 +136,7 @@ En medio de la blanca y fría inmensidad, de repente, aparecen dos siluetas que 
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/04/04-post-9.jpg" | prepend:site.baseurl }}'>
+  <img  class="lazy" src='/images/journey/04/04-post-9.jpg'>
 </figure>
 {:/}
 

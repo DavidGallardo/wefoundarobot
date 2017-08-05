@@ -31,7 +31,7 @@ Perquè vegis, et copiem aquí una crònica de la teva cerca per les muntanyes d
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-1.jpg" | prepend:site.baseurl }}' alt="Airí climbing at night">
+  <img  class="lazy" src='/{{ "images/journey/08/post-1.jpg" | prepend:site.baseurl }}' alt="Airí climbing at night">
 </figure>
 {:/}
 
@@ -39,7 +39,7 @@ Perquè vegis, et copiem aquí una crònica de la teva cerca per les muntanyes d
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-2.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
+  <img  class="lazy" src='/{{ "images/journey/08/post-2.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
 </figure>
 {:/}
 
@@ -49,7 +49,7 @@ Perquè vegis, et copiem aquí una crònica de la teva cerca per les muntanyes d
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-3.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
+  <img  class="lazy" src='/{{ "images/journey/08/post-3.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
 </figure>
 {:/}
 
@@ -63,7 +63,7 @@ Un pas més, va. Un sospir. Espera, un altre. Ara el peu dret. Aixequem la mirad
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-4.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
+  <img  class="lazy" src='/{{ "images/journey/08/post-4.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
 </figure>
 {:/}
 
@@ -73,7 +73,7 @@ A la nostra esquerra, s'alça imponent el pic del Pumori (7.161m), al seu costat
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-5.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
+  <img  class="lazy" src='/{{ "images/journey/08/post-5.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
 </figure>
 {:/}
 
@@ -85,13 +85,13 @@ Mentrestant, recordarem feliçment tot allò que hem après del Nepal, els *Nepa
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-6.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
+  <img  class="lazy" src='/{{ "images/journey/08/post-6.jpg" | prepend:site.baseurl }}' alt="Gorak Shep">
 </figure>
 {:/}
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/08/post-7.jpg" | prepend:site.baseurl }}' alt="Everest Basecamp">
+  <img  class="lazy" src='/{{ "images/journey/08/post-7.jpg" | prepend:site.baseurl }}' alt="Everest Basecamp">
 </figure>
 {:/}
 

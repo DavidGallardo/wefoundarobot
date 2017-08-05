@@ -39,8 +39,7 @@ Os adjunto aquí los **informes elaborados** para las 2 últimas ciudades que he
   
 {::nomarkdown type='html'}
 <figure>
-	<img  class="lazy" src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}'>
-  <!-- <img class="lazy" data-src='{{ "images/journey/01/01-post-1.jpg" | prepend:site.baseurl }}' data-src-retina='{{ "images/journey/01/01-post-1@2x.jpg" | prepend:site.baseurl }}' src='{{ "images/ui/placeholder.jpg" | prepend:site.baseurl }}' alt="Saint Petersburg" />  -->
+	<img  class="lazy" src='/images/journey/01/01-post-1.jpg'>
 </figure>
 {:/}
   
@@ -62,7 +61,7 @@ La mujer se pone a reír descontroladamente. Empiezo a detectar un comportamient
 
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-2.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-2.jpg'>
 </figure>
 {:/}
     
@@ -70,7 +69,7 @@ Después de este incidente medio patoso pero exitoso me dispongo a visitar los p
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-3.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-3.jpg'>
 </figure>
 {:/}   
   
@@ -80,7 +79,7 @@ La ciudad está **llena de coches y puentes** (La Venecia del Norte, dice Wikipe
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-4.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-4.jpg'>
 </figure>
 {:/}    
   
@@ -90,7 +89,7 @@ Mientras me despido de la ciudad, de camino al *hostel* donde pasaré la última
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-5.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-5.jpg'>
 </figure>
 {:/} 
   
@@ -106,7 +105,7 @@ Resultado del incidente: cuatro rasguños, una pequeña abolladura y un importan
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-6.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-6.jpg'>
 </figure>
 {:/}  
   
@@ -116,7 +115,7 @@ Desde allí, mi GPS me dirige hacia el Kremlin (el punto importante que comentab
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-7.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-7.jpg'>
 </figure>
 {:/}  
   
@@ -125,7 +124,7 @@ A mitad de camino, entre el edificio de colores y yo, un grupo de humanos catego
  
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-8.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-8.jpg'>
 </figure>
 {:/}   
   
@@ -135,7 +134,7 @@ Una vez resuelto el enigma, me quedo a dar una vuelta por aquí. El silencio y l
   
 {::nomarkdown type='html'}
 <figure>
-	<img class="lazy" src='{{ "images/journey/01/01-post-9.jpg" | prepend:site.baseurl }}'>
+	<img class="lazy" src='/images/journey/01/01-post-9.jpg'>
 </figure>
 {:/}   
   

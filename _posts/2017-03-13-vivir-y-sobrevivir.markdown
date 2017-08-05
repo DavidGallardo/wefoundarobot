@@ -37,7 +37,7 @@ La diferencia con San Petersburgo y Moscú es descarada. Aquí la mayoría de ge
 
 {::nomarkdown type='html'}
 <figure>
-  <img class="lazy" src='{{ "images/journey/03/03-post-1.jpg" | prepend:site.baseurl }}'>
+  <img class="lazy" src='/images/journey/03/03-post-1.jpg'>
 </figure>
 {:/}   
 
@@ -47,7 +47,7 @@ La diferencia con San Petersburgo y Moscú es descarada. Aquí la mayoría de ge
 
 {::nomarkdown type='html'}
 <figure>
-  <img class="lazy" src='{{ "images/journey/03/03-post-2.jpg" | prepend:site.baseurl }}'>
+  <img class="lazy" src='/images/journey/03/03-post-2.jpg'>
 </figure>
 {:/}   
 

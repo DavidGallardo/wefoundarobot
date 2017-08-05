@@ -51,7 +51,7 @@ Després d'haver creuat quilòmetres infinits de prats verds, petits boscos d'ar
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-1.jpg" | prepend:site.baseurl }}' alt="Yangshuo">
+  <img  class="lazy" src='/{{ "images/journey/07/post-1.jpg" | prepend:site.baseurl }}' alt="Yangshuo">
 </figure>
 {:/}
 
@@ -61,7 +61,7 @@ Seguim volent esborrar del mapa milers d'edificis enfilats i opacs, apilonats, q
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-2.jpg" | prepend:site.baseurl }}' alt="Edificis">
+  <img  class="lazy" src='/{{ "images/journey/07/post-2.jpg" | prepend:site.baseurl }}' alt="Edificis">
 </figure>
 {:/}
 
@@ -71,7 +71,7 @@ I seguim amb unes ganes boges de conèixer a aquella senyora de pell fosca, galt
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-3.jpg" | prepend:site.baseurl }}' alt="Camps de Conreu Xinesos">
+  <img  class="lazy" src='/{{ "images/journey/07/post-3.jpg" | prepend:site.baseurl }}' alt="Camps de Conreu Xinesos">
 </figure>
 {:/}
 
@@ -81,7 +81,7 @@ Probablement aquesta senyora tingui un marit que es passarà la tarda jugant a c
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-4.jpg" | prepend:site.baseurl }}' alt="Dali, Yunnan">
+  <img  class="lazy" src='/{{ "images/journey/07/post-4.jpg" | prepend:site.baseurl }}' alt="Dali, Yunnan">
 </figure>
 {:/}
 
@@ -91,7 +91,7 @@ Probablement aquest noi tingui una xicota que als matins treballa a una botiga d
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-5.jpg" | prepend:site.baseurl }}' alt="Carrers de Lijiang">
+  <img  class="lazy" src='/{{ "images/journey/07/post-5.jpg" | prepend:site.baseurl }}' alt="Carrers de Lijiang">
 </figure>
 {:/}
 
@@ -101,7 +101,7 @@ Probablement aquesta senyora visqui anys i panys... múrria, cofoia, entre cols 
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-6.jpg" | prepend:site.baseurl }}' alt="Shangri-la">
+  <img  class="lazy" src='/{{ "images/journey/07/post-6.jpg" | prepend:site.baseurl }}' alt="Shangri-la">
 </figure>
 {:/}
 
@@ -109,7 +109,7 @@ Ens acomiadem ja des de l'aeroport de Chengdu contents d'haver conegut la tendre
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/07/post-7.jpg" | prepend:site.baseurl }}' alt="Pandas">
+  <img  class="lazy" src='/{{ "images/journey/07/post-7.jpg" | prepend:site.baseurl }}' alt="Pandas">
 </figure>
 {:/}
 

@@ -56,7 +56,7 @@ Un país on la terra és de tots i de ningú, on viuen la meitat de les famílie
 
 {::nomarkdown type='html'}
 <figure>
-	<img  class="lazy" src='{{ "images/journey/05/post-1.jpg" | prepend:site.baseurl }}' alt="Mongolian Ger">
+	<img  class="lazy" src='/images/journey/05/post-1.jpg' alt="Mongolian Ger">
 </figure>
 {:/}
 
@@ -64,7 +64,7 @@ Un país amb carreteres invisibles trotades per cavalls, camells, cabres, yaks, 
 
 {::nomarkdown type='html'}
 <figure>
-	<img  class="lazy" src='{{ "images/journey/05/post-2.jpg" | prepend:site.baseurl }}' alt="Step with animals">
+	<img  class="lazy" src='/{{ "images/journey/05/post-2.jpg" | prepend:site.baseurl }}' alt="Step with animals">
 </figure>
 {:/}
 
@@ -74,7 +74,7 @@ Hem conegut famílies entranyables amb nens de nas xato i galtes rosades que ens
 
 {::nomarkdown type='html'}
 <figure>
-	<img  class="lazy" src='{{ "images/journey/05/post-3.jpg" | prepend:site.baseurl }}' alt="Mongolian kid with a goat">
+	<img  class="lazy" src='/{{ "images/journey/05/post-3.jpg" | prepend:site.baseurl }}' alt="Mongolian kid with a goat">
 </figure>
 {:/}
 
@@ -84,7 +84,7 @@ Hem compartit viatge amb 4 personetes tafaneres com nosaltres i un súperheroi: 
 
 {::nomarkdown type='html'}
 <figure>
-	<img  class="lazy" src='{{ "images/journey/05/post-4.jpg" | prepend:site.baseurl }}' alt="van stuck in the mud">
+	<img  class="lazy" src='/{{ "images/journey/05/post-4.jpg" | prepend:site.baseurl }}' alt="van stuck in the mud">
 </figure>
 {:/}
 

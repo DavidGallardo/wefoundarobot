@@ -39,7 +39,7 @@ Aparecí hace unos días por primera vez en **Pekín**, lo que parece ser un pun
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-1.jpg" | prepend:site.baseurl }}' alt="Beijing">
+  <img  class="lazy" src='/{{ "images/journey/06/post-1.jpg" | prepend:site.baseurl }}' alt="Beijing">
 </figure>
 {:/}
 
@@ -51,7 +51,7 @@ Aún y así, los Chinos no tienen ningún reparo en **vivir en la calle**. Al co
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-2.jpg" | prepend:site.baseurl }}' alt="Xi'an muslim quarter">
+  <img  class="lazy" src='/{{ "images/journey/06/post-2.jpg" | prepend:site.baseurl }}' alt="Xi'an muslim quarter">
 </figure>
 {:/}
 
@@ -64,7 +64,7 @@ El país dispone de miles de hectáreas llenas de restos arquitectónicos con fe
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-3.jpg" | prepend:site.baseurl }}' alt="Great wall of china">
+  <img  class="lazy" src='/{{ "images/journey/06/post-3.jpg" | prepend:site.baseurl }}' alt="Great wall of china">
 </figure>
 {:/}
 
@@ -74,7 +74,7 @@ Eso sí,  siempre teniendo el ejército preparado. Sino preguntadle al Emperador
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-4.jpg" | prepend:site.baseurl }}' alt="Terracotta warriors">
+  <img  class="lazy" src='/{{ "images/journey/06/post-4.jpg" | prepend:site.baseurl }}' alt="Terracotta warriors">
 </figure>
 {:/}
  
@@ -86,7 +86,7 @@ Probablemente esto tenga algo que ver con un libro que escribió hace muchos muc
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-5.jpg" | prepend:site.baseurl }}' alt="Pagoda">
+  <img  class="lazy" src='/{{ "images/journey/06/post-5.jpg" | prepend:site.baseurl }}' alt="Pagoda">
 </figure>
 {:/}
 
@@ -96,7 +96,7 @@ Por cierto, allí he tenido algún momento de *déja-vu*... **trenes voladores**
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-6.jpg" | prepend:site.baseurl }}' alt="Shanghai">
+  <img  class="lazy" src='/{{ "images/journey/06/post-6.jpg" | prepend:site.baseurl }}' alt="Shanghai">
 </figure>
 {:/}
 
@@ -104,7 +104,7 @@ La verdad es que no. China es como **una gran fiesta** celebrada en un parque co
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/06/post-7.jpg" | prepend:site.baseurl }}' alt="Chinese women dancing">
+  <img  class="lazy" src='/{{ "images/journey/06/post-7.jpg" | prepend:site.baseurl }}' alt="Chinese women dancing">
 </figure>
 {:/}
 

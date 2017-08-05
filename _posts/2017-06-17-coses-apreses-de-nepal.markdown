@@ -38,7 +38,7 @@ A Nepal hem après que **"Sherpa"** no és l'adjectiu que reben els nois nepales
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-1.jpg" | prepend:site.baseurl }}' alt="Sagarmatha National Park Entry">
+  <img  class="lazy" src='/{{ "images/journey/09/post-1.jpg" | prepend:site.baseurl }}' alt="Sagarmatha National Park Entry">
 </figure>
 {:/}
 
@@ -48,7 +48,7 @@ Hem après que els Sherpas parlen un idioma que no té res a veure amb el Nepal�
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-2.jpg" | prepend:site.baseurl }}' alt="Nens Sherpa">
+  <img  class="lazy" src='/{{ "images/journey/09/post-2.jpg" | prepend:site.baseurl }}' alt="Nens Sherpa">
 </figure>
 {:/}
 
@@ -58,7 +58,7 @@ Hem après també que per arribar a qualsevol poblet Sherpa només pots fer-ho c
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-3.jpg" | prepend:site.baseurl }}' alt="Aeroport de Lukla">
+  <img  class="lazy" src='/{{ "images/journey/09/post-3.jpg" | prepend:site.baseurl }}' alt="Aeroport de Lukla">
 </figure>
 {:/}
 
@@ -70,7 +70,7 @@ Una prova clara i amarga de la corrosió causada per l'**eterna corrupció**. Ac
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-4.jpg" | prepend:site.baseurl }}' alt="Kathmandú">
+  <img  class="lazy" src='/{{ "images/journey/09/post-4.jpg" | prepend:site.baseurl }}' alt="Kathmandú">
 </figure>
 {:/}
 
@@ -82,7 +82,7 @@ Però l'Everest és també un **lloc hostil** on s'enfronten i competeixen agèn
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-5.jpg" | prepend:site.baseurl }}' alt="Scott Fischer tomba">
+  <img  class="lazy" src='/{{ "images/journey/09/post-5.jpg" | prepend:site.baseurl }}' alt="Scott Fischer tomba">
 </figure>
 {:/}
 
@@ -90,7 +90,7 @@ Direcció al Camp Base hem après que gràcies a la falta de carreteres, els She
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-6.jpg" | prepend:site.baseurl }}' alt="Porters">
+  <img  class="lazy" src='/{{ "images/journey/09/post-6.jpg" | prepend:site.baseurl }}' alt="Porters">
 </figure>
 {:/}
 
@@ -100,7 +100,7 @@ Existeix també gent que, després d'haver aconseguit una proesa tant gran com a
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-7.jpg" | prepend:site.baseurl }}' alt="Helicopter Basecamp">
+  <img  class="lazy" src='/{{ "images/journey/09/post-7.jpg" | prepend:site.baseurl }}' alt="Helicopter Basecamp">
 </figure>
 {:/}
 
@@ -108,7 +108,7 @@ Caminant darrera el Dorjee, hem descobert pobles tant bonics com **Surke**, **Kh
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-8.jpg" | prepend:site.baseurl }}' alt="Surke">
+  <img  class="lazy" src='/{{ "images/journey/09/post-8.jpg" | prepend:site.baseurl }}' alt="Surke">
 </figure>
 {:/}
 
@@ -118,7 +118,7 @@ Una altra cosa que hem après és que Nepal és també un punt de trobada de cer
 
 {::nomarkdown type='html'}
 <figure>
-  <img  class="lazy" src='{{ "images/journey/09/post-9.jpg" | prepend:site.baseurl }}' alt="Pokhara">
+  <img  class="lazy" src='/{{ "images/journey/09/post-9.jpg" | prepend:site.baseurl }}' alt="Pokhara">
 </figure>
 {:/}
 
