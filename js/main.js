@@ -60,7 +60,7 @@ $("#nav-trigger span").click(function(){
 	    }, 800);
 	});
   $(window).bind("mousewheel", function() {
-     $("html, body").stop();
+     $("html, body").stop(true, false);;
   });
 
 // ///////////////////////////////////////////////////////////////

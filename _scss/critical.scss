@@ -554,3 +554,12 @@ a:visited{
 		background-image: $green-gradient;
 	}
 }
+
+.yellow-grad {
+	background-image: none;
+
+	//MEDIA QUERY
+	@include media($m) {
+		background-image: $yellow-gradient;
+	}
+}

@@ -31,7 +31,8 @@ gulp.task('critical', function () {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn( jekyll , ['build',
+    '--incremental'], {stdio: 'inherit'})
         .on('close', done);
 });
 
