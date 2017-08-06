@@ -54,10 +54,10 @@ Esta pegajosa e incomodísima situación ha venido acompañada de una descarga d
 {:/}
 
 Fue justo al llegar a Delhi cuando disfruté de mi primer trayecto acuático con uno de estos búfalos y le pregunté:
-> – Escuche joven, soy nuevo aquí, ¿usted sabe a qué se debe esta súbita intrusión de H2O?
+> Escuche joven, soy nuevo aquí, ¿usted sabe a qué se debe esta súbita intrusión de H<sub>2</sub>O?
 
 Y me contesta, junto con una suave inclinación de cabeza hacia la derecha:
-> – India Monzón ahora, amigo. Mejor norte, tu esquivas y allí estar seco.
+> India Monzón ahora, amigo. Mejor norte, tu esquivas y allí estar seco.
 
 Así que yo, androide y obediente, decidí coger un avión e irme al punto más norteño del país para escapar de tanta humedad. 
 
@@ -67,7 +67,7 @@ Así que yo, androide y obediente, decidí coger un avión e irme al punto más 
 </figure>
 {:/}
 
-Perplejo y muy dormido, aterricé un lunes por la mañana en **Kashmir**, en medio de un lago de más de ~~22km2~~ en el que seguía lloviendo y del que no había forma de escapar. Claramente ese búfalo me había engañado y yo seguía en remojo y sin saber quien era ese tal Monzón. Fue allí donde decidí empezar mi cruzada hacia el sur, para averiguarlo, pero a día de hoy aún no he encontrado ninguna pista sustancial. ¿Alguna idea? 
+Perplejo y muy dormido, aterricé un lunes por la mañana en **Kashmir**, en medio de un lago de más de 22km<sup>2</sup> en el que seguía lloviendo y del que no había forma de escapar. Claramente ese búfalo me había engañado y yo seguía en remojo y sin saber quien era ese tal Monzón. Fue allí donde decidí empezar mi cruzada hacia el sur, para averiguarlo, pero a día de hoy aún no he encontrado ninguna pista sustancial. ¿Alguna idea? 
 
 ###  P2. ¿Existe la posibilidad de que este trozo de tierra haya sufrido algún contratiempo en lo que a la evolución de la especie humana se refiere?
 Llevo unos días rebuscando en mis discos duros para encontrar el capítulo de la asignatura sobre *Evolución del ser humano en la Tierra* en la que se hablaba sobre India. 0 resultados encontrados. Empiezo a pensar que se la dejaron por alguna razón que desconozco. 

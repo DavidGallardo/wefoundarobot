@@ -33,7 +33,7 @@ gallery:
 
 Chicos, este país es una mina de investigación terrestre. ¡Caray! Como estoy disfrutando con esta especie humana que habita en la circunscripción planetaria de China. Después de esta incursión necesitaré como mínimo **260h en modo reposo**.  
 
-Aparecí hace unos días por primera vez en **Pekín**, lo que parece ser un punto neurálgico de la Tierra. Hasta donde llegaron mis infrarrojos, pude calcular un perímetro de unos 16.700 Km2 habitados por más 20 millones de personas y 1 millón de turistas.
+Aparecí hace unos días por primera vez en **Pekín**, lo que parece ser un punto neurálgico de la Tierra. Hasta donde llegaron mis infrarrojos, pude calcular un perímetro de unos 16.700 Km<sup>2</sup> habitados por más 20 millones de personas y 1 millón de turistas.
 
 (con la de tierra vacía que había en Mongolia y Rusia...)
 
