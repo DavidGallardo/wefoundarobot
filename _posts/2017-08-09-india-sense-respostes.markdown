@@ -11,7 +11,7 @@ home-image-path: images/journey/11/homepage.jpg
 home-image-title: India
 post-image-path: images/journey/11/header.jpg
 post-image-title: India
-excerpt: "Nosaltres també hem estat a la Índia, de fet, ja hem marxat... i ara mateix ens sembla que seguim sense poder respondre a cap de les preguntes que tenies. De fet, creiem tenir-ne bastantes més!..."
+excerpt: "Perdón por no haber dicho nada hasta ahora. Hace unos días llegué a un trozo de Tierra llamado India y sigo un poco atolondrado, asimilando todo lo que estoy viviendo estos días..."
 gallery: 
   - images/journey/11/gallery/gal-1.jpg
   - images/journey/11/gallery/gal-2.jpg
