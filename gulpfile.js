@@ -1,3 +1,4 @@
+
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
@@ -13,6 +14,7 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+
 /**
  * Compile files from _scss into 
  */
@@ -27,12 +29,25 @@ gulp.task('critical', function () {
 });
 
 /**
+ * Concat & Uglify JS
+ */
+
+gulp.task('js', function(){
+    return gulp.src(['./js/retina.js', './js/skrollr.js', './js/main.js'])
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('./js'))
+        .pipe(rename('main.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js/min'));
+});
+
+
+/**
  * Build the Jekyll Site
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build',
-    '--incremental'], {stdio: 'inherit'})
+    return cp.spawn( jekyll , ['build', '--incremental'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -48,26 +63,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
  */
 gulp.task('browser-sync', ['critical', 'sass', 'js', 'jekyll-build'], function() {
     browserSync({
-        /** Static Version **/
         server: {
-            baseDir: '_site',
+            baseDir: '_site'
         }
-
     });
-});
-
-// Minify & Concat JS
-gulp.task('js', function() {
-   gulp.src('./js/**/*.js') 
-        .pipe(order([
-            "retina.js",
-            "skrollr.js",
-            "main.js"
-        ]))
-       .pipe(concat('main.min.js'))
-       .pipe(uglify())
-       .pipe(gulp.dest('./js/min'));
-
 });
 
 /**
@@ -77,7 +76,6 @@ gulp.task('sass', function () {
     return gulp.src('_scss/main.scss')
         .pipe(sass({
             includePaths: ['scss'],
-            outputStyle: 'compressed',
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -92,9 +90,8 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass']);
-    gulp.watch('_scss/critical.scss', ['critical', 'jekyll-rebuild']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_pages/*', 'js/*.js'], ['jekyll-rebuild']);
-    gulp.watch('./js/**/*.js', ['jekyll-rebuild']);
+    gulp.watch(['_scss/critical.scss'], ['critical', 'jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*', '_pages/**/*', 'js/*.js', '_config.yml'], ['jekyll-rebuild']);
 });
 
 /**
