@@ -28,7 +28,7 @@ Hola chicos!
 
 Siento mucho esto de la libretita robada. Llevo unos meses en la tierra y la verdad es que es la primera vez que oigo a hablar del concepto *robo*. ¿En serio los seres humanos os saqueáis unos a otros? Entonces, ¿qué sentido tiene currar como locos para acumular cosas en *propiedad*(concepto que sigo investigando) si luego os las quitáis entre vosotros?
 
-En fin... ¡ya me contaréis! Yo hace unos días llegué a un lugar llamado Tailandia (traducción en idioma local: *país de gente libre* ¿?¿?) y creo que me voy a quedar por un tiempecito. Aún y así, os escribo para comentaros 3 grandes hallazgos que he hecho en los últimos días:
+En fin... ¡ya me contaréis! Yo hace unos días llegué a un lugar llamado Tailandia (traducción en idioma local: *país de gente libre* ¿?¿?) y creo que me voy a quedar por un tiempecito. Aún y así, os escribo para comentaros **3 grandes hallazgos que he hecho en los últimos días:**
 
 ### 1– El luto. 
 Si buscas en internet las "10 cosas más importantes a visitar en Tailandia", el **Gran Palacio** aparece primero de la lista en las 23.587 primeras entradas de Google. Así que, después de un tratamiento express de refrigeración para recuperarme del achicharro que sufrían mis transistores, lo primero que hice al llegar al país fue visitarlo.
@@ -140,7 +140,7 @@ La verdad es que me pareció un deporte curioso, especialmente por todas las **p
 
 Estuve estudiando con detenimiento la complexión física de esos chicos-ninja y me di cuenta de que ellos están dotados de una **elasticidad en sus músculos gastrocnemios** y sus talones de Aquiles que, según la enciclopedia del cuerpo humano, las personas de etnia europea no tenéis. Y creo que esto se debe principalmente a la gran habilidad que tienen los asiáticos para cagar y descansar sobre sus rodillas sin caer de culo al suelo. Pero esto me lo hago yo.
 
-En fin, que si os apetece cambiar de deporte, probáis, pero no os puedo garantizar inmunidad alguna.   
+En fin, que si os apetece cambiar de deporte, probáis, pero no os puedo garantizar inmunidad alguna. Por cierto, se llama *Sepak takraw*.   
 
 ### 3– El ser humano paga para ver escarabajos pelearse
 Esto me parece algo difícil de explicar con palabras, suerte que pude registrar alguna imagen... Intento describirlo de forma secuencial tal y como lo viví todo:
@@ -185,13 +185,3 @@ No pillé el significado de "trobar a faltar" pero entendí que era algo que me 
 
 Alegremente,
 BB-8.
-
-
-
-    
-
-
-
-  
-
-
