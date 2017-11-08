@@ -13,15 +13,15 @@ post-image-path: images/journey/15/header.jpg
 post-image-title: Tailandia
 excerpt: "Siento mucho esto de la libretita robada. Llevo unos meses en la tierra y la verdad es que es la primera vez que oigo a hablar del concepto robo..." 
 gallery: 
-  - /images/journey/15/gallery/gal-1.jpg
-  - /images/journey/15/gallery/gal-2.jpg
-  - /images/journey/15/gallery/gal-3.jpg
-  - /images/journey/15/gallery/gal-4.jpg
-  - /images/journey/15/gallery/gal-5.jpg
-  - /images/journey/15/gallery/gal-6.jpg
-  - /images/journey/15/gallery/gal-7.jpg
-  - /images/journey/15/gallery/gal-8.jpg
-  - /images/journey/15/gallery/gal-9.jpg
+  - images/journey/15/gallery/gal-1.jpg
+  - images/journey/15/gallery/gal-2.jpg
+  - images/journey/15/gallery/gal-3.jpg
+  - images/journey/15/gallery/gal-4.jpg
+  - images/journey/15/gallery/gal-5.jpg
+  - images/journey/15/gallery/gal-6.jpg
+  - images/journey/15/gallery/gal-7.jpg
+  - images/journey/15/gallery/gal-8.jpg
+  - images/journey/15/gallery/gal-9.jpg
 ---
 
 Hola chicos!
