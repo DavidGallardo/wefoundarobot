@@ -381,6 +381,7 @@ li.all-tips-cta {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
   @include media($l) {
     width: 32%;
