@@ -1,11 +1,5 @@
-# We Found a Robot
+# We Found a Robot 2
 
-www.wefoundarobot.com
+Version 2 of the project
 
 ## Travel-blog-jekyll
-
-Looking for a robot while discovering an extraordinary world // 
-––
-by @david_gallardo & @airiairo 
-
-🤖🌏😎 

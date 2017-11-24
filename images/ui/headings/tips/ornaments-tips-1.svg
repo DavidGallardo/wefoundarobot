@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="428px" height="58px" viewBox="0 0 428 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ornaments-tips-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Practical-Stuff/Desktop" transform="translate(-458.000000, -148.000000)">
+            <g id="Header">
+                <g id="Ornaments" transform="translate(460.000000, 150.000000)">
+                    <g id="ornaments-tips-1">
+                        <polyline id="Path-2" stroke="#FF3F6E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="13 51.658457 13 13 53.1558692 13"></polyline>
+                        <polyline id="Path-2" stroke="#3BE66F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="0 16.3660701 0 0 17 0"></polyline>
+                        <path d="M383,56 L424,56 C425.104569,56 426,55.1045695 426,54 C426,52.8954305 425.104569,52 424,52 L383,52 C381.895431,52 381,52.8954305 381,54 C381,55.1045695 381.895431,56 383,56 Z" id="Path-3" fill="#8EDCF8" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

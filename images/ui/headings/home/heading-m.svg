@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="324px" viewBox="0 0 1024 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Medium Round</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Desktop" transform="translate(0.000000, -564.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Medium-Round" transform="translate(0.000000, 564.000000)">
+                    <path d="M2.27373675e-13,323.035072 L0,0 C398.333186,127.58956 739.666519,144.256227 1024,50 L1024,323.035072 L2.27373675e-13,323.035072 Z" id="Path-5" opacity="0.300000012"></path>
+                    <path d="M0,20 L5.70723621e-14,310 L1024,310 L1024,100.413021 C668.276929,151.982137 326.943595,125.177796 0,20 Z" id="medium"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

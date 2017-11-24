@@ -1,39 +1,38 @@
-{% include head.html %}
-<header class="hp-heading">
+---
+layout: default
+---
+
+<header class="general-header journey-header">
+  <div class="general-svg peaks-svg"></div>
   {% include navigation.html %}
-  <div class="hp-image-block">
-    <div class="image-wrap">
-      <div class="img image-1 animated fadeInUp"></div>
-      <div class="img image-2 animated fadeInUp a-delay-3"></div>
-      <div class="img image-3 animated fadeInUp a-delay-6"></div>
+  <div class="wrap-padding">
+    <div class="general-claim jr-claim animated fadeInDown delay-3">
+      <h1>Síguenos en nuestra aventura por el mundo<div class="before animated fadeInUp delay-5"></div><div class="after animated fadeInUp delay-5"></div></h1>
     </div>
   </div>
-  <div class="hp-claim">
-    <h1>Looking for a robot while discovering an extraordinary planet </h1>
-  </div>
 </header>
-<main id="home-posts">
-<section class="home-post-section" >
+
+<section class="journey-post-section" >
   <ul class="home-post-list">
-    {% for post in site.posts %}
-      <li class="home-post" id="{{ post.number }}">
-        <div class="hp-cell-container">
-          <div class="hp-image">
-            <div class="hp-image-wrap" data-bottom-top="top: 60px;" data-top-bottom="top:-20px;">
-              <a href="{{ post.url }}"><figure>
-                <img class="lazy" src="/{{ post.home-image-path }}" alt="{{ post.home-image-title}}" />
-                <div class="hp-date" data-bottom-top="bottom: -40px;" data-top-bottom="bottom:-10px;">
-                  <div class="hp-day">{{ post.date | date: "%d"}}</div>
-                  <div class="hp-month">{{ post.date | date: "%b"}}</div>
+    {% for post in site.categories.post limit:25 %}
+      <li class="post-item" id="{{ post.number }}" >
+        <div class="post-cell-container">
+          <div class="post-item-image">
+            <div class="post-item-image-wrap">
+              <a href="{{ post.url | relative_url }}"><figure>
+                <img class="lazy" src='{{ "/images/journey/01/homepage.jpg" | replace: "01", post.number | relative_url }}' alt="{{ post.post-image-title}}" />
+                <div class="post-item-date">
+                  <div class="post-item-date-day">{{ post.date | date: "%d"}}</div>
+                  <div class="post-item-date-month">{{ post.date | date: "%b"}}</div>
                 </div>
               </figure></a>
             </div>
           </div>
-          <div class="hp-copyblock">
-            <div class="hp-copybox">
-              <h2 class="hp-title"><a href="{{ post.url }}">{{post.title}}</a></h2>
-              <p class="hp-excerpt">{{post.excerpt}}</p>
-              <a href="{{ post.url }}" class="generic-cta blue">Leer Post</a>
+          <div class="post-item-copyblock">
+            <div class="post-item-copybox">
+              <h3 class="post-item-title"><a href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+              <p class="post-item-excerpt">{{post.excerpt}}</p>
+              <a href="{{ post.url | relative_url }}" class="generic-cta">Leer Post</a>
             </div>
           </div>
         </div>
@@ -41,12 +40,7 @@
     {% endfor %}
   </ul>
 </section>
-{% include stats.html %}
-</main>
-<footer class="love">
-  <div class="footer-wrapper">
-    Designed + Coded + Written with <span>❤︎</span> in-between <a href="https://goo.gl/maps/vrCniQhZEUu" target="_blank">Barcelona</a> & <a href="https://goo.gl/maps/iGbDXX5pcJz" target="_blank">Auckland</a>
-  </div>
-</footer>
-{% include footer.html %}
-{% include footer-journey.html %}
+
+
+
+

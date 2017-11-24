@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="55px" viewBox="0 0 58 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Desktop" transform="translate(-720.000000, -4592.000000)" fill="#4A4A4A">
+            <g id="Stats" transform="translate(46.000000, 4057.000000)">
+                <g id="Middle" transform="translate(408.000000, 0.000000)">
+                    <g id="Transport" transform="translate(2.000000, 480.000000)">
+                        <g id="Flying" transform="translate(200.000000, 0.000000)">
+                            <path d="M79.51384,110 L85.31384,110 L98.32788,86.5957447 L113.3,86.5957447 C113.3,86.5957447 122,86.5957447 122,82.5 C122,78.4042553 113.3,78.4042553 113.3,78.4042553 L98.32788,78.4042553 L85.31384,55 L79.51384,55 L86.72788,78.4042553 L76.32616,78.4042553 L69.8,72.5531915 L64,72.5531915 L68.64,82.5 L64,92.4468085 L69.8,92.4468085 L76.32616,86.5957447 L86.72788,86.5957447 L79.51384,110 Z" id="Page-1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

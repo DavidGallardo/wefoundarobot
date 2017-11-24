@@ -1,0 +1,107 @@
+//////////////////////////////////////////////////////
+//HERO BANNER GENERAL
+//////////////////////////////////////////////////////
+
+.general-header {
+  width: 100%;
+  height: auto;
+  height: 300px;
+  position: relative;
+  padding-bottom: 5rem;
+  color: white;
+  background-image: $dark-blue-gradient;
+  z-index: 2;
+
+  @include media($m) {
+    overflow: hidden;
+    @include border-box;
+    height: 600px;
+  }
+}
+.general-svg {
+  width: 102%;
+  height: 100%;
+  background: transparent url("../images/ui/headings/journey/heading-l.svg") bottom left no-repeat;
+  background-size: 105%;
+  position: absolute;
+  bottom: -1px;
+  left: -2%;
+
+  @include media($m) {
+    background-size: 102%;
+    bottom: -15px;
+  }
+}
+.general-claim {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 0rem 1rem;
+  margin: 0 auto;
+  @include border-box;
+  top: 1.2rem;
+
+  @include media($m) {
+    position: relative;
+    width: 75%;
+    padding: 0rem;
+    padding-top: 6rem;
+    top: 0rem;
+  }
+  @include media($l) {
+    width: 85%;
+    max-width: 1280px;
+  }
+  h1 {
+    width: 100%;
+    max-width: 600px;
+    @include rubik(700, 1.8rem);
+    position: absolute;
+    color: white;
+    margin: 0 auto;
+    padding: 0 .75rem 0 1rem;
+    @include border-box;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    text-align: center;
+
+    @include media($m) {
+      max-width: 600px;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      @include rubik(600, 2.1rem);
+      line-height: 1.2;
+      transform: none;
+      top: 0;
+      left: auto;
+    }
+    @include media($l) {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////////
+//HERO BANNER SPECIFIC SVG
+//////////////////////////////////////////////////////
+
+.clouds-svg {
+  background-image: url("../images/ui/headings/tips/heading-l.svg");
+}
+
+.category-clouds-svg {
+  background-image: url("./../../images/ui/headings/tips/heading-l.svg");
+}
+
+.peaks-svg {
+  background-image: url("../images/ui/headings/journey/heading-l.svg");
+}
+
+
+

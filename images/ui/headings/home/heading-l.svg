@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="380px" viewBox="0 0 1280 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Large Round</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Desktop" transform="translate(0.000000, -494.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Large-Round" transform="translate(0.000000, 494.000000)">
+                    <path d="M-1.13686838e-13,353.622411 L-3.41060513e-13,0.587339587 C704.409728,222.610721 1184.40973,232.610721 1440,30.5873396 L1440,353.622411 L-1.13686838e-13,353.622411 Z" id="Path-5" opacity="0.300000012"></path>
+                    <path d="M1.13686838e-13,50 L1.14008789e-13,380 L1440,380 L1440,120.413021 C997.228938,230.397388 517.228938,206.926381 1.13686838e-13,50 Z" id="large"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

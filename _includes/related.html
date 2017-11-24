@@ -1,0 +1,67 @@
+
+{% if page.categories contains "post" %}
+
+	<div class="at-related" >
+		<div class="at-related-wrap">
+			{% if page.next and page.next.categories contains "post" %}
+			<a href="{{ page.next.url | relative_url }}" class="at-card card-general at-related-next" >
+				<div class="at-card-label">Artículo Siguiente <span><img src='{{ "/images/ui/arrows/arrow-pink.svg" | relative_url }}' alt="arrow" data-no-retina></span></div>
+				<div class="at-card-title">{{page.next.title}}</div>
+			</a>
+			{% else %}
+			<a href='{{ "/consejos" | relative_url }}' class="at-card card-general at-related-next" >
+				<div class="at-card-label">Consejos de Viaje<span><img src='{{ "/images/ui/tips-icon.svg" | relative_url }}' alt="arrow" data-no-retina></span></div>
+				<div class="at-card-title">No hay posts nuevos aún, mientras puedes leer alguno de nuestros consejitos.</div>
+			</a>
+			{% endif %}
+			{% if page.previous and page.previous.categories contains "post" %}
+			<a href="{{ page.previous.ur | relative_url l}}" class="at-card card-general at-related-prev" >
+				<div class="at-card-label"><span><img src='{{ "/images/ui/arrows/arrow-blue-left.svg" | relative_url }}' alt="arrow" data-no-retina></span>Artículo Anterior</div>
+				<div class="at-card-title">{{page.previous.title}}</div>
+			</a>
+			{% else %}
+			<a href='{{ "/consejos" | relative_url }}' class="at-card card-general at-related-prev" >
+				<div class="at-card-label"><span><img src='{{ "/images/ui/tips-icon-blue.svg" | relative_url }}' alt="arrow" data-no-retina></span>Consejos de Viaje</div>
+				<div class="at-card-title">No hay posts anteriores! Visita nuestra sección de consejos sobre viajes.</div>
+			</a>
+			{% endif %}
+		</div>
+	</div>
+
+
+{% elsif page.categories contains "tips" %}
+
+	<div class="at-related" >
+		<div class="at-related-wrap">
+			{% if page.next and page.next.categories contains "tips" %}
+			<a href="{{ page.next.url | relative_url }}" class="at-card card-general at-related-next" >
+				<div class="at-card-label">Consejo Siguiente <span><img src='{{ "/images/ui/arrows/arrow-pink.svg" | relative_url }}' alt="arrow" data-no-retina></span></div>
+				<div class="at-card-title">{{page.next.title}}</div>
+			</a>
+			{% else %}
+			<a href='{{ "/viaje" | relative_url }}' class="at-card card-general at-related-next" >
+				<div class="at-card-label">Blog de Aventuras<span><img src='{{ "/images/ui/tips-icon.svg" | relative_url }}' alt="arrow" data-no-retina></span></div>
+				<div class="at-card-title">No hay consejos nuevos aún, mientras puedes leer alguna de nuestras aventurillas.</div>
+			</a>
+			{% endif %}
+			{% if page.previous and page.previous.categories contains "tips" %}
+			<a href="{{ page.previous.url | relative_url }}" class="at-card card-general at-related-prev" >
+				<div class="at-card-label"><span><img src='{{ "/images/ui/arrows/arrow-blue-left.svg" | relative_url }}' alt="arrow" data-no-retina></span>Consejo Anterior</div>
+				<div class="at-card-title">{{page.previous.title}}</div>
+			</a>
+			{% else %}
+			<a href='{{ "/viaje" | relative_url }}' class="at-card card-general at-related-prev" >
+				<div class="at-card-label"><span><img src='{{ "/images/ui/tips-icon-blue.svg" | relative_url }}' alt="arrow" data-no-retina></span>Blog de Aventuras</div>
+				<div class="at-card-title">No hay consejos anteriores! Mientras puedes leer alguna de nuestras aventurillas.</div>
+			</a>
+			{% endif %}
+		</div>
+	</div>
+
+
+{% endif %}
+
+
+
+
+

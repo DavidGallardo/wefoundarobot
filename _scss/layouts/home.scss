@@ -1,0 +1,516 @@
+//////////////////////////////////////////////////////
+//HERO BANNER HOME
+//////////////////////////////////////////////////////
+@import 'modules/banner-home';
+
+//////////////////////////////////////////////////////
+//TITLES HOME
+//////////////////////////////////////////////////////
+
+///////////////////////////////
+//POSTS TITLE
+.container {
+  @include out-container;
+}
+.home-section {
+  margin-bottom: 4rem;
+
+  @include media($m) {
+    margin-bottom: 6rem;
+  }
+}
+h2.home-title {
+  @include rubik(700, 1.6rem);
+  line-height: 1;
+  color: $black-7;
+  @include border-box;
+
+  @include media($m) {
+    @include rubik(500, 2.2rem);
+  }
+}
+.home-posts {
+  padding-bottom: 0rem;
+
+  .first-title-wrap {
+    width: calc(12/12*100%);
+    position: relative;
+
+    @include media($m) {
+      width: calc(8/12*100%);
+      margin-left: calc(2/12*100%);
+    }
+    @include media($l) {
+      width: calc(10.35/12*100%);
+      margin-left: calc(.65/12*100%);
+    }
+  }
+  .home-title {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: left;
+
+    @include media($m) {
+      padding: 0;
+      padding-top: 3rem;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+    @include media($l) {
+      padding-top: 2.5rem;
+      margin: 0;
+      width: 60%;
+      text-align: left;
+    }
+  }
+}
+///////////////////////////////
+//TIPS TITLE
+.home-tips {
+  .second-title-wrap {
+    width: 100%;
+    position: relative;
+
+    @include media($m) {
+      width: calc(9/12*100%);
+      margin-left: calc(1.5/12*100%);
+    }
+  }
+  .home-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include media($m) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+///////////////////////////////
+//STATS TITLE
+.home-stats {
+  .third-title-wrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+
+    @include media($m) {
+      width: calc(8/12*100%);
+      margin-left: calc(2/12*100%);
+    }
+    @include media($l) {
+      display: none;
+    }
+  }
+  .home-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include media($m) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .third-title-wrap-desk {
+    margin-bottom: 3rem;
+    display: none;
+
+    @include media($l) {
+      display: block;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+}
+//////////////////////////////////////////////////////
+//BLOG POSTS LIST
+//////////////////////////////////////////////////////
+@import 'modules/generic/post-list';
+
+//////////////////////////////////////////////////////
+//TIPS LIST HOME
+//////////////////////////////////////////////////////
+
+.home-tips-content {
+  @include clearfix;
+}
+.home-tips-post-wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 2rem auto;
+  padding: 0;
+  border-top: 1px solid $dividers;
+  border-bottom: 1px solid $dividers;
+
+  @include media($m) {
+    margin: 4rem auto;
+  }
+}
+.home-tips-posts {
+  height: 100%;
+  background: white url('../images/home/tips/tips-image@2x.jpg') no-repeat;
+  box-shadow: inset 2rem 0 0 0 white;
+  background-size: auto 100%;
+  background-position: right center;
+}
+.home-tips-list {
+  width: 100%;
+
+  @include media($m) {
+    width: 60%;
+  }
+  @include media($l) {
+    width: 50%;
+  }
+  li {
+    list-style: none;
+    border-bottom: 1px solid $dividers;
+    padding: 1.5rem 0;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    background: white;
+    position: relative;
+
+    @include media($m) {
+      padding: 1.75rem 0;
+    }
+    &:before{
+      content: '';
+      width: 0%;
+      height: 2px;
+      display: block;
+      background:$pink;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      transition: .3s all;
+    }
+    &:after {
+      content: '';
+      width: 2rem;
+      height: 2rem;
+      background: white url('../images/ui/arrows/arrow-blue.svg') no-repeat center center;
+      border-radius: 50%;
+      border: 1px solid white;
+      position: absolute;
+      box-shadow: 0 0 0  rgba(0, 0, 0, 0);
+      right: .5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .3s all;
+
+      @include media($m) {
+        right: 1rem;
+      }
+    }
+    &:hover {
+      
+      &:before{
+        width: 100%;
+        transition: .3s all;
+      }
+      &:after {
+        right: .9rem;
+        border: 1px solid white;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+        transition: .3s all;
+      }
+    }
+  }
+  .home-tip-copyblock {
+    width: 100%;
+    box-sizing: border-box;
+    // opacity: 1;
+
+    @include media($m) {
+      padding: 0 1rem;
+    }
+    @include media($m) {
+      padding: 0 3rem 0 1rem;
+    }
+  }
+  .home-tip-title {
+    @include rubik(400, 1.3em);
+    color: $black-7;
+    margin: 0;
+    line-height: 1;
+
+    @include media($m) {
+      @include rubik(400, 1.5em);
+    }
+  }
+  .home-tip-tags {
+    margin-top: 1.2rem;
+    transition: .3s all;
+    span {
+      @include rubik(400, .9rem);
+      padding: .3rem;
+      color: $black-4;
+      background:white;
+      border: 1px solid $dividers;
+      border-radius: $radius;
+      margin-right: .1rem;
+      transition: all .3s;
+
+      @include media($m) {
+        margin-right: .2rem;
+      }
+    }
+  }
+}
+.home-tips-image {
+  height: 10rem;
+  width: 100%;
+  display: block;
+  background: url('../images/home/tips/tips-image@2x.jpg') bottom center no-repeat;
+  background-size: cover;
+
+  @include media($m) {
+    display: none;
+  }
+}
+//////////////////////////////////////////////////////
+//READ ALL CTA
+//////////////////////////////////////////////////////
+a.read-all {
+  color: $pink;
+  @include rubik(500, 1em);
+  margin: 0;
+  opacity: .85;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 100%;
+    background: url("../images/ui/arrows/arrow-pink.svg") left center no-repeat;
+    position: absolute;
+    right: -32px;
+    top: 1px;
+    transition: all .3s;
+  }
+  &:hover:after, &:active:after, &:focus:after {
+    width: 15px;
+    background: url("../images/ui/arrows/arrow-pink.svg") left center no-repeat;
+    transition: all .3s;
+  }
+}
+///////////////////////////////
+//POSTS CTA
+.all-posts-cta {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $dividers;
+
+  a.read-all {
+    left: 1rem;
+
+    @include media($m) {
+      left: -10px;
+    }
+  }
+  @include media($m) {
+    width: 70%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  @include media($l) {
+    width: 50%;
+  }
+}
+///////////////////////////////
+//TIPS CTA
+li.all-tips-cta {
+  border-bottom: none;
+
+  &:after, &:before {
+    display: none;
+  }
+  a {
+    padding-left: 0rem;
+
+    @include media($m) {
+      padding-left: 1rem;
+    }
+  }
+}
+//////////////////////////////////////////////////////
+//STATISTICS CARDS
+//////////////////////////////////////////////////////
+
+.stats-container {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include border-box;
+}
+.stats-container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+}
+.stats-column {
+  width: 100%;
+
+  @include media($m) {
+    width: 48%;
+  }
+  @include media($l) {
+    width: 32%;
+  }
+}
+.first {
+  @include media($m) {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
+  @include media($l) {
+    width: 32%;
+    display: block;
+  }
+  .stats-card {
+    width: 100%;
+
+    @include media($m) {
+      width: 48%;
+    }
+    @include media($l) {
+      width: 100%;
+    }
+  }
+}
+.stats-card {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background: white;
+  box-shadow: $shadow-hover;
+  border-radius: $radius;
+  @include border-box;
+  margin-bottom: 1rem;
+}
+.card-general {
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  @include media($m) {
+    padding: 2rem;
+  }
+}
+.stats-card-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+.card-small {
+  width: 48%;
+  background: white;
+  padding: 2rem 1rem;
+  box-shadow: $shadow-hover;
+  border-radius: $radius;
+  @include border-box;
+  text-align: center;
+  padding-top: 6rem;
+  color: white;
+
+  .big-number {
+    @include rubik(200, 1.8rem);
+    margin: 1rem 0 0 0;
+
+    @include media($m) {
+      @include rubik(200, 2.1rem);
+      margin: 1rem 0 0 0;
+    }
+  }
+  .small-label {
+    @include rubik(500, .7rem);
+    opacity: .9;
+
+    @include media($m) {
+      @include rubik(500, 1rem);
+    }
+  }
+}
+.card-header {
+  .stats-copy {
+    padding: 1rem;
+    @include media($m) {
+      padding: 2rem;
+    }
+  }
+}
+.stats-header {
+  height: 8.5rem;
+  border-radius: $radius $radius 0 0;
+}
+.stats-label {
+  @include rubik(500, .9rem);
+  margin-bottom: .5rem;
+
+  @include media($m) {
+    @include rubik(500, 1rem);
+    margin-bottom: 1rem;
+  }
+}
+.stats-data {
+  @include rubik(300, 1.3rem);
+  margin-bottom: 1rem;
+
+  @include media($m) {
+    @include rubik(300, 1.6rem);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.stats-disclaimer {
+  @include rubik(400, .9rem);
+  color: #B2BBC8;
+  margin-top: 1rem;
+}
+.blue-temp {
+  background: $blue url("../images/home/stats/icon-snow.svg") no-repeat;
+  background-position: center 2.5rem;
+}
+.red-temp {
+  background: $red url("../images/home/stats/icon-sun.svg") no-repeat;
+  background-position: center 2.5rem;
+}
+.white-train {
+  background: url("../images/home/stats/icon-transport.svg") no-repeat;
+  background-position: center 2.5rem;
+  color: $black-7;
+}
+.white-plane {
+  background: url("../images/home/stats/icon-plane.svg") no-repeat;
+  background-position: center 2.5rem;
+  color: $black-7;
+}
+.green-map {
+  background: $green url("../images/home/stats/icon-map.svg") center center no-repeat;
+}
+.blue-book {
+  background: $sky-blue url("../images/home/stats/icon-book.svg") center center no-repeat;
+}
+.orange-music {
+  background: $orange url("../images/home/stats/icon-music.svg") center center no-repeat;
+}
+//////////////////////////////////////////////////////

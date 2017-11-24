@@ -1,73 +1,99 @@
-{% include head.html %}
+---
+layout: default
+---
+<progress value="0">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
 
 <header class="at-header">
 	{% include navigation.html %}
-	<div class="header-gradient {{ page.gradient }}-grad ">
-		<div class="arrow-wrapper">
-			<a href="javascript:void(0)" id="scroll-down" class="grey at-keep-reading" data-start="opacity: 1;" data-200-start="opacity:0;" >Por Aquí<span><img src='/images/ui/arrow-black-right.svg' alt="pointing arrow" data-no-retina></span></a>
-		</div>
+	<div class="header-gradient dark-blue-grad">
+		<div class="heading-soft"></div>
 	</div>
 	
-	<div class="at-title" data-start="opacity: 1;" data-200-start="opacity:0;">
-		<a href="{{ site.url }}/#{{ page.number }}" class="at-back-mbl"><img src='/images/ui/arrow-blue-left.svg' alt="pointing arrow" data-no-retina>Back to posts</a>
+	<div class="at-title animated fadeInDown delay-3">
+		{% if page.categories contains "post" %}
+			<a href='{{ "/viaje" | relative_url }}/#{{ page.number }}' class="at-back-mbl"><img src='{{ "/images/ui/arrows/arrow-pink-left.svg" | relative_url }}' alt="pointing arrow" data-no-retina>Volver a El Viaje</a>
+		{% else %}
+			<a href='{{ "/consejos" | relative_url }}/#{{ page.number }}' class="at-back-mbl"><img src='{{ "/images/ui/arrows/arrow-pink-left.svg" | relative_url }}' alt="pointing arrow" data-no-retina>Volver a Consejos</a>
+		{% endif %}
 		<h1 class="animated fadeIn hinge">{{ page.title }}</h1>
 	</div>
 	<div class="at-main-image">
 		<figure class="animated fadeInUp">
-			<img src="/{{ page.post-image-path }}" alt="{{ page.post-image-title}}" />
+			<div class="scroll-arrow" id="scroll-down">Scroll <span><img src='{{ "/images/ui/arrows/arrow-white-right.svg" | relative_url }}' alt="scroll arrow" data-no-retina ></span></div>
+			{% if page.categories contains "post" %}
+				<img class="at-image-dsk" src='{{ "/images/journey/01/header.jpg" | replace: "01", page.number | relative_url }}' alt="{{ page.image-alt}}" />
+				<img class="at-image-mbl" src='{{ "/images/journey/01/homepage.jpg" | replace: "01", page.number | relative_url }}' alt="{{ page.image-alt}}" />
+				{% elsif page.categories contains "tips" %}
+				<img class="at-image-dsk" src='{{ "/images/tips/01/header.jpg" | replace: "01", page.number | relative_url }}' alt="{{ page.image-alt}}" />
+				<img class="at-image-mbl" src='{{ "/images/tips/01/header-s.jpg" | replace: "01", page.number | relative_url }}' alt="{{ page.image-alt }}" />
+			{% endif %}
 		</figure>
 	</div>
 </header>
 <section id="at-content" class="at-content" >
-	<article id="main-article">
+	<article id="main-article" >
 		<!-- SHARING OPTION -->
 		{% if page.share %}
-			<div class="sharing-block extra grey">Share on<span><img src='/images/ui/line.png' alt="line" data-no-retina></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
+			<div class="sharing-block extra grey">Compartir<span class="sharing-line"><img  src='{{ "/images/ui/line.png" | relative_url }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
 		{% endif %}
 		
 		<!-- DATE & READING TIME -->
 		<div class="at-date-block">
-			<div class="at-date">{% if page.author %} {{ page.author }}, {% endif %}{% if page.date %} {{ page.date | date: "%d %b"}} {% endif %}  –  {% assign words = content | number_of_words %}
-			{% if words < 320 %}
-				1 min
-			{% else %}
-				{{ words | divided_by:160 }} min
+			<div class="at-date">
+				{% if page.author == "BB-8"%}
+					<span><img src='{{ "/images/post/bb-8.png" | relative_url }}' alt="BB-8"></span>
+				{% else %}
+					<span><img src='{{ "/images/post/avatar.png" | relative_url }}' alt="Airí & David"></span>
+				{% endif %}
+				{% if page.author %} {{ page.author }}, {% endif %}{% if page.date and page.categories contains "post" %} {{ page.date | date: "%d %b"}} {% endif %}  –  {% assign words = content | number_of_words %}
+				{% if words < 320 %}
+					1 min
+				{% else %}
+					{{ words | divided_by:160 }} min
+				{% endif %}
+			</div>
+		</div>
+		
+		<!-- CONTENT -->
+		{{ content }}
+		
+		{% if page.categories contains "tips" %}
+			<hr>
+			<div class="disclaimer">
+				<p>Todos estos consejos están basados en nuestra experiencia y este viaje en concreto. El tiempo pasa, las cosas cambian y cada uno percibe el mundo a su manera. Por cierto, no recibimos dinero de ninguna marca ni organización, todas las recomendaciones son 100% honestas. Si tienes alguna duda, puedes contactar con nosotros a <strong>wefoundarobot@gmail.com</strong>
+				</p>
+			</div>
+		{% endif %}
+		<div class="at-share-categories" >
+			<div class="at-share-wrap">
+				{% if page.share %}
+					<div class="sharing-block grey"><span>Compartir</span><span class="sharing-line"><img src='{{ "/images/ui/line.png" | relative_url }}' alt="line"></span><a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter" class="twitter">Twitter</a></div>
+				{% endif %}
+			</div>
+			
+			{% if page.tags %}
+				<ul class="at-tags">
+					{% for tag in page.tags %}
+						<li class="at-tag">{{ tag }}</li>
+					{% endfor %}
+				</ul>
 			{% endif %}
 		</div>
-	</div>
+		
+	</article>
+	{% if page.gallery %}
+		<div class="at-gallery" >
+			<div class="slider">
+				{% for item in page.gallery %}
+					<div class="slider-item"><img src="{{ item | relative_url }}"></div>
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
 	
-	<!-- CONTENT -->
-	{{ content }}
-	
-</article>
-{% if page.gallery %}
-<div class="at-gallery">
-	<div class="slider">
-		{% for item in page.gallery %}
-			<div class="slider-item"><img src="/{{ item }}"></div>
-		{% endfor %}
-	</div>
-</div>
-{% endif %}
+	{% include related.html %}
 </section>
-{% if page.next %}
-	<a href="{{ page.next.url }}" style="display:block;">
-	<footer class="at-next {{ page.next.gradient }}-grad ">
-		<div class="at-footer-title">
-			<div class="at-next-copy">Siguiente Post</div>
-			<h4 class="h1">{{ page.next.title }}</h4>
-		</div>
-	</footer>
-	</a>
-{% else %}
-	<a href="https://instagram.com/wefoundarobot" target="_balnk" style="display:block;">
-	<footer class="at-next insta-grad ">
-		<div class="at-footer-title">
-			<div class="at-next-copy">No hay nuevos posts aún</div>
-			<h4 class="h1">Visita nuestro Instagram</h4>
-		</div>
-	</footer>
-	</a>
-{% endif %}
-{% include footer.html %}
-{% include footer-post.html %}

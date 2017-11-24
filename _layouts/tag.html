@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<header class="tips-heading">
+  {% include navigation.html %}
+  <h1>Tips and tricks to travel the places we’ve been</h1>
+</header>
+<section class="tips-section" id="tips-posts">
+  <div class="tips-content">
+    <div class="tips-post-wrap">
+      <div class="tips-posts">
+        <ul class="tips-list">
+          {% for post in site.tags[page.tag] %}
+            <a href="{{ post.url | relative_url }}" class="">
+              <li class="tip-post" id="{{ post.number }}">
+                <div class="tip-copyblock">
+                  <h2 class="tip-title">{{ post.title }}</h2>
+                  <div class="tip-tags">
+                    {% for tag in post.tags %}
+                      <span>{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            </a>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% include tips-sidebar.html %}
+</section>
+

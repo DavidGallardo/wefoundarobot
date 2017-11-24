@@ -1,0 +1,175 @@
+---
+layout: default
+---
+
+<header class="home-heading">
+  <div class="heading-round"></div>
+  
+  <div class="home-wrap">
+      {% include navigation.html %}
+    <div class="hp-image-block">
+      <div class="image-wrap">
+        <div class="img image-1 animated fadeInUp"><div class="after animated fadeInDown delay-4"></div></div>
+        <div class="img image-2 animated fadeInUp delay-3"><div class="before animated fadeInDown delay-5"></div><div class="after animated fadeInDown delay-5"></div></div>
+        <div class="img image-3 animated fadeInUp delay-4"><div class="before animated fadeInDown delay-5"></div><div class="after animated fadeInDown delay-5"></div></div>
+      </div>
+    </div>
+    <div class="wrap-padding">
+      <div class="hp-claim animated fadeInDown">
+        <h1>Looking for a robot while discovering an extraordinary planet </h1>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="home-section home-posts">
+  <div class="container">
+    <div class="first-title-wrap">
+      <h2 class="home-title">Síguenos en nuestra aventura por el mundo</h2>
+    </div>
+  </div>
+  <ul class="home-post-list">
+    {% for post in site.categories.post limit:3 %}
+      <li class="post-item" id="{{ post.number }}" >
+        <div class="post-cell-container">
+          <div class="post-item-image">
+            <div class="post-item-image-wrap">
+              <a href="{{ post.url | relative_url }}"><figure>
+                <img class="lazy" src='{{ "/images/journey/01/homepage.jpg" | replace: "01", post.number | relative_url }}' alt="{{ post.image-alt}}" />
+                <div class="post-item-date">
+                  <div class="post-item-date-day">{{ post.date | date: "%d"}}</div>
+                  <div class="post-item-date-month">{{ post.date | date: "%b"}}</div>
+                </div>
+              </figure></a>
+            </div>
+          </div>
+          <div class="post-item-copyblock">
+            <div class="post-item-copybox">
+              <h3 class="post-item-title"><a href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+              <p class="post-item-excerpt">{{post.excerpt}}</p>
+              <a href="{{ post.url | relative_url }}" class="generic-cta">Leer Post</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="all-posts-cta">
+    <a href='{{ "/viaje" | relative_url }}' class="read-all"> Ver todos los posts </a>
+  </div>
+</section>
+<section class="home-section home-tips" id="home-tips" >
+  <div class="container">
+    <div class="second-title-wrap">
+      <h2 class="home-title">Pensando en viajar?<br>Tenemos algún consejo para tí</h2>
+    </div>
+  </div>
+  <div class="home-tips-content">
+    <div class="home-tips-post-wrap">
+      <div class="home-tips-posts">
+        <ul class="home-tips-list">
+          {% for post in site.categories.tips limit:3 %}
+            <a href="{{ post.url | relative_url }}" class="">
+              <li class="home-tip-post" id="{{ post.number }}">
+                <div class="home-tip-copyblock">
+                  <h4 class="home-tip-title">{{ post.title }}</h4>
+                  <div class="home-tip-tags tip-tag">
+                    {% for tag in post.tags %}
+                      <span>{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            </a>
+          {% endfor %}
+          <li class="all-tips-cta">
+            <a href='{{ "/consejos" | relative_url }}' class="read-all"> Ver todos los consejos</a>
+          </li>
+        </ul>
+        <div class="home-tips-image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-section home-stats" id="home-stats" >
+  <div class="container">
+    <div class="third-title-wrap">
+      <h2 class="home-title">Nuestro viaje en números, para los frikis</h2>
+    </div>
+  </div>
+  <div class="stats-container">
+    <div class="stats-column third" >
+      <div class="stats-card-block">
+        <div class="card-small card-left blue-temp">
+          <div class="big-number">-17 Cº</div>
+          <div class="small-label">Irkutsk</div>
+        </div>
+        <div class="card-small card-left red-temp" >
+          <div class="big-number">43 Cº</div>
+          <div class="small-label">Orccha</div>
+        </div>
+      </div>
+        <div class="stats-card card-general">
+          <div class="stats-label">Paises Visitados:</div>
+          <div class="stats-data">Rusia, Mongolia, China, Nepal, India, Sri Lanka, Vietnam, Cambodia, Tailandia, Myanmar, Malaysia.</div>
+        </div>
+      <div class="stats-card card-general">
+        <div class="stats-label">País Siguiente:</div>
+        <div class="stats-data">Singapur</div>
+      </div>
+      <div class="stats-card card-general">
+        <div class="stats-label">Presupuesto:</div>
+        <div class="stats-data">85% Consumido :(</div>
+        <div class="stats-disclaimer">Al regresar, colgaremos una página hablando exclusivamente y en detalle de cuánto, cómo y en qué nos hemos gastado el dinero durante el viaje. Esperemos que ayude a los siguientes viajeros.</div>
+      </div>
+    </div>
+    <div class="stats-column second" >
+      <div class="stats-card card-header">
+        <div class="stats-header green-map"></div>
+        <div class="stats-copy">
+          <div class="stats-label">Distancia Cubierta:</div>
+          <div class="stats-data">47.148 km</div>
+          <div class="stats-label">Punto más lejano:</div>
+          <div class="stats-data">Shanghai (9.824 km)</div>
+        </div>
+      </div>
+      <div class="stats-card-block">
+        <div class="card-small card-left white-train">
+          <div class="big-number">84%</div>
+          <div class="small-label">Por Tierra</div>
+        </div>
+        <div class="card-small card-left white-plane">
+          <div class="big-number">16%</div>
+          <div class="small-label">Por Aire</div>
+        </div>
+      </div>
+      <div class="stats-card card-header">
+        <div class="stats-header blue-book"></div>
+        <div class="stats-copy">
+          <div class="stats-label">Airí está leyendo:</div>
+          <div class="stats-data">Abrir en caso de apocalipsis</div>
+          <div class="stats-label">David está leyendo:</div>
+          <div class="stats-data">El Ocho</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-column first" >
+      <div class="third-title-wrap-desk">
+        <h2 class="home-title">Nuestro viaje en números, para los frikis</h2>
+      </div>
+      
+      <div class="stats-card card-header">
+        <div class="stats-header orange-music"></div>
+        <div class="stats-copy">
+          <div class="stats-label">Géneros más escuchados:</div>
+          <div class="stats-data">HipHop, Rumba</div>
+          <div class="stats-label">Canción del momento:</div>
+          <div class="stats-data">SpiceGirl - Aminé</div>
+        </div>
+      </div>
+      <div class="stats-card card-general">
+        <div class="stats-label">Platos favoritos:</div>
+        <div class="stats-data">Tibetan cheeseballs, Russian Pilaf, Beijing Duck, Dal bhat, Punjabi Chicken, Cheese Roti, Bun bo noodles, Green Curry, Biriani, Pad thai, Deer curry, Papadam.</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -25,6 +25,11 @@ h3{
 	color: $black-7;
 	margin: 0;
 }
+h4{
+	@include rubik(600,1rem);
+	color: $black-5;
+	margin: 0;
+}
 
 p, li{
 	@include open(400,1rem);
@@ -35,28 +40,10 @@ p, li{
 
 a{
 	@include rubik(400,1em);
-	color: $blue;
 	text-decoration: none;
 	position: relative;
 	transition: all .3s;
 	&:hover{
-		color: darken($grey, 20);
-		transition: all .3s;
-	}
-	&:before{
-		content: '';
-		display: block;
-		position: absolute;
-		height: 1px;
-		width: 0;
-		bottom: 2px;
-		left: 0;
-		background:transparent;
-		transition: all .3s;
-	}
-	&:hover:before{
-		width: 100%;
-		background:$blue;
 		transition: all .3s;
 	}
 }
@@ -78,7 +65,13 @@ blockquote{
 }
 
 ul{
-	list-style: circle inside;
+	list-style: none;
+	// list-style: circle inside;
+}
+
+.tip-tag{
+	@include rubik(500, .9em);
+  color: $dark-blue;
 }
 
 

@@ -1,0 +1,141 @@
+// Footer
+
+footer{
+	display: block;
+}
+
+.insta-title-wrap{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 1rem;	
+	@include border-box;
+}
+.insta-cta{
+	padding-bottom: .5rem;
+}
+.insta-images{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 1rem;	
+	@include border-box;
+	position: relative;
+	background:transparent;
+	img{
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	&:before{
+		content: '';
+		width: 60%;
+		height: 1px;
+		background:$dividers;
+		position: absolute;
+		top: 1.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		display: none;
+	}
+}
+.dark-footer{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	color: white;
+  background-image: $dark-blue-gradient;
+	padding-top: 5rem;
+	margin-top: -5rem;
+}
+.footer-wrap{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.footer-nav{
+	text-align: center;
+	padding-bottom: 2rem;
+	display: none;
+	@include media($m) {
+    display: block;
+  }
+	li{
+		list-style: none;
+		color: white;
+		display: inline;
+		text-align: center;
+		padding: 0 1rem;
+	}
+	a{
+		display: inline-block;
+		@include rubik(500, 1rem);
+		color: white;
+		position: relative;
+    transition: all .3s;
+
+    &:after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      display: block;
+      background: white !important;
+      position: absolute;
+      bottom: -10px;
+      border-radius: 2px;
+      left: 0;
+      z-index: 999;
+      transition: all .3s;
+    }
+    &:hover:after {
+      width: 100%;
+      transition: all .3s;
+      }
+	}
+}
+.footer-love{
+	width: 100%;
+	max-width: 1440px;
+	height: auto;
+	position: relative;
+	background:transparent;
+
+	&:before{
+		content: '';
+		width: 90%;
+		height: 1px;
+		background:rgba(0,0,0,.1);
+		position: absolute;
+		top: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		@include media($m) {
+			width: 70%;
+	    top: 0;
+	  }
+	}
+}
+.footer-love-wrap{
+	width: 100%;
+	padding: 2rem 1rem;
+	@include border-box;
+	margin-bottom: 0;
+	text-align: center;
+	@include rubik(400, .8rem);
+	span{
+		color: $pink;
+	}
+	a{
+		color: white;
+		opacity: .9;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}

@@ -1,11 +1,12 @@
 ---
 layout: story
-navigation_order: 2
+navigation_order: 4
 nav-deepness: 1
-title: The Story Behind
+title: La Historia Detrás
+link: Historia Detrás
 author: "Airí & David"
-permalink: "/story/"
-post-image-path: ../images/story/story.jpg
+permalink: "/historia/"
+post-image-path: /images/story/story.jpg
 post-image-title: BB8 encima de maletas
 excerpt: "Farà ja cosa d'un mes, sortint a guardar la bici, vam descobrir una visita inesperada al balcó de casa...  
 Hará cosa de un mes, saliendo a guardar la bici, descubrimos una visita inesperada en el balcón de casa... "

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header class="general-header tips-heading">
+  <div class="general-svg category-clouds-svg"></div>
+  {% include navigation.html %}
+  <div class="wrap-padding">
+    <div class="general-claim tp-claim animated fadeInDown delay-3">
+      <h1>Algunos consejos para viajar por la Tierra <div class="before animated fadeInUp delay-5"></div><div class="after animated fadeInUp delay-5"></div></h1>
+    </div>
+  </div>
+</header>
+<section class="tips-section" id="tips-posts">
+  {% include tips-sidebar.html %}
+  <div class="tips-content">
+    <div class="tips-post-wrap">
+      <div class="tips-posts">
+        <ul class="tips-list">
+          {% for post in site.categories[page.category] %}
+            <a href="{{ post.url | relative_url }}" class="">
+              <li class="tip-post" id="{{ post.number }}">
+                <div class="tip-image-block">
+                  <figure>
+                    <figure>
+                    <img class="tip-img-dsk" src='{{ "/images/tips/01/homepage.jpg" | replace: "01", post.number | relative_url }}' alt="{{ post.image-alt }}">
+                    <img class="tip-img-mob" src='{{ "/images/tips/01/homepage-s.jpg" | replace: "01", post.number | relative_url }}' alt="{{ post.image-alt }}">
+                  </figure>
+                  </figure>
+                </div>
+                <div class="tip-copyblock">
+                  <h2 class="tip-title">{{ post.title }}</h2>
+                  <p>{{ post.excerpt }}</p>
+                  <div class="tip-tags">
+                    {% for tag in post.tags %}
+                      <span>{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            </a>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+

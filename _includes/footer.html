@@ -1,20 +1,45 @@
+		<footer >
+			<section class="instagram-module">
+		    <div class="insta-title-wrap">
+		      <h2 class="home-title">¿Te quedas con ganas de más? Síguenos en Instagram</h2>
+		      <div class="insta-cta">
+		      	<a href="https://www.instagram.com/wefoundarobot/" target="_blank" rel="noopenner noreferrer" class="read-all">@wefoundarobot</a>
+		      </div>
+		    </div>
+		    <div class="insta-images"><a href="https://www.instagram.com/wefoundarobot/" target="_blank" rel="noopenner noreferrer"><img src='{{ "/images/footer/insta-sample.png" | relative_url }}' alt=""></a></div>
+		  </section>
+		  <div class="dark-footer">
+					<div class="footer-wrap">
+						<ul  class="footer-nav">
+							{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
+							{% for p in navigation_pages %}
+								{% if p.navigation_order %}
+									<li>
+										<a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>
+										{{ p.link }}
+										</a>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+						<div class="footer-love">
+							<div class="footer-love-wrap">
+						    Diseñado + Programado + Escrito con <span>❤︎</span> entre <a href="https://goo.gl/maps/vrCniQhZEUu" target="_blank" rel="noopenner noreferrer">Barcelona</a> & <a href="https://goo.gl/maps/kopcZKmZGr32" target="_blank" rel="noopenner noreferrer">San Francisco</a>
+						  </div>
+						</div>
+					</div>
+			</div>
+		</footer>		
 		</main>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.url }}/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-		<script>
-		 WebFont.load({
-		    google: {
-		      families: [
-		      'Open Sans:300,400,400i,700', 
-		      'Rubik:300,400,400i,500,600,700,800,900']
-		    }
-		  });
-		</script>
 		<!--[if !IE]> -->
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href='{{ "/css/main.css" | relative_url }}'>
     <!-- <![endif]-->
+
+		{% include scripts.html %}
+
+	</body>
+</html>
+		
 		
 		

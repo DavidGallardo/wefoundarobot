@@ -1,22 +1,29 @@
-<nav class="main-nav">
-	<div class="list-wrapper">
-		<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show"><img src='/images/ui/menu-icon.svg' alt="menu icon" data-no-retina></span><span id="close"><img src='/images/ui/menu-icon-close.svg' alt="menu icon close" data-no-retina></span></div>
-		<ul class="closed">
-			{% if page.backbutton %}
-			<li class="arrow"><a href="{{ site.url }}/#{{ page.number }}"><img src='/images/ui/arrow-white-left.svg' alt="pointing arrow" data-no-retina></a></li>
-			{% endif %}
-			{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
-	    {% for p in navigation_pages %}
-	      {% if p.navigation_order %}
-	        <li>
-	          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-	            {{ p.title }}
-	          </a>
-	        </li>
-	      {% endif %}
-	  	{% endfor %}
-		</ul>
-		<div class="logo logo-dsk"><a href="{{ site.url }}"><img src='/images/ui/logo-winter-small.svg' alt="logo" data-no-retina></a></div>
-		<div class="logo logo-mbl"><a href="{{ site.url }}"><img src='/images/ui/logo-winter-black.svg' alt="logo" data-no-retina></a></div>
-	</div>
-</nav>
+<div class="wrap-padding">
+	<nav class="main-nav animated fadeInDown">
+		<div class="list-wrapper">
+			<div class="nav-trigger" id="nav-trigger"><span id="menu" class="show"><img src='{{ "/images/ui/menu-icon.svg" | relative_url }}' alt="menu icon" data-no-retina></span><span id="close"><img src='{{ "/images/ui/menu-icon-close.svg" | relative_url }}' alt="menu icon close" data-no-retina></span></div>
+			<ul class="closed">
+				{% if page.backbutton %}
+					<li class="arrow">
+						{% if page.categories contains "post" %}
+						<a href='{{ "/viaje" | relative_url }}/#{{ page.number }}'><img src='{{ "/images/ui/arrows/arrow-white-left.svg" | relative_url }}' alt="pointing arrow" data-no-retina></a>
+						{% else %}
+						<a href='{{ "/consejos" | relative_url }}/#{{ page.number }}'><img src='{{ "/images/ui/arrows/arrow-white-left.svg" | relative_url }}' alt="pointing arrow" data-no-retina></a>
+						{% endif %}
+					</li>
+				{% endif %}
+				{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
+				{% for p in navigation_pages %}
+					{% if p.navigation_order %}
+						<li>
+							<a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>
+							{{ p.link }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<div class="logo"><a href="{{ site.url }}"><img src='{{ "/images/ui/logo-winter-small.svg" | relative_url }}' alt="logo" data-no-retina></a></div>
+		</div>
+	</nav>
+</div>

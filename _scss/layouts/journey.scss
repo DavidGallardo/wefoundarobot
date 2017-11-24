@@ -1,283 +1,46 @@
-///////////////NON CRITICAL//////////////
-// Home-Post Typography
-h2.hp-title {
-	@include rubik(600, 1.8rem);
-	color: $black-7;
-	margin: 0;
-	margin-top: .5rem;
-	margin-left: -2px;
-	position: relative;
-	line-height: 1.2;
+//////////////////////////////////////////////////////
+//HERO BANNER JOURNEY
+//////////////////////////////////////////////////////
+.jr-claim {
+  h1 {
+    .before {
+      width: 340px;
+      height: 44px;
+      position: absolute;
+      display: none;
+      background: transparent url('../images/ui/headings/journey/ornaments-journey-1.svg') left top no-repeat;
 
-	//MEDIA QUERY
-	@include media($m) {
-		margin: 0;
-		margin-left: -2px;
-	}
-	a {
-		@include rubik(600, 1.8rem);
-		color: $black-7;
+      @include media($m) {
+        display: block;
+        bottom: -2rem;
+        left: 0;
+      }
+      @include media($l) {
+        bottom: -3rem;
+        left: 0;
+      }
+    }
+    .after {
+      width: 420px;
+      height: 45px;
+      position: absolute;
+      display: none;
+      background: transparent url('../images/ui/headings/journey/ornaments-journey-2.svg') left top no-repeat;
 
-		&:hover {
-			opacity: .8;
-		}
-		&:before {
-			display: none;
-		}
-	}
+      @include media($m) {
+        display: block;
+        top: -2.5rem;
+        right: -2rem;
+      }
+      @include media($l) {
+        top: -2rem;
+        right: -2rem;
+      }
+    }
+  }
 }
-p.hp-excerpt {
-	@include open(400, 1rem);
-	line-height: 1.6rem;
-	color: $grey;
-	margin: 1rem 0 1.5rem 0;
-
-	//MEDIA QUERY
-	@include media($l) {
-		@include open(400, .9rem);
-		line-height: 1.6;
-	}
+.journey-post-section {
+  @include media($m) {
+    margin-top: 0rem;
+  }
 }
-.hp-day {
-	@include open(600, .9rem);
-	color: $blue;
-	display: inline-block;
-	margin-top: 1rem;
-
-	//Media Queries
-	@include media($l) {
-		@include open(700, 1.75rem);
-		color: $black-7;
-		line-height: 1em;
-		padding-top: 20px;
-		margin-top: 0px;
-		margin-left: -4px;
-	}
-}
-.hp-month {
-	@include open(600, .9rem);
-	color: $blue;
-	display: inline-block;
-
-	@include media($l) {
-		display: block;
-		@include open(400, .8rem);
-		color: $black-7;
-		text-transform: uppercase;
-		letter-spacing: 2.5px;
-	}
-}
-// --------------------------------------
-
-// Home-Post Odd
-.home-post-list li:nth-child(2n+1) {
-	.hp-cell-container {
-		@include out-container;
-	}
-	.hp-image {
-		width: calc(12/12*100%);
-		position: relative;
-		float: left;
-
-		//MEDIA QUERY
-		@include media($m) {
-			width: calc(8/12*100%);
-			margin-left: calc(2/12*100%);
-		}
-		@include media($l) {
-			width: calc(6/12*100%);
-			margin-left: 0;
-			height: 430px;
-		}
-		//
-	}
-	.hp-image-wrap {
-		//MEDIA QUERY
-		@include media($l) {
-			width: 100%;
-			margin-bottom: 0;
-		}
-		//
-	}
-	figure {
-		position: relative;
-		width: 100%;
-		max-width: 470px;
-		margin: 0;
-
-		//MEDIA QUERY
-		@include media($l) {
-			margin: 0 auto;
-		}
-		img {
-			width: 100%;
-			box-shadow: $shadow;
-			border-radius: $radius;
-			transition: all .3s;
-
-			//MEDIA QUERY
-			@include media($m) {
-				width: 98%;
-				max-width: 470px;
-			}
-		}
-		//
-		.hp-date {
-			display: block;
-			position: relative;
-
-			//MEDIA QUERY
-			@include media($l) {
-				position: absolute;
-				display: block;
-				left: 30px;
-			}
-			//
-		}
-	}
-	.hp-copyblock {
-		width: calc(12/12*100%);
-		position: relative;
-		float: left;
-
-		//MEDIA QUERY
-		@include media($m) {
-			width: calc(8/12*100%);
-			margin-left: calc(2/12*100%);
-		}
-		@include media($l) {
-			width: calc(6/12*100%);
-			margin-left: 0;
-			height: 430px;
-		}
-		//
-		.hp-copybox {
-			//MEDIA QUERY
-			@include media($l) {
-				width: 400px;
-				height: auto;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-		}
-	}
-}
-// --------------------------------------
-
-
-.home-post-list li:nth-child(2n) {
-	.hp-cell-container {
-		@include out-container;
-	}
-	.hp-image {
-		width: calc(12/12*100%);
-		position: relative;
-
-		//MEDIA QUERY
-		@include media($m) {
-			width: calc(8/12*100%);
-			margin-left: calc(2/12*100%);
-		}
-		@include media($l) {
-			width: calc(6/12*100%);
-			margin-left: 0;
-			height: 430px;
-			position: relative;
-			float: right;
-
-			.hp-image-wrap {
-				width: 100%;
-			}
-			figure {
-				position: relative;
-				width: 100%;
-				max-width: 470px;
-				margin: 0 auto;
-
-				.hp-date {
-					display: block;
-					right: 30px;
-				}
-			}
-			img {
-				width: 100%;
-				box-shadow: $shadow;
-				border-radius: $radius;
-				transition: all .3s;
-
-				//MEDIA QUERY
-				@include media($m) {
-					width: 98%;
-					max-width: 470px;
-				}
-			}
-		}
-	}
-	.hp-copyblock {
-		width: calc(12/12*100%);
-		position: relative;
-
-		//MEDIA QUERY
-		@include media($m) {
-			width: calc(8/12*100%);
-			margin-left: calc(2/12*100%);
-		}
-		@include media($l) {
-			width: calc(6/12*100%);
-			margin-left: 0;
-			height: 430px;
-			position: relative;
-			float: right;
-
-			.hp-copybox {
-				width: 400px;
-				height: auto;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-		}
-	}
-	.hp-date {
-		display: block;
-	}
-}
-// --------------------------------------
-
-#home-posts {
-	//MEDIA QUERY
-	@include media($l) {
-		margin-bottom: 102px;
-		z-index: 2;
-	}
-}
-footer.love {
-	width: 100%;
-	max-width: 1200px;
-	height: auto;
-	min-height: 0;
-	text-align: center;
-	margin: 0 auto;
-
-	.footer-wrapper {
-		@include rubik(300, .8rem);
-		padding: 2rem 0;
-		margin: 0 auto;
-		color: lighten($grey, 20);
-		text-align: center;
-
-		span {
-			color: $pink;
-		}
-	}
-	//MEDIA QUERY
-	@include media($l) {
-		position: fixed;
-		bottom: 0;
-		z-index: -2;
-	}
-}
-// --------------------------------------

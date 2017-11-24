@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="46px" viewBox="0 0 341 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Journey/Desktop" transform="translate(-342.000000, -372.000000)">
+            <g id="Header">
+                <g id="Ornaments" transform="translate(344.000000, 215.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 159.000000)">
+                        <polyline id="Path-2" stroke="#3BE66F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.329229, 20.250194) rotate(-270.000000) translate(-19.329229, -20.250194) " points="-0.748706065 39.5794226 -0.748706065 0.920965525 39.4071631 0.920965525"></polyline>
+                        <path d="M300,43.1722595 L337,43.1722595 C338.104569,43.1722595 339,42.276829 339,41.1722595 C339,40.06769 338.104569,39.1722595 337,39.1722595 L300,39.1722595 C298.895431,39.1722595 298,40.06769 298,41.1722595 C298,42.276829 298.895431,43.1722595 300,43.1722595 Z" id="Path-4" fill="#576FF3" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

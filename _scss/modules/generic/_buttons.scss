@@ -1,0 +1,53 @@
+// Buttons
+
+.generic-cta{
+	width: auto;
+	max-width: 140px;
+	display: block;
+	padding: 9px 30px 10px 20px;
+	@include open(600,1rem);
+	text-decoration: none;
+	border-radius: 30px;
+	color: white;
+	background: $dark-blue;
+	transition: all .3s;
+	top: 0px;
+	
+	&:hover, &:active, &:focus, &:visited{
+		background: $dark-blue ;
+		color: white;
+		box-shadow: $hard-shadow;
+		top: -2px;
+		transition: all .3s;
+	}
+	&:before{
+		display: none;
+	}
+	&:after{
+		content: '';
+		display: block;
+		width: 45px;
+		height: 100%;
+		background: url("../images/ui/arrows/arrow-white.svg") left center no-repeat;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all .3s;
+	}
+	&:hover:after, &:active:after, &:focus:after{
+		width: 35px;
+		background: url("../images/ui/arrows/arrow-white.svg") left center no-repeat;
+		transition: all .3s;
+	}
+}
+
+.pink{
+	background: $pink ;
+	&:hover, &:active, &:focus, &:visited{
+		background: $pink ;
+		color: white;
+		box-shadow: $hard-shadow;
+		top: -2px;
+		transition: all .3s;
+	}
+}

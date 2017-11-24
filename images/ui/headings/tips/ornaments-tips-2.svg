@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="40px" viewBox="0 0 284 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ornaments-tips-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Practical-Stuff/Desktop" transform="translate(-629.000000, -393.000000)">
+            <g id="Header">
+                <g id="Ornaments" transform="translate(460.000000, 150.000000)">
+                    <g id="ornaments-tips-2" transform="translate(171.000000, 243.000000)">
+                        <polyline id="Path-2" stroke="#FCAF56" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(17.329229, 20.077935) rotate(-270.000000) translate(-17.329229, -20.077935) " points="-0.248706065 37.0003881 -0.248706065 3.15548108 34.9071631 3.15548108"></polyline>
+                        <path d="M272.68231,4 L279.136597,4 C280.241167,4 281.136597,3.1045695 281.136597,2 C281.136597,0.8954305 280.241167,1.0401789e-15 279.136597,8.8817842e-16 L272.68231,0 C271.57774,-1.52000481e-16 270.68231,0.8954305 270.68231,2 C270.68231,3.1045695 271.57774,4 272.68231,4 Z" id="Path-3" fill="#8EDCF8" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

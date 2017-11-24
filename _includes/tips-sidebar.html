@@ -1,0 +1,20 @@
+<aside class="tips-sidebar">
+  <div class="category-list-label">Filtrar por Lugar</div>
+  <ul class="category-list" id="category-list">
+    <a href='{{"/consejos" | relative_url }}'>
+      <li class='{% if page.title == "Consejos para viajar" %} active {% endif %}'>La Tierra</li>
+    </a>
+    {% assign sorted_categories = site.categories | sort %}
+    {% for category in sorted_categories %}
+      {% if  category contains 'tips' %}
+        {% elsif  category contains 'post' %}
+        {% elsif  category contains 'todos' %}
+      {% else %}
+
+        <a href='{{ site.baseurl }}/category/{{ category[0] | slugify }}/#tips-posts'>
+          <li class="{% if page.title == category[0] %} active {% endif %}">{{ category | first | capitalize }}</li>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</aside>

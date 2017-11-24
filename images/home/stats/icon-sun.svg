@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Minimum Tº</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-28.0%" y="-18.0%" width="156.0%" height="139.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Desktop" transform="translate(-1118.000000, -4110.000000)" fill="#FFFFFF">
+            <g id="Stats" transform="translate(46.000000, 4057.000000)">
+                <g id="Right" transform="translate(808.000000, 0.000000)">
+                    <g id="Tª" transform="translate(2.000000, 0.000000)">
+                        <g id="Maximum-Tº" filter="url(#filter-1)" transform="translate(200.000000, 0.000000)">
+                            <g id="Group-5" transform="translate(62.000000, 53.000000)">
+                                <path d="M51.1160571,47.4786683 L48.4764373,50.1182882 L43.1971975,44.8390484 L45.8368174,42.1994285 L51.1160571,47.4786683 Z M28.1330224,57.0004391 L31.8665029,57.0004391 L31.8665029,49.5334781 L28.1330224,49.5334781 L28.1330224,57.0004391 Z M16.7983405,44.8390484 L11.5191007,50.1182882 L8.87948083,47.4786683 L14.1573915,42.1994285 L16.7983405,44.8390484 Z M1.99998813,30.8660757 L9.4669491,30.8660757 L9.4669491,27.1325952 L1.99998813,27.1325952 L1.99998813,30.8660757 Z M8.87948083,10.5213317 L11.5191007,7.88171184 L16.7983405,13.1609516 L14.1573915,15.8005715 L8.87948083,10.5213317 Z M28.1330224,8.46652189 L28.1330224,0.999560914 L31.8665029,0.999560914 L31.8665029,8.46652189 L28.1330224,8.46652189 Z M29.9990981,43.9339219 C21.7506183,43.9339219 15.0665053,37.2471507 15.0665053,29 C15.0665053,20.7541784 21.7506183,14.0660781 29.9990981,14.0660781 C38.2462488,14.0660781 44.93302,20.7541784 44.93302,29 C44.93302,37.2471507 38.2462488,43.9339219 29.9990981,43.9339219 Z M43.1971975,13.1609516 L48.4764373,7.88171184 L51.1160571,10.5213317 L45.8368174,15.8005715 L43.1971975,13.1609516 Z M50.5339053,30.8660757 L57.9995372,30.8660757 L57.9995372,27.1325952 L50.5339053,27.1325952 L50.5339053,30.8660757 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

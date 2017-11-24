@@ -1,0 +1,174 @@
+// Navigation
+
+nav.main-nav {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: transparent;
+  z-index: 999;
+
+  .list-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: block;
+    position: relative;
+    background: transparent;
+    z-index: 999;
+    @include border-box;
+
+    //MEDIA QUERY
+    @include media($m) {
+      width: 100%;
+      height: auto;
+      max-width: 1024px;
+      padding: 0rem 0rem;
+      background: transparent;
+    }
+    @include media($l) {
+      max-width: 1280px;
+    }
+  }
+  .list-open {
+    position: absolute;
+    height: 550px;
+    background-image: $dark-blue-gradient;
+    box-shadow: 0 20px 40px rgba(0,0,0,.8);
+  }
+  .logo {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    transition: all .3s;
+
+    //MEDIA QUERY
+    @include media($m) {
+      right: 0rem;
+      left: auto;
+      top: 42px;
+    }
+    @include media($l) {
+      right: 0rem;
+    }
+    &:hover {
+      transform: translateY(-4px);
+      transition: all .3s;
+    }
+  }
+  .nav-trigger {
+    @include rubik(500, 1rem);
+    color: white;
+    padding: 2rem 0 0 0;
+    display: block;
+    text-align: right;
+
+    #close {
+      color: white;
+    }
+    span {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+    @include media($m) {
+      display: none;
+    }
+  }
+  ul {
+    width: 100%;
+    @include clearfix;
+    padding: 0;
+    position: relative;
+    padding: 2rem 0;
+    display: none;
+    @include border-box;
+
+    @include media($m) {
+      width: 100%;
+      position: relative;
+      @include clearfix;
+      padding-top: 3rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      background: transparent;
+      border-bottom: none;
+      transform: none;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+    @include media($l) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .ul-open {
+    display: block;
+  }
+  li {
+    list-style: none;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+
+    @include media($m) {
+      width: auto;
+      text-align: center;
+      padding: 0;
+      float: left;
+      margin-right: 2rem;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    a {
+      @include rubik(500, 1rem);
+      color: white;
+      position: relative;
+      transition: all .3s;
+
+      &:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        display: block;
+        background: white !important;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: 999;
+        transition: all .3s;
+      }
+      &:hover:after {
+        width: 100%;
+        transition: all .3s;
+      }
+    }
+    .active:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      display: block;
+      background: white !important;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      border-radius: 10px;
+      z-index: 999;
+    }
+  }
+  .arrow {
+    display: none;
+
+    @include media($m) {
+      display: block;
+    }
+    a:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,297 @@
+//////////////////////////////////////////////////////
+//HERO BANNER TIPS
+//////////////////////////////////////////////////////
+.tp-claim {
+  h1 {
+    .before {
+      content: '';
+      width: 285px;
+      height: 40px;
+      position: absolute;
+      display: none;
+      background: transparent url('../images/ui/headings/tips/ornaments-tips-2.svg') left top no-repeat;
+
+      @include media($m) {
+        display: block;
+        bottom: -4.5rem;
+        right: 2rem;
+      }
+    }
+    .after {
+      content: '';
+      width: 430px;
+      height: 60px;
+      position: absolute;
+      display: none;
+      background: transparent url('../images/ui/headings/tips/ornaments-tips-1.svg') left top no-repeat;
+
+      @include media($m) {
+        display: block;
+        top: -4.5rem;
+        right: 3rem;
+      }
+    }
+  }
+}
+//////////////////////////////////////////////////////
+//TIPS LAYOUT
+//////////////////////////////////////////////////////
+.tips-section {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: wrap;
+
+  @include media($m) {
+    margin-top: 2rem;
+  }
+  @include media($l) {
+    margin-top: 4rem;
+  }
+}
+.tips-content {
+  width: 100%;
+
+  @include media($m) {
+    flex: 1;
+  }
+}
+.tips-sidebar {
+  width: 100%;
+  background: white;
+
+  @include media($l) {
+    width: 250px;
+  }
+}
+.tips-list {
+  @include no-space;
+  @include border-box;
+  padding: 0 1rem;
+
+  a {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: $radius;
+    background: white;
+    box-shadow: $soft-shadow;
+    position: relative;
+    z-index: 1;
+    @include media($l) {
+      width: 95%;
+      box-shadow: $cell-shadow;
+    }
+
+    &:after{
+      content: '';
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      background:$pink;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 4px 4px;
+      transition: all .3s;
+      
+       @include media($m) {
+        height: 4px;
+        background:$dividers;
+      }
+
+    }
+    &:hover {
+      box-shadow: $cell-shadow;
+
+      @include media($l) {
+        box-shadow: $soft-shadow;
+      }
+
+      li figure img{
+       @include media($m) {
+         box-shadow: $soft-shadow;
+         transition: all .3s;
+       }
+      }
+      &:after{
+        height: 6px;
+        background:$pink;
+        transition: all .3s;
+      }
+    }
+  }
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0rem 0rem 2rem 0rem;
+
+    @include media($m) {
+      padding: 3rem 2rem;
+    }
+    @include media($l) {
+      padding: 3.5rem 2rem;
+    }
+    .tip-copyblock {
+      width: 100%;
+      padding: 0 1rem;
+      @include border-box;
+
+      @include media($m) {
+        width: 65%;
+        padding: 0;
+      }
+      @include media($l) {
+        width: 75%;
+      }
+    }
+    p{
+      max-height: 170px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 0rem;
+
+      @include media($m) {
+        max-height: 1000px;
+        margin-bottom: 1rem;
+      }
+
+      &:after{
+        content: '';
+        width: 250px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        background-image: $white-gradient;
+        bottom: 4px;
+        right: 0;
+        @include media($m) {
+          display: none;
+        }
+      }
+    }
+    h2 {
+      @include rubik(500, 1.4rem);
+      @include no-space;
+      line-height: 1.8rem;
+      margin-bottom: .8rem;
+      color: $black-7;
+      transition: all .3s;
+
+      @include media($m) {
+        @include rubik(400, 1.8rem);
+        margin-bottom: 1rem;
+        line-height: 2rem;
+      }
+    }
+    span {
+      color: white;
+      @include rubik(400, .9rem);
+      padding: .3rem;
+      border-radius: $radius;
+      color: $pink;
+      background:white;
+      border: 1px solid $pink;
+      margin-right: .1rem;
+      transition: all .3s;
+      display: none;
+
+      @include media($m) {
+        margin-right: .2rem;
+        display: inline;
+      }
+
+    }
+    .tip-image-block {
+      width: 100%;
+      position: relative;
+      margin-bottom: 1.5rem;
+      @include border-box;
+
+      @include media($m) {
+        width: 190px;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2rem;
+        width: 190px;
+      }
+      @include media($l) {
+        right: -2rem;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 4px 4px 0 0 ;
+        border: 0px solid white;
+        @include border-box;
+        transition: all .3s;
+
+        @include media($m) {
+          border-radius: $radius;
+          box-shadow: 0 2px 10px rgba(0, 0, 50, .1);
+          border: 5px solid white;
+        }
+      }
+      .tip-img-dsk{
+          display: none;
+          @include media($m) {
+            display: block;
+          }
+        }
+        .tip-img-mob{
+          display: block;
+          @include media($m) {
+            display: none;
+          }
+        }
+    }
+  }
+}
+.category-list {
+  @include no-space;
+  @include border-box;
+  padding: 0rem 1rem 1.5rem 2rem;
+
+  @include media($l) {
+    padding: 1rem 2rem 1.5rem 2rem;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 0;
+    @include rubik(400, 1rem);
+    color: $black-7;
+    transition: all .3s;
+    margin-right: .5rem;
+
+    @include media($m) {
+      padding-bottom: .5rem;
+    }
+    @include media($l) {
+      margin-right: 0rem;
+      display: block;
+    }
+    &:hover {
+      color: $pink;
+      transition: all .3s;
+    }
+  }
+  .active {
+    color: $pink;
+  }
+}
+.category-list-label {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  @include rubik(500, 1rem);
+  margin-bottom: .3rem;
+  color: $black-7;
+  @include media($l) {
+    @include rubik(600, 1rem);
+    padding-left: 2rem;
+  }
+}

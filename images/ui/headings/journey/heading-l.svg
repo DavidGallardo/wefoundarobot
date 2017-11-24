@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="86px" viewBox="0 0 1280 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Journey/Desktop" transform="translate(0.000000, -517.000000)" fill="#FFFFFF">
+            <g id="Header" transform="translate(-1.000000, 0.000000)">
+                <g id="bg">
+                    <g id="svg" transform="translate(0.000000, 517.000000)">
+                        <polygon id="Path-3" points="0.340309652 84.1536563 178.336562 20.7345345 354.141429 72.6657263 442.227142 42.496937 526.687109 62.8542836 619.020125 0.153656305 742.008626 72.6657263 830.046527 42.496937 967.816917 72.6657263 1117.7236 0.153656305 1280.34031 84.1536563"></polygon>
+                        <polygon id="Path-6" opacity="0.5" points="0.340309652 69.8831304 92.9713317 33.8984024 276.582746 85.0149759 347.618027 33.8984024 436.85256 85.0149759 577.822702 10.4362085 726.030221 85.0149759 781.662002 45.5782567 911.77899 85.0149759 1016.10197 7.82019272 1139.48127 85.0149759 1235.09612 27.3346065 1280.34031 63.6488748 1280.34031 85.8201927 0.340309652 85.8201927"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

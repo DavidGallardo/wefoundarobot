@@ -1,279 +1,449 @@
-//// Post
+//////////////////////////////////////////////////////
+//PROGRESS BAR
+//////////////////////////////////////////////////////
+progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: $pink;
+  z-index: 999;
+  opacity: .8;
+  display: none;
+  @include media($l) {
+    display: block;
+  }
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+progress::-webkit-progress-value {
+  background-color: $pink;
+}
+progress::-moz-progress-bar {
+  background-color: $pink;
+}
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  display: block;
+}
+.progress-bar {
+  background-color: $pink;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+//////////////////////////////////////////////////////
+//POST
+//////////////////////////////////////////////////////
 .at-content {
-	width: 100%;
-	position: relative;
-	// padding: 0rem 1rem;
-	height: auto;
-	min-height: 200px;
-	margin: 0 auto;
-	overflow: hidden;
-	@include border-box;
+  width: 100%;
+  position: relative;
+  height: auto;
+  min-height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include border-box;
 
-	//MEDIA QUERY
-	@include media($m) {
-		padding: 1rem 0 0 0 ;
-	}
-	@include media($l) {
-		padding: 2rem 0 0 0;
-		margin-bottom: 250px;
-	}
-	.at-date-block {
-		width: 100%;
-		height: 40px;
-		display: block;
-		margin: 0 auto;
-		margin-top: 2rem;
-		@include rubik(500, 1rem);
-		color: $black-6;
+  @include media($m) {
+    padding: 1rem 0 0 0;
+  }
+  @include media($l) {
+    padding: 2rem 0 0 0;
+  }
+  .at-date-block {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    @include rubik(500, 1rem);
+    color: $black-6;
 
-		//MEDIA QUERY
-		@include media($m) {
-			max-width: 600px;
-			margin-top: 0;
-		}
-	}
-	article {
-		max-width: 768px;
-		display: block;
-		position: relative;
-		margin: 0 auto;
-		padding: 0 1rem 3rem 1rem;
+    @include media($m) {
+      max-width: 600px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    span {
+      height: 2rem;
+      display: none;
+      margin-right: .3rem;
+      display: none;
 
-		//MEDIA QUERY
-		@include media($m) {
-			padding: 2rem 0 3rem 0;
-		}
-		@include media($l) {
-			padding: 0 0 3rem 0;
-		}
-		h1, h2, h3, h4, h5, h6, p, ul, hr {
-			width: 100%;
-			margin-left: 0;
+      @include media($s) {
+        display: inline-block;
+      }
 
-			//MEDIA QUERY
-			@include media($m) {
-				max-width: 600px;
-				margin-left: 84px;
-			}
-		}
-		figure {
-			width: 100%;
-			margin: 2rem 0;
+      @include media($m) {
+        margin-right: .5rem;
+        display: inline-block;
+      }
+      img {
+        height: 100%;
+        margin-top: -3px;
+      }
+    }
+  }
+  article {
+    max-width: 768px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
 
-			//MEDIA QUERY
-			@include media($m) {
-				max-width: calc(768px - 132px);
-				margin: 3rem auto;
-			}
-			@include media($l) {
-				max-width: 680px;
-				margin: 4rem auto;
-			}
-			img {
-				width: 100%;
-				height: auto;
-				border-radius: $radius;
-				box-shadow: $shadow;
-			}
-		}
-	}
+    @include media($m) {
+      padding: 2rem 0 1rem 0;
+    }
+    @include media($l) {
+      padding: 0 0 2rem 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, ul, hr, .disclaimer {
+      width: 100%;
+      margin-left: 0;
+
+      @include media($m) {
+        max-width: 600px;
+        margin-left: 84px;
+      }
+    }
+    h2 {
+      padding: 1rem 0 0 0;
+    }
+    h3 {
+      padding: 0rem 0 .5rem 0;
+    }
+    ul {
+      @include border-box;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        position: relative;
+        margin-bottom: .5rem;
+
+        &:before {
+          content: '–';
+          color: inherit;
+          position: absolute;
+          left: -1rem;
+          font-weight: 500;
+        }
+      }
+    }
+    hr {
+      border-color: $dividers;
+      margin-top: 2rem;
+    }
+    a {
+      color: $pink;
+      position: relative;
+
+      &:after {
+        content: '';
+        height: 2px;
+        display: block;
+        position: absolute;
+        background: $pink;
+        bottom: -2px;
+        transition: all .3s;
+        border-radius: $radius;
+      }
+      &:after {
+        width: 0%;
+        left: 0;
+      }
+      &:hover:after {
+        width: 100%;
+        transition: all .3s;
+      }
+    }
+    figure {
+      width: 100%;
+      margin: 2rem 0;
+
+      @include media($m) {
+        max-width: calc(768px - 132px);
+        margin: 3rem auto;
+      }
+      @include media($l) {
+        max-width: 680px;
+        margin: 4rem auto;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $radius;
+        box-shadow: $shadow;
+      }
+    }
+  }
+  .disclaimer {
+    p {
+      @include open(400, .6rem);
+      line-height: 1.66;
+      color: $black-3;
+      margin: 0;
+    }
+  }
 }
 #at-mobile {
-	display: block;
+  display: block;
 }
-
 .sharing-block {
-	width: 100%;
-	display: none;
-	padding-top: 1rem;
-	color: $grey;
+  width: 100%;
+  display: none;
+  padding-top: 1rem;
+  color: $grey;
+  @include rubik(400, 1rem);
 
-	//MEDIA QUERY
-	@include media($m) {
-		display: block;
-		width: 380px;
-		position: absolute;
-		padding-top: 0;
-		transform: rotate(90deg);
-		left: -7rem;
-		top: 11rem;
-	}
-	@include media($l) {
-		left: -8.5rem;
-		top: 9.3rem;
-	}
-	span {
-		display: inline-block;
-		width: 30px;
-		margin: 0 1rem;
+  @include media($m) {
+    display: block;
+    width: 380px;
+    position: absolute;
+    padding-top: 0;
+    transform: rotate(90deg);
+    left: -7.5rem;
+    top: 11.5rem;
+  }
+  @include media($l) {
+    left: -8.5rem;
+    top: 9rem;
+  }
+  span{
+    display: none;
+    @include media($s) {
+      display: inline-block;
+    }
+  }
+  span.sharing-line{
+    margin: 0 .5rem;
+    @include media($s) {
+      width: 10px;
+    }
+    @include media($m) {
+      width: 30px;
+      margin: 0 1rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  a {
+    margin-right: 1rem;
+    color: $grey !important;
 
-		img {
-			width: 100%;
-		}
-	}
-	a {
-		margin-right: .5rem;
-		color: $grey;
+    @include media($m) {
+      margin-right: .5rem;
+    }
 
-		&.facebook:hover {
-			color: #3b5998;
-		}
-		&.twitter:hover {
-			color: #1da1f2;
-		}
-		&:before {
-			display: none;
-		}
-	}
+    &.facebook ,&.facebook:hover {
+      color: #3b5998 !important;
+    }
+    &.facebook:after {
+      background: #3b5998 !important;
+    }
+    &.twitter, &.twitter:hover {
+      color: #1da1f2 !important;
+    }
+    &.twitter:after {
+      background: #1da1f2 !important;
+    }
+  }
 }
+// –––––––––––––– Share & Tags
+.at-share-categories {
+  margin: 0 auto;
+  padding-top: 0rem;
 
+  @include media($m) {
+    max-width: 600px;
+    padding-top: 1rem;
+  }
+  .at-share-wrap {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $dividers;
+    border-top: 1px solid $dividers;
+  }
+  .sharing-block {
+    display: block;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
 
+    @include media($m) {
+      padding: 2rem 0;
+    }
+  }
+  .at-tags {
+    margin: 0;
+    padding: 1rem 0;
+    @include border-box;
 
+    @include media($m) {
+      padding: 2rem 0;
+    }
+  }
+  .at-tag {
+    @include rubik(400, 1rem);
+    display: inline-block;
+    padding: .2rem .5rem;
+    margin-right: .2rem;
+    background: $pink;
+    border-radius: $radius;
+    color: white;
+    margin-bottom: .2rem;
+    box-shadow: $shadow;
 
-
+    @include media($m) {
+      padding: .2rem .5rem;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
 // –––––––––––––– Gallery
 
 .at-gallery {
-	border-top: 1px solid $dividers;
-	padding: 2rem 0;
-	background: darken(white, 2);
+  border-top: 1px solid $dividers;
+  padding: 0;
+  background: #FAFAFA;
 
-	//MEDIA QUERY
-	@include media($m) {
-		padding: 4rem 0;
-		border-top: none;
-	}
-	@include media($l) {
-		padding: 6rem 0;
-	}
+  @include media($m) {
+    padding: 1rem 0 0 0;
+    border-top: none;
+  }
+  @include media($l) {
+    padding: 2rem 0 0 0;
+  }
 }
 .slick-slide {
-	max-width: 300px;
-	padding: 0 .4rem;
-	cursor: pointer;
+  max-width: 300px;
+  padding: 0 .4rem;
+  cursor: pointer;
+  @include border-box;
 
-	//MEDIA QUERY
-	@include media($m) {
-		max-width: 636px;
-		padding: 0 2rem;
-	}
-	@include media($l) {
-		max-width: 700px;
-	}
-	img {
-		width: 100%;
-		height: auto;
-		border-radius: $radius;
-		box-shadow: $shadow;
-	}
-	&:focus {
-		outline: none;
-	}
+  @include media($m) {
+    max-width: 636px;
+    padding: 0 2rem;
+  }
+  @include media($l) {
+    max-width: 700px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $radius;
+    box-shadow: $hard-shadow;
+    border: 5px solid white;
+    margin: 2rem auto;
+    @include border-box;
+
+    @include media($m) {
+      margin: 4rem auto;
+      border: 10px solid white;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
 }
-// –––––––––––––– Footer Next
+// –––––––––––––– Related Articles
 
-footer.at-next {
-	background: $dark-grey;
-	margin: 0;
-	padding: 0;
-	height: 250px;
-	min-height: 250px;
-	position: relative;
-	transition: all .3s;
+.at-related {
+  width: 100%;
+  height: auto;
+  min-height: 2rem;
+  background: white;
+  box-shadow: inset 0 150px 0 #FAFAFA;
 
-	//MEDIA QUERY
-	@include media($l) {
-		position: fixed;
-		width: 100%;
-		bottom: 0;
-		z-index: -1;
-	}
+  .at-related-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+    @include border-box;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 
-	&:hover {
-		color: white;
-		transition: all .3s;
-	}
-
-	.at-footer-title{
-		width: 90%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: left;
-		//MEDIA QUERY
-		@include media($m) {
-			width: 80%;
-			text-align: center;
-		}
-	}
-	.at-next-copy {
-		display: block;
-		@include rubik(500, 1rem);
-		padding-bottom: 0;
-		opacity: .7;
-		color: white;
-	}
-
-	.h1{
-		@include rubik(700, 1.8rem);
-		line-height: 1;
-		margin: 1rem 0;
-		color: white;
-
-		//MEDIA QUERY
-		@include media($m) {
-			@include rubik(700, 2.75rem);
-			min-height: 70px;
-			color: white;
-		}
-		&:after{
-			display: none;
-		}
-	}
+    @include media($m) {
+      padding: 0;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      width: 80%;
+    }
+    @include media($l) {
+      width: 65%;
+    }
+  }
 }
-// –––––––––––––– Specific gradients
-footer.blue-grad {
-	background: $dark-grey;
+.at-card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 50, .08);
+  border-radius: $radius;
+  @include border-box;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  z-index: 1;
+  top: 0;
+  transition: all .3s;
 
-	&:hover {
-		background-color: $blue;
-	}
+  @include media($m) {
+    width: 48%;
+  }
+  @include media($l) {
+    width: 48%;
+  }
+  &:hover {
+    top: -.5rem;
+    box-shadow: 0 30px 50px rgba(0, 0, 50, .05);
+    transition: all .3s;
+  }
 }
-footer.dark-blue-grad {
-	background: $dark-grey;
-
-	&:hover {
-		background-color: $dark-blue;
-	}
+.at-card-label {
+  @include rubik(500, 1rem);
+  color: $pink;
+  margin-bottom: .5rem;
 }
-footer.brown-grad {
-	background: $dark-grey;
-
-	&:hover {
-		background-color: $brown;
-	}
+.at-card-title {
+  @include rubik(200, 1.4rem);
+  color: $black-7;
+  line-height: 1.25;
 }
-footer.red-grad {
-	background: $dark-grey;
+.at-related-prev .at-card-label {
+  color: $dark-blue;
 
-	&:hover {
-		background-color: $red;
-	}
+  img {
+    margin-top: -2px;
+    margin-right: .5rem;
+  }
 }
-footer.green-grad {
-	background: $dark-grey;
+.at-related-next .at-card-label {
+  color: $pink;
 
-	&:hover {
-		background-color: $green;
-	}
-}
-
-footer.insta-grad {
-	background: $dark-grey url('../images/ui/grey-pix.png');
-
-	&:hover {
-		background: $dark-grey url('../images/ui/instagradient.png') no-repeat center center;
-		background-size: 100%;
-	}
+  img {
+    margin-top: -1px;
+    margin-left: .5rem;
+  }
 }

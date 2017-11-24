@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="104px" viewBox="0 0 1280 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Article/Desktop" transform="translate(0.000000, -427.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Box">
+                    <g id="SVG" transform="translate(0.000000, 427.000000)">
+                        <path d="M0,103 L1280,103 C961.327745,34.3333333 747.994412,0 640,0 C532.005588,0 318.672255,34.3333333 0,103 Z" id="Path-2" opacity="0.300000012"></path>
+                        <path d="M0,104 L1280,104 C961.327745,50.6666667 747.994412,24 640,24 C532.005588,24 318.672255,50.6666667 0,104 Z" id="Path-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

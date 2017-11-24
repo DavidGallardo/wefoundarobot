@@ -33,14 +33,13 @@ gulp.task('critical', function () {
  */
 
 gulp.task('js', function(){
-    return gulp.src(['./js/retina.js', './js/skrollr.js', './js/main.js'])
-        .pipe(concat('main.js'))
+    return gulp.src(['./js/retina.js', './js/slick.min.js', './js/main.js'])
+        .pipe(concat('concat.js'))
         .pipe(gulp.dest('./js'))
         .pipe(rename('main.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./js/min'));
 });
-
 
 /**
  * Build the Jekyll Site
@@ -76,6 +75,7 @@ gulp.task('sass', function () {
     return gulp.src('_scss/main.scss')
         .pipe(sass({
             includePaths: ['scss'],
+            outputStyle: 'compressed',
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))

@@ -1,11 +1,23 @@
 name: We Found A Robot
 markdown: kramdown
-permalink: /journey/:title/
 highlighter: rouge
 include: ["_pages"]
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-# gems: [jekyll-paginate]
-url: http://wefoundarobot.com
+exclude: [node_modules, gulpfile.js, package.json, CNAME, README.md]
+keep_files: [images]
+permalink: /:categories/:title/
+
+# PRE
 # url: http://localhost:3000
+# baseurl: ''
+
+# PRE-PROD
+# url: https://davidgallardo.github.io
+# baseurl: '/travelblog2'
+
+# PROD
+url: http://wefoundarobot.com
 baseurl: ''
-# incremental: true
+
+
+
+
