@@ -355,6 +355,10 @@ li.all-tips-cta {
   margin: 0 auto;
   padding: 0 1rem;
   @include border-box;
+  @include media($l) {
+    padding-top: 2rem;
+  }
+  
 }
 .stats-container {
   display: flex;

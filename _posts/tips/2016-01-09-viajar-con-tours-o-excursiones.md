@@ -29,7 +29,7 @@ Aquí van unos cuantos después de nuestras experiencias (algunas muy satisfacto
 - En las excursiones y tours que son en grupo, **la gente con la que vayas va a marcar la diferencia**. Si puedes, asegúrate de ir con gente con la que te sientas cómodo y que busque lo mismo que tu. 
 - Para nosotros, algo muy importante a la hora de contratar algo así son **el compromiso y la responsabilidad social** de la agencia con la zona y/o comunidad.
 
-## Estos son los tours que hemos hecho durante este viaje y los cuales recomendamos:
+## Tours hechos durante este viaje y que recomendamos:
 
 ### Desierto del Gobi – Mongolia
 Mongolia es un país difícil de explorar si no es contratando, al menos, una furgoneta con conductor. Es un país sin apenas red de carreteras ni transporte donde la gente vive de forma nómada; por lo que vas a necesitar alguien que se conozca muy bien la zona y sepa conducir en cualquier tipo de terreno. Nosotros lo contratamos desde el [**Golden Gobi Hostel**][ref1] y lo compartimos con 4 compañeros más que conocimos en el propio hostel. Muy recomendable, aunque la guía podía haber sido mejor.

@@ -190,6 +190,10 @@ progress::-moz-progress-bar {
     }
   }
   .disclaimer {
+    margin-bottom: 1rem;
+    @include media($m) {
+      margin-bottom: 0;
+    }
     p {
       @include open(400, .6rem);
       line-height: 1.66;
