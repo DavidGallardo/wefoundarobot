@@ -12,7 +12,7 @@ image-alt: "Furgoneta en el desierto de Mongolia"
 excerpt: "Aunque no hacemos muchos (porque algunos son demasiado caros y no tan interesantes y/o necesarios), creemos que a veces la mejor forma de conocer a fondo y vivir un país o una zona es mediante tours, excursiones organizadas o guías turísticos..."
 ---
 
-## No siempre funcionan y a veces son caros..
+## No siempre funcionan y a veces son caros...
 
 Aunque no hacemos muchos (porque algunos son demasiado caros o no tan interesantes o necesarios), creemos que a veces la mejor forma de conocer a fondo y vivir un país o una zona es mediante tours, excursiones organizadas o guías turísticos. Te damos algunas pistas para no equivocarte.
 

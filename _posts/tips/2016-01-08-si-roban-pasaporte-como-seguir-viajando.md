@@ -14,7 +14,7 @@ excerpt: "A nosotros nos lo robaron en Cambodia y allí no hay embajada español
 
 ## Mejor que no te lo roben! 😅
 
-Pero bueno, si te pasa..
+Pero bueno, si te pasa...
 
 **Primero:** tranquilo/a porqué no tienes que volver a casa. Aunque te esperan unos días largos y algún que otro cambio de planes. 
 

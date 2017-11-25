@@ -9,11 +9,11 @@ title: "Cómo Tramitar Visados"
 author: "Airí & David"
 tags: [fronteras, visado, embajadas]
 image-alt: "Some Caption"
-excerpt: "Lavar ropa durante el viaje puede darte más de un disgusto... pero no tienes otra opción. Muchos hostels tienen su propia lavadora y otros te ofrecen llevarlo a una lavandería externa."
+excerpt: "Para saber si necesitas visado o no para entrar a cada país teniendo pasaporte español lo mejor que puedes hacer es consultar en la web del Ministerio de Exteriores de España (y buscar por país) y visitar también..."
 
 ---
 
-## Necesito visado para ir a ..?
+## Necesito visado para ir a ...?
 
 Para saber si necesitas visado o no para entrar a cada país **teniendo pasaporte español** lo mejor que puedes hacer es consultar en la web del [Ministerio de Exteriores de España][ref1] (y buscar por país) y visitar también la web de Exteriores e Inmigración del país a donde quieras ir (la información siempre será más reciente). 
 

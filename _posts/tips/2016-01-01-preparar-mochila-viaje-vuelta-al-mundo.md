@@ -15,7 +15,7 @@ excerpt: "¿Qué tipo de maleta llevar? ¿Qué poner en ella? ¿Cómo mantenerla
 ## Mochila o Maleta?
 Esta es una decisión importante porque va a acompañarte durante todo el viaje. Si no tienes muy claro el itinerario y tienes previsto coger buses, trenes y furgonetas (dónde no siempre se trata bien el equipaje) o andar en bastantes tramos, la recomendación es una **mochila**. Aún así, una maleta dura con ruedas no es mala opción si se tiene un poco planificado el tema. 
 
-### Nuestro caso – Mochila.
+### Nuestro caso – Mochila
 Mochilas grandes que llevamos: [Fjällräven Abisko][ref1] 55L(W) & 65L  
 Mochilas pequeñas o auxiliares: [Poler Classic Rucksack 23L][ref2] & [Poler Rumers Pack 14L][ref3]   
   
@@ -85,6 +85,7 @@ En cuanto a las vacunas, depende del país y de la época en la que vayas. La de
 - Gafas de recambio y lentes de contacto (si se necesitan)  
 - Pequeña libreta y boli.
 - Kleenex, papel higiénico y toallitas.
+- Gel limpiador en seco para manos.
 - Alguna bolsa de plástico.
 - Fotos de carnet y otros documentos impresos para visados.
   

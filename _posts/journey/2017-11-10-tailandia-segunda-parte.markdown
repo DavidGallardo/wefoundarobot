@@ -8,7 +8,7 @@ title:  "Tailandia, segunda parte."
 author: "BB-8"
 tags: [Tailandia, Playas, Islas]
 image-alt: Bagan, Myanmar
-excerpt: "Nosaltres som al port de Kawthaung, al sud de Myanmar, apunt de creuar amb barca fins a Tailàndia per poder anar cap a Malàisia. Tu on pares exactament? Igual ens podem trobar?..." 
+excerpt: "Sigo en Tailandia. Más concretamente, en el sur. He hecho un amigo y estoy viajando con él. Os lo presento: se llama Krabi (como el Pokémon, si), tiene 2 ojos saltones, anda de lado y pertenece a la familia de cangrejos de arena llamados peleles..." 
 gallery: 
   - /images/journey/17/gallery/gal-1.jpg
   - /images/journey/17/gallery/gal-2.jpg
@@ -26,7 +26,7 @@ Hola chicos,
 
 Sigo en Tailandia. Más concretamente, en el sur. He hecho un amigo y estoy viajando con él. 
 
-Os lo presento: se llama Krabi (como el Pokemon, si), tiene 2 años y 7 meses, 2 ojos saltones, anda de lado a 20km/h de promedio y pertenece a la familia de **cangrejos de arena llamados "peleles"**. 
+Os lo presento: se llama Krabi (como el Pokémon, si), tiene 2 años y 7 meses, 2 ojos saltones, anda de lado a 20km/h de promedio y pertenece a la familia de **cangrejos de arena llamados "peleles"**. 
 
 Le conocí en **Railay**, una bonita playa de agua azul turquesa rodeada de escarpados acantilados donde sólo se puede llegar  en bote, nadando o teletransportándote, como hice yo.
 

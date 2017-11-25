@@ -11,7 +11,7 @@ tags: [apps, gastos, mapas]
 image-alt: "Iconos de aplicaciones"
 excerpt: "Viajar ya no se hace como antes. Pero eso no lo hace menos interesante. Te contamos qué apps se nos han hecho imprescindibles durante esta aventura."
 ---
-## Viajar ya no se hace como antes.
+## Viajar ya no se hace como antes
 
 Pero eso no lo hace menos interesante. De hecho la tecnología nos ha permitido conversar con un señor en un tren durante horas sin saber una palabra de ruso o encontrar el camino a *casa* desde un festín en un templo budista detrás de una playa secreta a 40km de distancia... 
 
