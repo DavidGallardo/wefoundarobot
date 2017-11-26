@@ -33,7 +33,7 @@ gulp.task('critical', function () {
  */
 
 gulp.task('js', function(){
-    return gulp.src(['./js/retina.js', './js/slick.min.js', './js/main.js'])
+    return gulp.src(['./js/retina.js', './js/cookieconsent.min.js', './js/slick.min.js', './js/main.js'])
         .pipe(concat('concat.js'))
         .pipe(gulp.dest('./js'))
         .pipe(rename('main.min.js'))
