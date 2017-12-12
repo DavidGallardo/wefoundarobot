@@ -7,7 +7,7 @@ share: true
 title:  "Tailandia, segunda parte."
 author: "BB-8"
 tags: [Tailandia, Playas, Islas]
-image-alt: Bagan, Myanmar
+image-alt: Maya Bay, Thailand
 excerpt: "Sigo en Tailandia. Más concretamente, en el sur. He hecho un amigo y estoy viajando con él. Os lo presento: se llama Krabi (como el Pokémon, si), tiene 2 ojos saltones, anda de lado y pertenece a la familia de cangrejos de arena llamados peleles..." 
 gallery: 
   - /images/journey/17/gallery/gal-1.jpg
