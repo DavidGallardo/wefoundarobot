@@ -15,7 +15,7 @@
 			</a>
 			{% endif %}
 			{% if page.previous and page.previous.categories contains "post" %}
-			<a href="{{ page.previous.ur | relative_url l}}" class="at-card card-general at-related-prev" >
+			<a href="{{ page.previous.url | relative_url l}}" class="at-card card-general at-related-prev" >
 				<div class="at-card-label"><span><img src='{{ "/images/ui/arrows/arrow-blue-left.svg" | relative_url }}' alt="arrow" data-no-retina></span>Artículo Anterior</div>
 				<div class="at-card-title">{{page.previous.title}}</div>
 			</a>
