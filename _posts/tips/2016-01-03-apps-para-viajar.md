@@ -84,6 +84,13 @@ Para más info del tema leer este post de [Seat61][ref13] que, por cierto, es la
 
 [Link a Cleartrip][ref11]
 
+### Skyscanner
+Un clásico entre clásicos. Meta-buscador de vuelos con un montón de opciones en cuanto a la flexibilidad de fechas y destinos, para los más indecisos o cortos de presupuesto, con una magnífica interfaz.
+
+Su herramienta 'Explorar Mapa', es un sueño hecho realidad para los más intrépidos.
+
+[Link a Skyscanner][ref18]
+
 ## Idiomas
 
 ### Google Translator
@@ -123,3 +130,4 @@ Hasta el momento la mejor app para ir sacando alguna frase en **mandarín** sin 
 [ref15]: https://www.pleco.com/
 [ref16]: http://www.hellochinese.cc/es/
 [ref17]: https://es.duolingo.com/ 
+[ref18]: https://www.skyscanner.es/ 
